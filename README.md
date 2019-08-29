@@ -5,6 +5,8 @@
 # About the App
 Salmon King Seafood (SKS) is a reference App create to show some of the migration capabilities of the [Visual Basic Upgrade Companion](https://www.mobilize.net/visual-basic-upgrade-companion) [VBUC](https://www.mobilize.net/visual-basic-upgrade-companion) from [Mobilize.Net](https://www.mobilize.net)
 
+This repo contanins the migrated [SKS VB6 Version](https://github.com/MobilizeNet/SKSVB6)
+
 # Migrated Screens
 
 Below you can see some of the migrated screens
