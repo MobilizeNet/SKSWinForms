@@ -1,0 +1,4 @@
+tasks:
+  - init: echo "Workspace Ready."
+image:
+  file: .gitpod.Dockerfile
