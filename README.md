@@ -7,6 +7,33 @@ Salmon King Seafood (SKS) is a reference App create to show some of the migratio
 
 This repo contanins the migrated [SKS VB6 Version](https://github.com/MobilizeNet/SKSVB6)
 
+# Building the App
+
+You can clone the repository to your machine. From the command line just run:
+```
+git clone https://github.com/MobilizeNet/SKSWinForms.git
+```
+
+Or you can download the code by clicking on Download ZIP
+
+> NOTE: if you download the code remember to unblock your files. When you download certain files Windows will block then for 
+> security and you might get an error like ![blockedResX](https://i.stack.imgur.com/9pW1r.png)
+
+> To fix this problem:
+> Open the file explorer. Navigate to project/solution directory
+> Search for *.resx. --> You will get list of resx files
+> Right click the resx file, open the properties and check the option 'Unblock'
+> Repeat #3 for each resx file.
+> Reload the project.
+
+Once you have downloaded the code look for SKS.sln. And open that file.
+When the solution is open the first thing you need to do is restore packages.
+One easy way to do is right click on your solution node. 
+
+Select the `Manage Nuget Packages for Solution...` and select that option. From there you can make sure that all nugets are restored.
+
+Once all the nugets have been restore, just rebuild and run. 
+
 # Migrated Screens
 
 Below you can see some of the migrated screens
