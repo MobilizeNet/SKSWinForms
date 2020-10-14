@@ -1,0 +1,11 @@
+<MigrationStatus>
+  <Date>2/17/2020 3:46:43 PM</Date>
+  <VBUC_Version>8.1.40607.0 (RTM 8.1.40607.0)</VBUC_Version>
+  <TargetLanguage>CSharp</TargetLanguage>
+  <VSVersion>VisualStudio2017</VSVersion>
+  <UpgradeOptions>
+  </UpgradeOptions>
+  <Projects>
+    <Project Path="SKS.csproj" VB6DesignLines="4890" VB6CodeLines="2902" />
+  </Projects>
+</MigrationStatus>
