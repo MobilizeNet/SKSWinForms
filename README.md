@@ -9,6 +9,11 @@ This repo contanins the migrated [SKS VB6 Version](https://github.com/MobilizeNe
 
 # Building the App
 
+You sohuld need to download the .Net Framework 4.7 here https://dotnet.microsoft.com/en-us/download/visual-studio-sdks?cid=getdotnetsdk
+
+``` 
+(https://github.com/MobilizeNet/SKSVB6/raw/master/Media/SDKVersion.PNG)
+```
 You can clone the repository to your machine. From the command line just run:
 ```
 git clone https://github.com/MobilizeNet/SKSWinForms.git
