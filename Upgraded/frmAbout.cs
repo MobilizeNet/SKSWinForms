@@ -40,9 +40,9 @@ namespace SKS
 
 		private void frmAbout_Activated(System.Object eventSender, System.EventArgs eventArgs)
 		{
-			if (UpgradeHelpers.Gui.ActivateHelper.myActiveForm != eventSender)
+			if (UpgradeHelpers.Gui.Utils.ActivateHelper.myActiveForm != eventSender)
 			{
-				UpgradeHelpers.Gui.ActivateHelper.myActiveForm = (System.Windows.Forms.Form) eventSender;
+				UpgradeHelpers.Gui.Utils.ActivateHelper.myActiveForm = (System.Windows.Forms.Form) eventSender;
 			}
 		}
 

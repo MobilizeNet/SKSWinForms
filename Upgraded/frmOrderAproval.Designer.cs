@@ -63,8 +63,8 @@ namespace SKS
 		public System.Windows.Forms.Label Label4;
 		public System.Windows.Forms.Label Label2;
 		public System.Windows.Forms.GroupBox Frame1;
-		public UpgradeHelpers.Gui.ListControlHelper listBoxComboBoxHelper1;
-		public UpgradeHelpers.Gui.CommandButtonHelper commandButtonHelper1;
+		public UpgradeHelpers.Gui.Controls.ListControlHelper listBoxComboBoxHelper1;
+		public UpgradeHelpers.Gui.Controls.CommandButtonHelper commandButtonHelper1;
 		//NOTE: The following procedure is required by the Windows Form Designer
 		//It can be modified using the Windows Form Designer.
 		//Do not modify it using the code editor.
@@ -103,9 +103,9 @@ namespace SKS
 			this.sbStatusBar.SuspendLayout();
 			this.Frame1.SuspendLayout();
 			this.SuspendLayout();
-			this.listBoxComboBoxHelper1 = new UpgradeHelpers.Gui.ListControlHelper(this.components);
+			this.listBoxComboBoxHelper1 = new UpgradeHelpers.Gui.Controls.ListControlHelper(this.components);
 			((System.ComponentModel.ISupportInitialize) this.listBoxComboBoxHelper1).BeginInit();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.CommandButtonHelper(this.components);
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			((System.ComponentModel.ISupportInitialize) this.fgOrders).BeginInit();
 			// 
 			// cmdApprove

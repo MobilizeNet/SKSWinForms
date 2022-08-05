@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 using UpgradeHelpers.DB.ADO;
-using UpgradeHelpers.Gui;
+using UpgradeHelpers.Gui.Controls;
 using UpgradeHelpers.Helpers;
 
 namespace SKS
@@ -42,9 +42,9 @@ namespace SKS
 
 		private void frmUsersManage_Activated(System.Object eventSender, System.EventArgs eventArgs)
 		{
-			if (UpgradeHelpers.Gui.ActivateHelper.myActiveForm != eventSender)
+			if (UpgradeHelpers.Gui.Utils.ActivateHelper.myActiveForm != eventSender)
 			{
-				UpgradeHelpers.Gui.ActivateHelper.myActiveForm = (System.Windows.Forms.Form) eventSender;
+				UpgradeHelpers.Gui.Utils.ActivateHelper.myActiveForm = (System.Windows.Forms.Form) eventSender;
 			}
 		}
 		string CurrentEditedUser = "";

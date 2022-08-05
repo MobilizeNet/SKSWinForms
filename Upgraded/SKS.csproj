@@ -69,9 +69,13 @@
       <HintPath>..\UpgradeSupport\UpgradeHelpers.DB.Essentials.Controls.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="UpgradeHelpers.Gui">
+    <Reference Include="UpgradeHelpers.Gui.Utils">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.Gui.dll</HintPath>
+      <HintPath>..\UpgradeSupport\UpgradeHelpers.Gui.Utils.dll</HintPath>
+    </Reference>
+	<Reference Include="UpgradeHelpers.Gui.Controls">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UpgradeSupport\UpgradeHelpers.Gui.Controls.dll</HintPath>
     </Reference>
     <Reference Include="UpgradeHelpers.Gui.ContainerHelper">
       <SpecificVersion>False</SpecificVersion>

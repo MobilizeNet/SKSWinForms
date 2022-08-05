@@ -46,7 +46,7 @@ namespace SKS
 		public System.Windows.Forms.Label lblVersion;
 		public System.Windows.Forms.Label lblDisclaimer;
 		public System.Windows.Forms.Label[] Line1 = new System.Windows.Forms.Label[2];
-		public UpgradeHelpers.Gui.CommandButtonHelper commandButtonHelper1;
+		public UpgradeHelpers.Gui.Controls.CommandButtonHelper commandButtonHelper1;
 		//NOTE: The following procedure is required by the Windows Form Designer
 		//It can be modified using the Windows Form Designer.
 		//Do not modify it using the code editor.
@@ -65,7 +65,7 @@ namespace SKS
 			this.lblVersion = new System.Windows.Forms.Label();
 			this.lblDisclaimer = new System.Windows.Forms.Label();
 			this.SuspendLayout();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.CommandButtonHelper(this.components);
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// picIcon
 			// 

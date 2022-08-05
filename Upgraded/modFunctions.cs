@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Text;
 using System.Windows.Forms;
 using UpgradeHelpers.DB.ADO;
-using UpgradeHelpers.Gui;
+using UpgradeHelpers.Gui.Controls;
 using UpgradeHelpers.Helpers;
 
 namespace SKS

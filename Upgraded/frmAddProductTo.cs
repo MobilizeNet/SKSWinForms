@@ -3,7 +3,7 @@ using System;
 using System.Collections.Specialized;
 using System.Windows.Forms;
 using UpgradeHelpers.DB.ADO;
-using UpgradeHelpers.Gui;
+using UpgradeHelpers.Gui.Controls;
 
 namespace SKS
 {
@@ -42,9 +42,9 @@ namespace SKS
 
 		private void frmAddProductTo_Activated(System.Object eventSender, System.EventArgs eventArgs)
 		{
-			if (UpgradeHelpers.Gui.ActivateHelper.myActiveForm != eventSender)
+			if (UpgradeHelpers.Gui.Utils.ActivateHelper.myActiveForm != eventSender)
 			{
-				UpgradeHelpers.Gui.ActivateHelper.myActiveForm = (System.Windows.Forms.Form) eventSender;
+				UpgradeHelpers.Gui.Utils.ActivateHelper.myActiveForm = (System.Windows.Forms.Form) eventSender;
 			}
 		}
 

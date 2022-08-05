@@ -46,7 +46,7 @@ namespace SKS
 		public System.Windows.Forms.PictureBox Image3;
 		public System.Windows.Forms.Label Label1;
 		public System.Windows.Forms.Label lblSrchBy;
-		public UpgradeHelpers.Gui.CommandButtonHelper commandButtonHelper1;
+		public UpgradeHelpers.Gui.Controls.CommandButtonHelper commandButtonHelper1;
 		//NOTE: The following procedure is required by the Windows Form Designer
 		//It can be modified using the Windows Form Designer.
 		//Do not modify it using the code editor.
@@ -67,7 +67,7 @@ namespace SKS
 			this.Label1 = new System.Windows.Forms.Label();
 			this.lblSrchBy = new System.Windows.Forms.Label();
 			this.SuspendLayout();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.CommandButtonHelper(this.components);
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// cmdClose
 			// 

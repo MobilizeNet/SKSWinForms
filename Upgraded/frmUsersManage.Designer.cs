@@ -62,8 +62,8 @@ namespace SKS
 		public System.Windows.Forms.Label Label4;
 		public System.Windows.Forms.PictureBox Image1;
 		public System.Windows.Forms.Label[] Label1 = new System.Windows.Forms.Label[5];
-		public UpgradeHelpers.Gui.ListViewHelper listViewHelper1;
-		public UpgradeHelpers.Gui.CommandButtonHelper commandButtonHelper1;
+		public UpgradeHelpers.Gui.Controls.ListViewHelper listViewHelper1;
+		public UpgradeHelpers.Gui.Controls.CommandButtonHelper commandButtonHelper1;
 		//NOTE: The following procedure is required by the Windows Form Designer
 		//It can be modified using the Windows Form Designer.
 		//Do not modify it using the code editor.
@@ -100,9 +100,9 @@ namespace SKS
 			this.lstAccounts.SuspendLayout();
 			this.Frame1.SuspendLayout();
 			this.SuspendLayout();
-			this.listViewHelper1 = new UpgradeHelpers.Gui.ListViewHelper(this.components);
+			this.listViewHelper1 = new UpgradeHelpers.Gui.Controls.ListViewHelper(this.components);
 			((System.ComponentModel.ISupportInitialize) this.listViewHelper1).BeginInit();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.CommandButtonHelper(this.components);
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// lstAccounts
 			// 

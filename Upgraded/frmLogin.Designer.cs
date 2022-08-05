@@ -43,7 +43,7 @@ namespace SKS
 		private System.Windows.Forms.Label _lblLabels_0;
 		private System.Windows.Forms.Label _lblLabels_1;
 		public System.Windows.Forms.Label[] lblLabels = new System.Windows.Forms.Label[2];
-		public UpgradeHelpers.Gui.CommandButtonHelper commandButtonHelper1;
+		public UpgradeHelpers.Gui.Controls.CommandButtonHelper commandButtonHelper1;
 		//NOTE: The following procedure is required by the Windows Form Designer
 		//It can be modified using the Windows Form Designer.
 		//Do not modify it using the code editor.
@@ -60,7 +60,7 @@ namespace SKS
 			this._lblLabels_0 = new System.Windows.Forms.Label();
 			this._lblLabels_1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.CommandButtonHelper(this.components);
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// txtUserName
 			// 
