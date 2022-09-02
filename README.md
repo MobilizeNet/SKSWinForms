@@ -9,7 +9,10 @@ This repo contanins the migrated [SKS VB6 Version](https://github.com/MobilizeNe
 
 # Building the App
 
-You should need to download the .Net Framework 4.7 here https://dotnet.microsoft.com/en-us/download/visual-studio-sdks?cid=getdotnetsdk
+If you want to build this project on your development machine, just check that you match the following requirements:
+
+* [SQLite3 ODBC Driver](http://www.ch-werner.de/sqliteodbc/) (download sqliteodbc.exe and sqliteodbc_w64.exe)
+* [.Net Framework 4.7](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks?cid=getdotnetsdk) 
 
 ![sdkVersion](./Media/SDKVersion.png)
 
