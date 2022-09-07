@@ -264,7 +264,7 @@ namespace SKS
 		//private void MakeTextBoxVisible(TextBox txtBox, UpgradeHelpers.DataGridViewFlex grid)
 		//{
 			//txtBox.Text = Convert.ToString(grid[grid.CurrentRowIndex, grid.CurrentColumnIndex].Value);
-			//txtBox.SetBounds(grid.CellLeft / 15d + grid.Left, grid.CellTop / 15d + grid.Top, grid.CellWidth / 15d, grid.CellHeight / 15d);
+			//txtBox.SetBounds(grid.CellLeft / 15 + grid.Left, grid.CellTop / 15 + grid.Top, grid.CellWidth / 15, grid.CellHeight / 15);
 			//txtBox.Visible = true;
 			//Application.DoEvents();
 			//txtBox.Focus();
