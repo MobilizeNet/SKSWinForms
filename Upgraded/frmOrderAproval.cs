@@ -203,7 +203,7 @@ namespace SKS
 			if (cmbStatus.SelectedIndex != -1 && cmbStatus.Text != "All")
 			{
 				modFunctions.AppendAND(ref filter);
-				filter = filter + "o.Status = '" + cmbStatus.Text + "'";
+				filter = filter + "o.Status = '" + cmbStatus.Text.ToUpper() + "'";
 			}
 
 			string where = " Where o.OrderID = d.OrderID And p.ProviderID = o.ProviderID And u.Username = o.ReceivedBy ";
