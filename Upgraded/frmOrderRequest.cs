@@ -375,11 +375,15 @@ namespace SKS
 			{
 				return;
 			}
-			double previousLinePrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
+			//UPGRADE_WARNING: (1068) DoubleValue() of type Variant is being forced to double. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+			double previousLinePrice = Convert.ToDouble(modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value)));
 			fgProducts[fgProducts.CurrentRowIndex, fgProducts.CurrentColumnIndex].Value = txtEntry.Text;
-			double lineQuantity = modFunctions.DoubleValue(txtEntry.Text);
-			double lineUnitPrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 3].Value));
-			previousLinePrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
+			//UPGRADE_WARNING: (1068) DoubleValue() of type Variant is being forced to double. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+			double lineQuantity = Convert.ToDouble(modFunctions.DoubleValue(txtEntry.Text));
+			//UPGRADE_WARNING: (1068) DoubleValue() of type Variant is being forced to double. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+			double lineUnitPrice = Convert.ToDouble(modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 3].Value)));
+			//UPGRADE_WARNING: (1068) DoubleValue() of type Variant is being forced to double. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+			previousLinePrice = Convert.ToDouble(modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value)));
 			double linePrice = lineQuantity * lineUnitPrice;
 			fgProducts[fgProducts.CurrentRowIndex, 4].Value = linePrice.ToString();
 			ReCalculateTotals(previousLinePrice, linePrice);
@@ -597,7 +601,8 @@ namespace SKS
 
 		private void txtFreightCharge_TextChanged(Object eventSender, EventArgs eventArgs)
 		{
-			currentFreightCharge = modFunctions.DoubleValue(txtFreightCharge.Text);
+			//UPGRADE_WARNING: (1068) DoubleValue() of type Variant is being forced to double. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+			currentFreightCharge = Convert.ToDouble(modFunctions.DoubleValue(txtFreightCharge.Text));
 			ReCalculateTotals(0, 0);
 			editingData = true;
 		}
@@ -634,7 +639,8 @@ namespace SKS
 
 		private void txtSalesTax_TextChanged(Object eventSender, EventArgs eventArgs)
 		{
-			currentTax = modFunctions.DoubleValue(txtSalesTax.Text);
+			//UPGRADE_WARNING: (1068) DoubleValue() of type Variant is being forced to double. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+			currentTax = Convert.ToDouble(modFunctions.DoubleValue(txtSalesTax.Text));
 			ReCalculateTotals(0, 0);
 			editingData = true;
 		}
