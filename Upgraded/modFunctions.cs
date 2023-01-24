@@ -50,7 +50,7 @@ namespace SKS
 		}
 
 
-		internal static object DoubleValue(string strValue)
+		internal static double DoubleValue(string strValue)
 		{
 			if (Strings.Len(strValue) != 0)
 			{
