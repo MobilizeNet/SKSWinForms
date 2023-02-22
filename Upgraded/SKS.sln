@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11d3-BF4B-00C04F79EFBC}") = "SKS", "SKS.csproj", "{B6B91533-D216-4ABF-BC49-81D8C6EE1C6D}"
 EndProject
