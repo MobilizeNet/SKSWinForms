@@ -337,6 +337,7 @@ namespace SKS
 			this.Frame3.AllowDrop = true;
 			this.Frame3.BackColor = System.Drawing.SystemColors.Control;
 			this.Frame3.Controls.Add(this.lvStocks);
+			this.Frame3.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
 			this.Frame3.Enabled = true;
 			this.Frame3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Frame3.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -429,6 +430,7 @@ namespace SKS
 			this.Frame1.Controls.Add(this.cmdProducts);
 			this.Frame1.Controls.Add(this.Label5);
 			this.Frame1.Controls.Add(this.Label4);
+			this.Frame1.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
 			this.Frame1.Enabled = true;
 			this.Frame1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Frame1.ForeColor = System.Drawing.SystemColors.ControlText;

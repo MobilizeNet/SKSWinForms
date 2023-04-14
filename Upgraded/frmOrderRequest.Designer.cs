@@ -379,6 +379,7 @@ namespace SKS
 			this.Frame1.Controls.Add(this.Label3);
 			this.Frame1.Controls.Add(this.Label4);
 			this.Frame1.Controls.Add(this.Label2);
+			this.Frame1.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
 			this.Frame1.Enabled = true;
 			this.Frame1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Frame1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -569,6 +570,7 @@ namespace SKS
 			this.Frame2.Controls.Add(this.txtCustomerCompany);
 			this.Frame2.Controls.Add(this.Label5);
 			this.Frame2.Controls.Add(this.Label1);
+			this.Frame2.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
 			this.Frame2.Enabled = true;
 			this.Frame2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Frame2.ForeColor = System.Drawing.SystemColors.ControlText;

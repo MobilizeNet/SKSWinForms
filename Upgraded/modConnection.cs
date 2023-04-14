@@ -32,7 +32,7 @@ namespace SKS
 			{
 				if (_rs is null)
 				{
-					_rs = new ADORecordSetHelper("");
+					_rs = new ADORecordSetHelper();
 				}
 				return _rs;
 			}
@@ -49,7 +49,7 @@ namespace SKS
 			{
 				if (_rs2 is null)
 				{
-					_rs2 = new ADORecordSetHelper("");
+					_rs2 = new ADORecordSetHelper();
 				}
 				return _rs2;
 			}
@@ -70,13 +70,13 @@ namespace SKS
 
 		internal static void ExecuteSql(string Statement)
 		{
-			rs = new ADORecordSetHelper("");
+			rs = new ADORecordSetHelper();
 			rs.Open(Statement, CurrentConnection, UpgradeHelpers.DB.LockTypeEnum.LockPessimistic);
 		}
 
 		internal static void ExecuteSql2(string Statement)
 		{
-			rs2 = new ADORecordSetHelper("");
+			rs2 = new ADORecordSetHelper();
 			rs2.Open(Statement, CurrentConnection, UpgradeHelpers.DB.LockTypeEnum.LockPessimistic);
 		}
 	}
