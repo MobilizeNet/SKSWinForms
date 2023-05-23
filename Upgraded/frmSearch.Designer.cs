@@ -258,6 +258,8 @@ namespace SKS
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Search";
+			this.commandButtonHelper1.SetStyle(this.cmdClose, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdSearch, 0);
 			this.Activated += new System.EventHandler(this.frmSearch_Activated);
 			this.Closed += new System.EventHandler(this.Form_Closed);
 			this.ResumeLayout(false);

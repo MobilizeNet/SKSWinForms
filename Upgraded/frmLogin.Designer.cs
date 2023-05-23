@@ -182,6 +182,8 @@ namespace SKS
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Login";
+			this.commandButtonHelper1.SetStyle(this.cmdCancel, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdOK, 0);
 			this.Activated += new System.EventHandler(this.frmLogin_Activated);
 			this.Closed += new System.EventHandler(this.Form_Closed);
 			this.ResumeLayout(false);

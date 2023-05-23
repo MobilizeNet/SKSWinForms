@@ -565,6 +565,11 @@ namespace SKS
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Create Invoice";
+			this.commandButtonHelper1.SetStyle(this.cmdApprove, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdInfo, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdCancel, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdClose, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdCustomers, 0);
 			this.listBoxComboBoxHelper1.SetItemData(this.cmbStatus, new int[]{0, 0, 0, 0});
 			this.Activated += new System.EventHandler(this.frmRequestApproval_Activated);
 			this.Closed += new System.EventHandler(this.Form_Closed);

@@ -453,6 +453,10 @@ namespace SKS
 			this.Name = "frmAddProductTo";
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Text = "Create New Product Item";
+			this.commandButtonHelper1.SetStyle(this.cmdRemove, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdClose, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdSave, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdProducts, 0);
 			this.Activated += new System.EventHandler(this.frmAddProductTo_Activated);
 			this.Closed += new System.EventHandler(this.Form_Closed);
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);

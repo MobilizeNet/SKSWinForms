@@ -499,6 +499,11 @@ namespace SKS
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Users Management";
+			this.commandButtonHelper1.SetStyle(this.cmdClear, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdSave, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdClose, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdEdit, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdDelete, 0);
 			this.ToolTipMain.SetToolTip(this.Image1, "View warnings");
 			this.Activated += new System.EventHandler(this.frmUsersManage_Activated);
 			this.Closed += new System.EventHandler(this.Form_Closed);

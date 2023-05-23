@@ -786,6 +786,10 @@ namespace SKS
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Add Stock Order";
+			this.commandButtonHelper1.SetStyle(this.cmdSave, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdClose, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdAddProducts, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdProviders, 0);
 			this.Activated += new System.EventHandler(this.frmOrderReception_Activated);
 			this.Closed += new System.EventHandler(this.Form_Closed);
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);

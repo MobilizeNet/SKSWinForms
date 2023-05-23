@@ -755,6 +755,9 @@ namespace SKS
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Add Stock to Inventory";
+			this.commandButtonHelper1.SetStyle(this.cmdApprove, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdCancel, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdClose, 0);
 			this.Activated += new System.EventHandler(this.frmActionOrderReception_Activated);
 			this.Closed += new System.EventHandler(this.Form_Closed);
 			((System.ComponentModel.ISupportInitialize) this.fgDetails).EndInit();

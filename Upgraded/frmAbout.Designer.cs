@@ -210,6 +210,7 @@ namespace SKS
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.ShowInTaskbar = false;
 			this.Text = "About Salmon King Seafood";
+			this.commandButtonHelper1.SetStyle(this.cmdOK, 0);
 			this.Activated += new System.EventHandler(this.frmAbout_Activated);
 			this.Closed += new System.EventHandler(this.Form_Closed);
 			this.ResumeLayout(false);
