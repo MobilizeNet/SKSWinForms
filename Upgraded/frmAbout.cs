@@ -63,15 +63,13 @@ namespace SKS
 		const int REG_DWORD = 4; // 32-bit number
 
 
-		private void cmdOk_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void cmdOk_Click(Object eventSender, EventArgs eventArgs) => this.Close();
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
-			this.Text = "About " + AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly());
+			this.Text = $"About {AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly())}";
 			//lblVersion.Caption = "Version " & App.Major & "." & App.Minor & "." & App.Revision
 			lblTitle.Text = AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly());
 		}

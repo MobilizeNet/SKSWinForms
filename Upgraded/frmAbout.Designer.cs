@@ -122,6 +122,7 @@ namespace SKS
 			this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblDescription.ForeColor = System.Drawing.Color.Black;
 			this.lblDescription.Location = new System.Drawing.Point(164, 80);
+			this.lblDescription.MinimumSize = new System.Drawing.Size(199, 13);
 			this.lblDescription.Name = "lblDescription";
 			this.lblDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblDescription.Size = new System.Drawing.Size(199, 13);
@@ -137,6 +138,7 @@ namespace SKS
 			this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTitle.ForeColor = System.Drawing.Color.Black;
 			this.lblTitle.Location = new System.Drawing.Point(163, 24);
+			this.lblTitle.MinimumSize = new System.Drawing.Size(122, 13);
 			this.lblTitle.Name = "lblTitle";
 			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTitle.Size = new System.Drawing.Size(122, 13);
@@ -163,6 +165,7 @@ namespace SKS
 			this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblVersion.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblVersion.Location = new System.Drawing.Point(163, 56);
+			this.lblVersion.MinimumSize = new System.Drawing.Size(137, 13);
 			this.lblVersion.Name = "lblVersion";
 			this.lblVersion.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblVersion.Size = new System.Drawing.Size(137, 13);
@@ -178,6 +181,7 @@ namespace SKS
 			this.lblDisclaimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblDisclaimer.ForeColor = System.Drawing.Color.Black;
 			this.lblDisclaimer.Location = new System.Drawing.Point(17, 175);
+			this.lblDisclaimer.MinimumSize = new System.Drawing.Size(132, 13);
 			this.lblDisclaimer.Name = "lblDisclaimer";
 			this.lblDisclaimer.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblDisclaimer.Size = new System.Drawing.Size(132, 13);
@@ -215,10 +219,8 @@ namespace SKS
 			this.Closed += new System.EventHandler(this.Form_Closed);
 			this.ResumeLayout(false);
 		}
-		void ReLoadForm(bool addEvents)
-		{
-			InitializeLine1();
-		}
+		void ReLoadForm(bool addEvents) => InitializeLine1();
+
 		void InitializeLine1()
 		{
 			this.Line1 = new System.Windows.Forms.Label[2];

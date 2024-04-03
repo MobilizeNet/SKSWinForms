@@ -116,7 +116,7 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="frmLogin.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAABAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
+        AAABAAEAICAQcwAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
         AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHd3d3d3dwAAAAAAAAAAB3dyIiIiIiJ3AAAAAAAAByIi
         IiJyIiIiInAAAAAAACIndyInd3ciIiJwAAAAAAIid3cvJ3d3ciIicAAAAAAiJ3d3f4J3d3ciInAAAAAA

@@ -350,6 +350,7 @@ namespace SKS
 			this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label4.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.Label4.Location = new System.Drawing.Point(16, 40);
+			this.Label4.MinimumSize = new System.Drawing.Size(89, 17);
 			this.Label4.Name = "Label4";
 			this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label4.Size = new System.Drawing.Size(89, 17);
@@ -364,6 +365,7 @@ namespace SKS
 			this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label5.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.Label5.Location = new System.Drawing.Point(16, 16);
+			this.Label5.MinimumSize = new System.Drawing.Size(89, 17);
 			this.Label5.Name = "Label5";
 			this.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label5.Size = new System.Drawing.Size(89, 17);
@@ -424,6 +426,7 @@ namespace SKS
 			this.lblProductsRelated.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblProductsRelated.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblProductsRelated.Location = new System.Drawing.Point(8, 248);
+			this.lblProductsRelated.MinimumSize = new System.Drawing.Size(409, 17);
 			this.lblProductsRelated.Name = "lblProductsRelated";
 			this.lblProductsRelated.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblProductsRelated.Size = new System.Drawing.Size(409, 17);

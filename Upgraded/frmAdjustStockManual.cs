@@ -64,27 +64,25 @@ namespace SKS
 		private double quantity = 0;
 		private double stockPrice = 0, unitPrice = 0;
 
-		private void cmdClose_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void cmdClose_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 		private void cmdSave_Click(Object eventSender, EventArgs eventArgs)
 		{
-			int newStockId = 0;
-			int newManualLogId = 0;
-			int newStockLogId = 0;
+			_ = 0;
+			_ = 0;
+			_ = 0;
 			editingData = false;
 			try
 			{
 
-				double deltaStockPrice = 0;
-				double deltaStock = 0;
+				_ = 0;
+				_ = 0;
 				changedStockPrice = Double.Parse(txtValues[0].Text);
 				changedStock = Double.Parse(txtValues[1].Text);
 
-				deltaStockPrice = changedStockPrice - currentStockPrice;
-				deltaStock = changedStock - currentStock;
+				double deltaStockPrice = changedStockPrice - currentStockPrice;
+				double deltaStock = changedStock - currentStock;
 
 				if (deltaStockPrice == 0 && deltaStock == 0)
 				{
@@ -92,8 +90,8 @@ namespace SKS
 					return;
 				}
 				// UPDATE
-				modConnection.ExecuteSql("Update Stocks Set StockPrice = " + changedStockPrice.ToString() + 
-				                         ", Stock = " + changedStock.ToString() + " Where StockId = " + currentIdStock.ToString());
+				modConnection.ExecuteSql($"Update Stocks Set StockPrice = {changedStockPrice.ToString()}" +
+				                         $", Stock = {changedStock.ToString()} Where StockId = {currentIdStock.ToString()}");
 
 				// NEW
 				modConnection.ExecuteSql("Select * from ManualStocks");
@@ -106,7 +104,7 @@ namespace SKS
 				modConnection.rs["Action"] = "MOD";
 				modConnection.rs.Update();
 				modConnection.ExecuteSql("SELECT last_insert_rowid()");
-				newManualLogId = Convert.ToInt32(modConnection.rs[0]);
+				int newManualLogId = Convert.ToInt32(modConnection.rs[0]);
 
 				//NEW
 				modConnection.ExecuteSql("Select * from StockLog");
@@ -121,12 +119,12 @@ namespace SKS
 				modConnection.rs["DocID"] = newManualLogId;
 				modConnection.rs.Update();
 				modConnection.ExecuteSql("SELECT last_insert_rowid()");
-				newStockLogId = Convert.ToInt32(modConnection.rs[0]);
+				_ = Convert.ToInt32(modConnection.rs[0]);
 
-				modConnection.ExecuteSql("Update Products Set UnitsInStock = UnitsInStock + " + deltaStock.ToString() + 
-				                         " Where ProductId = '& currentIdProduct &'");
+				modConnection.ExecuteSql($"Update Products Set UnitsInStock = UnitsInStock + {deltaStock.ToString()}" +
+				                         $" Where ProductId = '& currentIdProduct &'");
 
-				if (MessageBox.Show("Data modified successfully" + Environment.NewLine + "Would you like to modify another stock manually?", "Modify data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+				if (MessageBox.Show($"Data modified successfully{Environment.NewLine}Would you like to modify another stock manually?", "Modify data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
 				{
 					ClearFields();
 				}
@@ -137,8 +135,8 @@ namespace SKS
 			}
 			catch (System.Exception excep)
 			{
-				//UPGRADE_WARNING: (2081) Err.Number has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2081
-				MessageBox.Show("An error has occurred adding the data. Error: (" + Information.Err().Number.ToString() + ") " + excep.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				//UPGRADE_WARNING: (2081) Err.Number has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2081
+				MessageBox.Show($"An error has occurred adding the data. Error: ({Information.Err().Number.ToString()}) {excep.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
 		}
@@ -146,13 +144,13 @@ namespace SKS
 		private void Form_FormClosing(Object eventSender, FormClosingEventArgs eventArgs)
 		{
 			int Cancel = (eventArgs.Cancel) ? 1 : 0;
-			int UnloadMode = (int) eventArgs.CloseReason;
+			_ = (int) eventArgs.CloseReason;
 			try
 			{
-				DialogResult res = (DialogResult) 0;
+				_ = (DialogResult) 0;
 				if (editingData)
 				{
-					res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+					DialogResult res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 					if (res == System.Windows.Forms.DialogResult.Yes)
 					{
 						cmdSave_Click(cmdSave, new EventArgs());
@@ -177,54 +175,46 @@ namespace SKS
 			DoSearchProduct();
 		}
 
-		private void lvProducts_ItemClick(ListViewItem Item)
-		{
-			DoSearchStocks();
-		}
+		private void lvProducts_ItemClick(ListViewItem Item) => DoSearchStocks();
 
-		private void lvStocks_ItemClick(ListViewItem Item)
-		{
-			RetrieveDataProduct();
-		}
 
-		private void txtCode_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchProduct();
-		}
+		private void lvStocks_ItemClick(ListViewItem Item) => RetrieveDataProduct();
+
+
+		private void txtCode_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchProduct();
+
 
 		//Private Sub txtCode_KeyPress(KeyAscii As Integer)
 		//KeyAscii = UpCase(KeyAscii)
 		//End Sub
 
-		private void txtName_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchProduct();
-		}
+		private void txtName_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchProduct();
+
 
 		private void DoSearchProduct()
 		{
 			string filter = "";
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtCode.Text))
 			{
-				filter = "ProductId LIKE '%" + txtCode.Text + "%'";
+				filter = $"ProductId LIKE '%{txtCode.Text}%'";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtName.Text))
 			{
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!String.IsNullOrEmpty(filter))
 				{
-					filter = filter + " AND ";
+					filter = $"{filter} AND ";
 				}
-				filter = filter + "ProductName LIKE '%" + txtName.Text + "%'";
+				filter = $"{filter}ProductName LIKE '%{txtName.Text}%'";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(filter))
 			{
-				filter = "Where " + filter;
+				filter = $"Where {filter}";
 			}
-			modConnection.ExecuteSql("Select ProductID, ProductName, UnitPrice, UnitsInStock, UnitsOnOrder, QuantityPerUnit, Unit from Products " + filter);
+			modConnection.ExecuteSql($"Select ProductID, ProductName, UnitPrice, UnitsInStock, UnitsOnOrder, QuantityPerUnit, Unit from Products {filter}");
 			lvProducts.Items.Clear();
 			ListViewItem x = null;
 			if (modConnection.rs.RecordCount == 0)
@@ -239,7 +229,7 @@ namespace SKS
 					int tempForEndVar = (modConnection.rs.FieldsMetadata.Count - 1);
 					for (modMain.i = 1; modMain.i <= tempForEndVar; modMain.i++)
 					{
-						//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+						//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 						if (!(modConnection.rs.GetField(modMain.i) is null))
 						{
 							ListViewHelper.GetListViewSubItem(x, modMain.i).Text = Convert.ToString(modConnection.rs[modMain.i]);
@@ -273,12 +263,12 @@ namespace SKS
 			currentIdProduct = lvProducts.FocusedItem.Text;
 			ListViewItem withVar = null;
 			withVar = lvProducts.FocusedItem;
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(ListViewHelper.GetListViewSubItem(withVar, 5).Text))
 			{
 				currentQuantityPerUnit = ListViewHelper.GetListViewSubItem(withVar, 5).Text;
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(ListViewHelper.GetListViewSubItem(withVar, 6).Text))
 			{
 				currentUnit = ListViewHelper.GetListViewSubItem(withVar, 6).Text;
@@ -288,14 +278,14 @@ namespace SKS
 			txtUnit.Text = currentUnit;
 			txtQuantityPerUnit.Text = currentQuantityPerUnit;
 
-			modConnection.ExecuteSql("Select StockID, Stock, InitialStock, UnitPrice, " + 
-			                         "StockPrice, DateStarted, DateModified, User From Stocks " + 
-			                         " Where ProductId = '" + productId + "'");
+			modConnection.ExecuteSql($"Select StockID, Stock, InitialStock, UnitPrice, " +
+			                         $"StockPrice, DateStarted, DateModified, User From Stocks " +
+			                         $" Where ProductId = '{productId}'");
 			lvStocks.Items.Clear();
 			ListViewItem x = null;
 			if (modConnection.rs.RecordCount == 0)
 			{
-				modMain.LogStatus("There are no stock records of the product " + productName);
+				modMain.LogStatus($"There are no stock records of the product {productName}");
 				RetrieveDataProduct();
 			}
 			else
@@ -331,7 +321,7 @@ namespace SKS
 			ListViewItem withVar = null;
 			if (lvStocks.FocusedItem != null)
 			{
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!(lvStocks.FocusedItem is null))
 				{
 					currentIdStock = Convert.ToInt32(Double.Parse(lvStocks.FocusedItem.Text));
@@ -344,8 +334,8 @@ namespace SKS
 					txtStockID.Text = currentIdStock.ToString();
 					txtValues[0].Text = currentStockPrice.ToString();
 					txtValues[1].Text = currentStock.ToString();
-					lblNewQuantity.Text = StringsHelper.Format(currentStock * Double.Parse(currentQuantityPerUnit), "##,###.00") + currentUnit;
-					lblCurrentQuantity.Text = StringsHelper.Format(currentStock * Double.Parse(currentQuantityPerUnit), "##,###.00") + currentUnit;
+					lblNewQuantity.Text = $"{StringsHelper.Format(currentStock * Double.Parse(currentQuantityPerUnit), "##,###.00")}{currentUnit}";
+					lblCurrentQuantity.Text = $"{StringsHelper.Format(currentStock * Double.Parse(currentQuantityPerUnit), "##,###.00")}{currentUnit}";
 					codeGeneratedChange = false;
 					setEmpty = false;
 					txtValues[0].ReadOnly = false;
@@ -412,12 +402,12 @@ namespace SKS
 			{
 				editingData = true;
 				codeGeneratedChange = true;
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!String.IsNullOrEmpty(txtValues[0].Text))
 				{
 					changedStockPrice = Double.Parse(txtValues[0].Text);
 				}
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!String.IsNullOrEmpty(txtValues[1].Text))
 				{
 					changedStock = Double.Parse(txtValues[1].Text);
@@ -433,8 +423,8 @@ namespace SKS
 						} 
 						break;
 				}
-				lblNewQuantity.Text = StringsHelper.Format(changedStock * Double.Parse(currentQuantityPerUnit), "##,###.00") + currentUnit;
-				lblCurrentQuantity.Text = StringsHelper.Format(currentStock * Double.Parse(currentQuantityPerUnit), "##,###.00") + currentUnit;
+				lblNewQuantity.Text = $"{StringsHelper.Format(changedStock * Double.Parse(currentQuantityPerUnit), "##,###.00")}{currentUnit}";
+				lblCurrentQuantity.Text = $"{StringsHelper.Format(currentStock * Double.Parse(currentQuantityPerUnit), "##,###.00")}{currentUnit}";
 				codeGeneratedChange = false;
 			}
 		}

@@ -22,7 +22,7 @@ namespace SKS
 		public static string msg = "";
 		public static string ImgName = "", ImgSrc = "";
 
-		//UPGRADE_WARNING: (1047) Application will terminate when Sub Main() finishes. More Information: https://docs.mobilize.net/vbuc/ewis#1047
+		//UPGRADE_WARNING: (1047) Application will terminate when Sub Main() finishes. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1047
 		[STAThread]
 		public static void Main()
 		{
@@ -87,9 +87,7 @@ namespace SKS
 			}
 		}
 
-		internal static void ClearLogStatus(Form frm = null)
-		{
-			LogStatus("", frm);
-		}
+		internal static void ClearLogStatus(Form frm = null) => LogStatus("", frm);
+
 	}
 }

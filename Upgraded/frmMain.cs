@@ -44,7 +44,7 @@ namespace SKS
 			}
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void MDIForm_Load()
 		{
 			frmSplash.DefInstance.ShowDialog();
@@ -53,30 +53,20 @@ namespace SKS
 
 		}
 
-		public void mnuAbout_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmAbout.DefInstance.ShowDialog(this);
-		}
+		public void mnuAbout_Click(Object eventSender, EventArgs eventArgs) => frmAbout.DefInstance.ShowDialog(this);
 
-		public void mnuAddStockManually_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmAddStockManual.DefInstance.Show();
-		}
 
-		public void mnuAdjustStockManually_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmAdjustStockManual.DefInstance.Show();
-		}
+		public void mnuAddStockManually_Click(Object eventSender, EventArgs eventArgs) => frmAddStockManual.DefInstance.Show();
 
-		public void mnuCreateOrderReception_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmOrderReception.DefInstance.Show();
-		}
 
-		public void mnuCreateOrderRequest_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmOrderRequest.DefInstance.Show();
-		}
+		public void mnuAdjustStockManually_Click(Object eventSender, EventArgs eventArgs) => frmAdjustStockManual.DefInstance.Show();
+
+
+		public void mnuCreateOrderReception_Click(Object eventSender, EventArgs eventArgs) => frmOrderReception.DefInstance.Show();
+
+
+		public void mnuCreateOrderRequest_Click(Object eventSender, EventArgs eventArgs) => frmOrderRequest.DefInstance.Show();
+
 
 		public void mnuCustomer_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -84,36 +74,24 @@ namespace SKS
 			frmCustomers.DefInstance.InitForm();
 		}
 
-		public void mnuExit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		public void mnuExit_Click(Object eventSender, EventArgs eventArgs) => this.Close();
 
-		public void mnuOrderReceptionsApproval_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmReceptionApproval.DefInstance.Show();
-		}
 
-		public void mnuOrderRequestsApproval_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmRequestApproval.DefInstance.Show();
-		}
+		public void mnuOrderReceptionsApproval_Click(Object eventSender, EventArgs eventArgs) => frmReceptionApproval.DefInstance.Show();
 
-		public void mnuProducts_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmProducts.DefInstance.ShowDialog();
-		}
 
-		public void mnuProviders_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmProviders.DefInstance.ShowDialog();
-		}
+		public void mnuOrderRequestsApproval_Click(Object eventSender, EventArgs eventArgs) => frmRequestApproval.DefInstance.Show();
 
-		public void mnuSecurity_Click(Object eventSender, EventArgs eventArgs)
-		{
-			frmUsersManage.DefInstance.Show();
-		}
-		//UPGRADE_NOTE: (7001) The following declaration (Form_Unload) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
+
+		public void mnuProducts_Click(Object eventSender, EventArgs eventArgs) => frmProducts.DefInstance.ShowDialog();
+
+
+		public void mnuProviders_Click(Object eventSender, EventArgs eventArgs) => frmProviders.DefInstance.ShowDialog();
+
+
+		public void mnuSecurity_Click(Object eventSender, EventArgs eventArgs) => frmUsersManage.DefInstance.Show();
+
+		//UPGRADE_NOTE: (7001) The following declaration (Form_Unload) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
 		//private void Form_Unload(int Cancel)
 		//{
 		//}

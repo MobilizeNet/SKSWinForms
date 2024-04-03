@@ -53,10 +53,8 @@ namespace SKS
 
 
 
-		private void Form_Closed(Object eventSender, EventArgs eventArgs)
-		{
-			CurrentCustomerID = Convert.ToString(dcCustomers.Recordset["CustomerId"]);
-		}
+		private void Form_Closed(Object eventSender, EventArgs eventArgs) => CurrentCustomerID = Convert.ToString(dcCustomers.Recordset["CustomerId"]);
+
 
 
 		//Private Sub dcCustomers_MoveComplete(ByVal adReason As ADODB.EventReasonEnum, ByVal pError As ADODB.Error, adStatus As ADODB.EventStatusEnum, ByVal pRecordset As ADODB.Recordset)
@@ -69,11 +67,9 @@ namespace SKS
 		//CancellingMode = True
 		//End Sub
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
-		private void Form_Load()
-		{
-			InitForm();
-		}
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
+		private void Form_Load() => InitForm();
+
 
 		public void InitForm()
 		{
@@ -87,7 +83,7 @@ namespace SKS
 		{
 			ToolStripItem Button = (ToolStripItem) eventSender;
 			object x = null;
-			int newCustomerId = 0;
+			_ = 0;
 			switch(Button.Text)
 			{
 				case "Add" : 
@@ -142,14 +138,14 @@ namespace SKS
 		//Used already in frmSearch
 		public void SearchCriteriaProducts(string field, string value)
 		{
-			modConnection.ExecuteSql("Select * from Customers where " + field + " LIKE '" + value + "%'");
+			modConnection.ExecuteSql($"Select * from Customers where {field} LIKE '{value}%'");
 			if (modConnection.rs.RecordCount == 0)
 			{
 				MessageBox.Show("There are no records with the selected criteria", "Search", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 			else
 			{
-				modMain.LogStatus("There are " + modConnection.rs.RecordCount.ToString() + " that meet with the selected criteria");
+				modMain.LogStatus($"There are {modConnection.rs.RecordCount.ToString()} that meet with the selected criteria");
 				dcCustomers.Recordset = modConnection.rs;
 			}
 		}

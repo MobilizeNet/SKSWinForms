@@ -62,16 +62,12 @@ namespace SKS
 			}
 		}
 
-		//UPGRADE_NOTE: (7001) The following declaration (Frame1_Click) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
-		//private void Frame1_Click()
-		//{
-			//this.Close();
-		//}
+		//UPGRADE_NOTE: (7001) The following declaration (Frame1_Click) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
+		//private void Frame1_Click() => this.Close();
+		//
 
-		private void Timer1_Tick(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void Timer1_Tick(Object eventSender, EventArgs eventArgs) => this.Close();
+
 		private void Form_Closed(Object eventSender, EventArgs eventArgs)
 		{
 		}

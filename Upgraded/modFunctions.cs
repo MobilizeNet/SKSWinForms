@@ -15,10 +15,10 @@ namespace SKS
 
 		internal static void AppendAND(ref string filter)
 		{
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(filter))
 			{
-				filter = filter + " AND ";
+				filter = $"{filter} AND ";
 			}
 		}
 
@@ -38,14 +38,14 @@ namespace SKS
 			object o = null;
 			try
 			{
-				//UPGRADE_WARNING: (1068) col() of type Variant is being forced to Scalar. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+				//UPGRADE_WARNING: (1068) col() of type Variant is being forced to Scalar. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1068
 				o = col[Index];
 			}
 			catch
 			{
 			}
 
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			return !Object.Equals(o, null);
 		}
 
@@ -102,10 +102,8 @@ namespace SKS
 			txtBox.SelectionLength = Strings.Len(txtBox.Text);
 		}
 
-		internal static int UpCase(int KeyAscii)
-		{
-			return Strings.Asc(Strings.Chr(KeyAscii).ToString().ToUpper()[0]);
-		}
+		internal static int UpCase(int KeyAscii) => Strings.Asc(Strings.Chr(KeyAscii).ToString().ToUpper()[0]);
+
 
 
 		//'''''''''''''''''''''''''''''''''
@@ -114,9 +112,9 @@ namespace SKS
 
 		internal static void LoadCombo(string Table, ComboBox combo, string field, string valueField = "")
 		{
-			modConnection.ExecuteSql("Select * From " + Table);
+			modConnection.ExecuteSql($"Select * From {Table}");
 			combo.Items.Clear();
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(valueField))
 			{
 				while (!modConnection.rs.EOF)
@@ -147,7 +145,7 @@ namespace SKS
 			{
 				result = true;
 				MessageBox.Show("Please select an option from the list", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!Index.Equals(0))
 				{
 					//strip.SelectedItem = strip.Tabs(Index)
@@ -165,7 +163,7 @@ namespace SKS
 		{
 			if (lstView.Items.Count == 0 || lstView.FocusedItem == null)
 			{
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!String.IsNullOrEmpty(Prompt))
 				{
 					MessageBox.Show(Prompt, AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -181,7 +179,7 @@ namespace SKS
 		internal static string RcrdId(string Table, string Identifier = "", string FldNo = "")
 		{
 			int RcrdNo = 0;
-			modConnection.ExecuteSql("Select * from " + Table + " order by " + FldNo + " ASC");
+			modConnection.ExecuteSql($"Select * from {Table} order by {FldNo} ASC");
 			if (!modConnection.rs.EOF)
 			{
 				modConnection.rs.MoveLast();
@@ -191,10 +189,10 @@ namespace SKS
 			{
 				RcrdNo = 1;
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(Identifier))
 			{
-				return Identifier + RcrdNo.ToString() + DateTime.Today.ToString("MM");
+				return $"{Identifier}{RcrdNo.ToString()}{DateTime.Today.ToString("MM")}";
 			}
 			else
 			{
@@ -211,8 +209,7 @@ namespace SKS
 			frmSearch.DefInstance.ShowDialog();
 		}
 
-		internal static double ValBox(string Prompt, PictureBox Icon, string Title = "", double Default = 0, string Header = "Value Box")
-		{
+		internal static double ValBox(string Prompt, PictureBox Icon, string Title = "", double Default = 0, string Header = "Value Box") => 
 			//With frmValue
 			//    If Title <> Empty Then
 			//       .Caption = Title
@@ -227,19 +224,19 @@ namespace SKS
 			//    ValBox = Val(.txtValue.Text)
 			//    Unload frmValue
 			//End With
-			return 0;
-		}
+			0;
+
 
 
 		internal static bool TextBoxEmpty(TextBox stext, object TabObject = null, int TabIndex = 0)
 		{
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			bool result = false;
 			if (String.IsNullOrEmpty(stext.Text.Trim()) || stext.Text == "  /  /    ")
 			{
 				result = true;
 				MessageBox.Show("You need to fill in all required fields", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!TabIndex.Equals(0))
 				{
 					//TabObject.SelectedItem = TabObject.Tabs(TabIndex)
@@ -273,10 +270,10 @@ namespace SKS
 
 
 
-		//UPGRADE_NOTE: (7001) The following declaration (SaveDetection) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
+		//UPGRADE_NOTE: (7001) The following declaration (SaveDetection) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
 		//private void SaveDetection(string Reference, string Title, string Description, string Table)
 		//{
-			//modConnection.ExecuteSql2("Select * from " + Table);
+			//modConnection.ExecuteSql2($"Select * from {Table}");
 			//modConnection.rs2.AddNew();
 			//modConnection.rs2["record_no"] = Conversion.Val(RcrdId(Table, "", "record_no"));
 			//modConnection.rs2["Reference"] = Reference;
@@ -290,17 +287,17 @@ namespace SKS
 		internal static string ExecErr(string Prompt, string PromptFld = "", string Table = "", string RcrdFld = "", string RcrdStr = "")
 		{
 			StringBuilder Rcrds = new StringBuilder();
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(Table))
 			{
-				modConnection.ExecuteSql("Select * from " + Table + " where " + RcrdFld + " = '" + RcrdStr + "'");
+				modConnection.ExecuteSql($"Select * from {Table} where {RcrdFld} = '{RcrdStr}'");
 				while (!modConnection.rs.EOF)
 				{
-					Rcrds.Append(Convert.ToString(modConnection.rs[PromptFld]) + "; ");
+					Rcrds.Append($"{Convert.ToString(modConnection.rs[PromptFld])}; ");
 					modConnection.rs.MoveNext();
 				}
-				return "Error: " + Prompt + Environment.NewLine + Environment.NewLine + 
-				"Related Records: " + Rcrds.ToString();
+				return $"Error: {Prompt}{Environment.NewLine}{Environment.NewLine}" +
+				$"Related Records: {Rcrds.ToString()}";
 			}
 			else
 			{

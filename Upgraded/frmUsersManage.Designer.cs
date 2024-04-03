@@ -296,6 +296,7 @@ namespace SKS
 			this._Label1_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this._Label1_2.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this._Label1_2.Location = new System.Drawing.Point(16, 88);
+			this._Label1_2.MinimumSize = new System.Drawing.Size(68, 13);
 			this._Label1_2.Name = "_Label1_2";
 			this._Label1_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this._Label1_2.Size = new System.Drawing.Size(68, 13);
@@ -311,6 +312,7 @@ namespace SKS
 			this._Label1_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this._Label1_0.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this._Label1_0.Location = new System.Drawing.Point(16, 32);
+			this._Label1_0.MinimumSize = new System.Drawing.Size(70, 13);
 			this._Label1_0.Name = "_Label1_0";
 			this._Label1_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this._Label1_0.Size = new System.Drawing.Size(70, 13);
@@ -326,6 +328,7 @@ namespace SKS
 			this._Label1_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this._Label1_1.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this._Label1_1.Location = new System.Drawing.Point(16, 56);
+			this._Label1_1.MinimumSize = new System.Drawing.Size(96, 13);
 			this._Label1_1.Name = "_Label1_1";
 			this._Label1_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this._Label1_1.Size = new System.Drawing.Size(96, 13);
@@ -341,6 +344,7 @@ namespace SKS
 			this._Label1_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this._Label1_3.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this._Label1_3.Location = new System.Drawing.Point(16, 120);
+			this._Label1_3.MinimumSize = new System.Drawing.Size(71, 13);
 			this._Label1_3.Name = "_Label1_3";
 			this._Label1_3.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this._Label1_3.Size = new System.Drawing.Size(71, 13);
@@ -356,6 +360,7 @@ namespace SKS
 			this.lblId.Font = new System.Drawing.Font("Tahoma", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblId.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this.lblId.Location = new System.Drawing.Point(128, 24);
+			this.lblId.MinimumSize = new System.Drawing.Size(3, 13);
 			this.lblId.Name = "lblId";
 			this.lblId.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblId.Size = new System.Drawing.Size(3, 13);
@@ -418,6 +423,7 @@ namespace SKS
 			this._Label1_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this._Label1_4.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this._Label1_4.Location = new System.Drawing.Point(8, 392);
+			this._Label1_4.MinimumSize = new System.Drawing.Size(95, 13);
 			this._Label1_4.Name = "_Label1_4";
 			this._Label1_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this._Label1_4.Size = new System.Drawing.Size(95, 13);
@@ -433,6 +439,7 @@ namespace SKS
 			this.Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label19.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this.Label19.Location = new System.Drawing.Point(48, 8);
+			this.Label19.MinimumSize = new System.Drawing.Size(34, 16);
 			this.Label19.Name = "Label19";
 			this.Label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label19.Size = new System.Drawing.Size(34, 16);
@@ -449,6 +456,7 @@ namespace SKS
 			this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label4.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this.Label4.Location = new System.Drawing.Point(48, 32);
+			this.Label4.MinimumSize = new System.Drawing.Size(176, 13);
 			this.Label4.Name = "Label4";
 			this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label4.Size = new System.Drawing.Size(176, 13);

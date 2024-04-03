@@ -49,32 +49,24 @@ namespace SKS
 		private string Id = "";
 
 
-		private void cmbStatus_SelectedIndexChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchRequest();
-		}
+		private void cmbStatus_SelectedIndexChanged(Object eventSender, EventArgs eventArgs) => DoSearchRequest();
 
-		private void cmdApprove_Click(Object eventSender, EventArgs eventArgs)
-		{
-			LoadActionOrderRequest(1);
-		}
 
-		private void cmdCancel_Click(Object eventSender, EventArgs eventArgs)
-		{
-			LoadActionOrderRequest(2);
-		}
+		private void cmdApprove_Click(Object eventSender, EventArgs eventArgs) => LoadActionOrderRequest(1);
 
-		private void cmdInfo_Click(Object eventSender, EventArgs eventArgs)
-		{
-			LoadActionOrderRequest();
-		}
+
+		private void cmdCancel_Click(Object eventSender, EventArgs eventArgs) => LoadActionOrderRequest(2);
+
+
+		private void cmdInfo_Click(Object eventSender, EventArgs eventArgs) => LoadActionOrderRequest();
+
 
 		private void LoadActionOrderRequest(int Action = 0)
 		{
-			int OrderId = 0;
+			_ = 0;
 			if (fgOrders.CurrentRowIndex > 0)
 			{
-				OrderId = Convert.ToInt32(Double.Parse(Convert.ToString(fgOrders[fgOrders.CurrentRowIndex, 1].Value)));
+				int OrderId = Convert.ToInt32(Double.Parse(Convert.ToString(fgOrders[fgOrders.CurrentRowIndex, 1].Value)));
 				frmActionOrderRequest.DefInstance.OrderId = OrderId;
 				frmActionOrderRequest.DefInstance.Action = Action;
 				frmActionOrderRequest.DefInstance.LoadData();
@@ -95,52 +87,34 @@ namespace SKS
 		}
 
 
-		private void fgOrders_DoubleClick(Object eventSender, EventArgs eventArgs)
-		{
-			cmdInfo_Click(cmdInfo, new EventArgs());
-		}
+		private void fgOrders_DoubleClick(Object eventSender, EventArgs eventArgs) => cmdInfo_Click(cmdInfo, new EventArgs());
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
-		private void Form_Load()
-		{
-			InitGrid();
-		}
 
-		private void txtOrderID_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchRequest();
-		}
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
+		private void Form_Load() => InitGrid();
 
-		private void txtProductID_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchRequest();
-		}
 
-		private void txtCompanyName_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchRequest();
-		}
+		private void txtOrderID_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchRequest();
 
-		private void txtContactLastName_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchRequest();
-		}
 
-		private void txtContactName_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchRequest();
-		}
+		private void txtProductID_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchRequest();
 
-		//UPGRADE_NOTE: (7001) The following declaration (txtName_Change) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
-		//private void txtName_Change()
-		//{
-			//DoSearchRequest();
-		//}
 
-		private void cmdClose_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void txtCompanyName_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchRequest();
+
+
+		private void txtContactLastName_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchRequest();
+
+
+		private void txtContactName_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchRequest();
+
+
+		//UPGRADE_NOTE: (7001) The following declaration (txtName_Change) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
+		//private void txtName_Change() => DoSearchRequest();
+		//
+
+		private void cmdClose_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 		private void cmdCustomers_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -157,61 +131,61 @@ namespace SKS
 			string filter = "";
 			if (Id != -1)
 			{
-				filter = "o.CustomerID = " + Id.ToString();
+				filter = $"o.CustomerID = {Id.ToString()}";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtCompanyName.Text))
 			{
 				modFunctions.AppendAND(ref filter);
-				filter = "c.CompanyName LIKE '%" + txtCompanyName.Text + "%'";
+				filter = $"c.CompanyName LIKE '%{txtCompanyName.Text}%'";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtContactName.Text))
 			{
 				modFunctions.AppendAND(ref filter);
-				filter = filter + "c.ContactFirstName LIKE '%" + txtContactName.Text + "%'";
+				filter = $"{filter}c.ContactFirstName LIKE '%{txtContactName.Text}%'";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtContactLastName.Text))
 			{
 				modFunctions.AppendAND(ref filter);
-				filter = filter + "c.ContactLastName LIKE '%" + txtContactLastName.Text + "%'";
+				filter = $"{filter}c.ContactLastName LIKE '%{txtContactLastName.Text}%'";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtOrderID.Text))
 			{
 				modFunctions.AppendAND(ref filter);
-				filter = filter + "o.OrderID = " + txtOrderID.Text;
+				filter = $"{filter}o.OrderID = {txtOrderID.Text}";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtProductID.Text))
 			{
 				modFunctions.AppendAND(ref filter);
-				filter = filter + "d.ProductID LIKE '%" + txtProductID.Text + "%'";
+				filter = $"{filter}d.ProductID LIKE '%{txtProductID.Text}%'";
 			}
 			if (chkFrom.CheckState == CheckState.Checked)
 			{
 				modFunctions.AppendAND(ref filter);
-				//UPGRADE_WARNING: (1068) dtFrom.value of type Variant is being forced to DateTime. More Information: https://docs.mobilize.net/vbuc/ewis#1068
-				filter = filter + "o.OrderDate >= '" + Convert.ToDateTime(dtFrom.GetValue()).ToString("MM/dd/yyyy") + "'";
+				//UPGRADE_WARNING: (1068) dtFrom.value of type Variant is being forced to DateTime. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1068
+				filter = $"{filter}o.OrderDate >= '{Convert.ToDateTime(dtFrom.GetValue()).ToString("MM/dd/yyyy")}'";
 			}
 			if (chkTo.CheckState == CheckState.Checked)
 			{
 				modFunctions.AppendAND(ref filter);
-				//UPGRADE_WARNING: (1068) dtTo.value of type Variant is being forced to DateTime. More Information: https://docs.mobilize.net/vbuc/ewis#1068
-				filter = filter + "o.OrderDate <= '" + Convert.ToDateTime(dtTo.GetValue()).ToString("MM/dd/yyyy") + "'";
+				//UPGRADE_WARNING: (1068) dtTo.value of type Variant is being forced to DateTime. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1068
+				filter = $"{filter}o.OrderDate <= '{Convert.ToDateTime(dtTo.GetValue()).ToString("MM/dd/yyyy")}'";
 			}
 			if (cmbStatus.SelectedIndex != -1 && cmbStatus.Text != "All")
 			{
 				modFunctions.AppendAND(ref filter);
-				filter = filter + "o.Status = UPPER('" + cmbStatus.Text + "')";
+				filter = $"{filter}o.Status = UPPER('{cmbStatus.Text}')";
 			}
 
 			string where = " Where o.OrderID = d.OrderID And c.CustomerID = o.CustomerID And u.Username = o.EmployeeId ";
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(filter))
 			{
-				filter = where + " AND " + filter;
+				filter = $"{where} AND {filter}";
 			}
 			else
 			{
@@ -219,12 +193,12 @@ namespace SKS
 			}
 
 
-			string sql = "Select o.OrderDate, o.OrderID, c.CompanyName, c.ContactFirstName + ' ' + c.ContactLastName as ContactName, u.Fullname as [Received by], Sum(d.LineTotal) as Price, o.Status " + 
-			             "From OrderRequests as o, OrderRequestDetails as d, Customers as c, Users as u " + 
-			             filter + " Group by o.orderDate, o.OrderID, c.CompanyName, c.ContactFirstName + ' ' + c.ContactLastName, u.Fullname, o.Status ";
+			string sql = $"Select o.OrderDate, o.OrderID, c.CompanyName, c.ContactFirstName + ' ' + c.ContactLastName as ContactName, u.Fullname as [Received by], Sum(d.LineTotal) as Price, o.Status " +
+			             $"From OrderRequests as o, OrderRequestDetails as d, Customers as c, Users as u " +
+			             $"{filter} Group by o.orderDate, o.OrderID, c.CompanyName, c.ContactFirstName + ' ' + c.ContactLastName, u.Fullname, o.Status ";
 			modConnection.ExecuteSql(sql);
-			modMain.LogStatus("There are " + modConnection.rs.RecordCount.ToString() + " records with the selected criteria", this);
-			int i = 0;
+			modMain.LogStatus($"There are {modConnection.rs.RecordCount.ToString()} records with the selected criteria", this);
+			_ = 0;
 			fgOrders.RowsCount = modConnection.rs.RecordCount + 1;
 			if (fgOrders.RowsCount == 1)
 			{
@@ -234,7 +208,7 @@ namespace SKS
 			{
 				fgOrders.FixedRows = 1;
 			}
-			i = 1;
+			int i = 1;
 			while (!modConnection.rs.EOF)
 			{
 				int tempForEndVar = modConnection.rs.FieldsMetadata.Count - 1;
@@ -255,7 +229,7 @@ namespace SKS
 			fgOrders.RowsCount = 0;
 			fgOrders.ColumnsCount = 7;
 			fgOrders.FixedColumns = 0;
-			fgOrders.AddItem("Date" + "\t" + "Order" + "\t" + "Customer" + "\t" + "Contact" + "\t" + "Received by" + "\t" + "Price" + "\t" + "Status");
+			fgOrders.AddItem($"Date{"\t"}Order{"\t"}Customer{"\t"}Contact{"\t"}Received by{"\t"}Price{"\t"}Status");
 			fgOrders.RowsCount = 1;
 			fgOrders.FixedRows = 0;
 			fgOrders.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -266,7 +240,7 @@ namespace SKS
 
 
 
-		//UPGRADE_NOTE: (7001) The following declaration (MakeTextBoxVisible) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
+		//UPGRADE_NOTE: (7001) The following declaration (MakeTextBoxVisible) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
 		//private void MakeTextBoxVisible(TextBox txtBox, UpgradeHelpers.DataGridViewFlex grid)
 		//{
 			//txtBox.Text = Convert.ToString(grid[grid.CurrentRowIndex, grid.CurrentColumnIndex].Value);

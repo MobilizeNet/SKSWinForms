@@ -62,7 +62,7 @@ namespace SKS
 			{
 				return;
 			}
-			if (MessageBox.Show("Are you sure you want to delete the user '" + lstAccounts.FocusedItem.Text + "'?", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.Yes)
+			if (MessageBox.Show($"Are you sure you want to delete the user '{lstAccounts.FocusedItem.Text}'?", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == System.Windows.Forms.DialogResult.Yes)
 			{
 				modConnection.ExecuteSql("Select * from Users");
 				if (modConnection.rs.RecordCount == 1)
@@ -70,7 +70,7 @@ namespace SKS
 					MessageBox.Show("You cannot delete the last user", "Delete error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					return;
 				}
-				modConnection.ExecuteSql("Delete From Users Where Username = '" + lstAccounts.FocusedItem.Text + "'");
+				modConnection.ExecuteSql($"Delete From Users Where Username = '{lstAccounts.FocusedItem.Text}'");
 				LoadUsers();
 			}
 		}
@@ -81,7 +81,7 @@ namespace SKS
 			{
 				return;
 			}
-			modConnection.ExecuteSql("Select * from Users where Username = '" + lstAccounts.FocusedItem.Text + "'");
+			modConnection.ExecuteSql($"Select * from Users where Username = '{lstAccounts.FocusedItem.Text}'");
 			txtUsername.Text = Convert.ToString(modConnection.rs["UserName"]);
 			if (modConnection.rs.EOF)
 			{
@@ -101,7 +101,7 @@ namespace SKS
 
 		private void cmdSave_Click(Object eventSender, EventArgs eventArgs)
 		{
-			string SecId = "";
+			_ = "";
 			if (modFunctions.TextBoxEmpty(txtUsername))
 			{
 				return;
@@ -119,7 +119,7 @@ namespace SKS
 				return;
 			}
 
-			modConnection.ExecuteSql("Select * from Users where Username = '" + txtUsername.Text + "'");
+			modConnection.ExecuteSql($"Select * from Users where Username = '{txtUsername.Text}'");
 			if (cmdSave.Text != "&Update")
 			{
 				if (!modConnection.rs.EOF)
@@ -144,23 +144,23 @@ namespace SKS
 					return;
 				}
 				modConnection.rs.AddNew();
-				modMain.msg = "Added new user " + txtUsername.Text;
+				modMain.msg = $"Added new user {txtUsername.Text}";
 			}
 			else if (CurrentEditedUser != txtUsername.Text)
 			{ 
-				modConnection.ExecuteSql2("Select * from Users where username = '" + txtUsername.Text + "'");
+				modConnection.ExecuteSql2($"Select * from Users where username = '{txtUsername.Text}'");
 				if (!modConnection.rs2.EOF)
 				{
-					MessageBox.Show("Username '" + txtUsername.Text + "' already exists.", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.OK, MessageBoxIcon.Information);
+					MessageBox.Show($"Username '{txtUsername.Text}' already exists.", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.OK, MessageBoxIcon.Information);
 					txtUsername.Focus();
 					modFunctions.SelectAll(txtUsername);
 					return;
 				}
-				modMain.msg = "Record for the user " + txtUsername.Text + " has been successfully updated";
+				modMain.msg = $"Record for the user {txtUsername.Text} has been successfully updated";
 			}
 			else
 			{
-				modMain.msg = "Record for the user " + txtUsername.Text + " has been successfully updated";
+				modMain.msg = $"Record for the user {txtUsername.Text} has been successfully updated";
 			}
 			modConnection.rs["UserName"] = txtUsername.Text;
 			modConnection.rs["Password"] = txtPassword.Text;
@@ -215,12 +215,10 @@ namespace SKS
 			cmdSave.Text = "&Save";
 		}
 
-		private void cmdClose_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void cmdClose_Click(Object eventSender, EventArgs eventArgs) => this.Close();
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			modConnection.ExecuteSql("Select * from Levels");
@@ -247,8 +245,8 @@ namespace SKS
 				modConnection.ExecuteSql("Select * from Users");
 				if (modConnection.rs.EOF)
 				{
-					MessageBox.Show("System has failed to initialized. Please contact your administrator" + Environment.NewLine + Environment.NewLine + "Status: analysing accounts configuration" + Environment.NewLine + 
-					                "Error: No users found", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show($"System has failed to initialized. Please contact your administrator{Environment.NewLine}{Environment.NewLine}Status: analysing accounts configuration{Environment.NewLine}" +
+					                $"Error: No users found", AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly()), MessageBoxButtons.OK, MessageBoxIcon.Error);
 					Environment.Exit(0);
 				}
 				//frmxSplash.tmrLoad.Enabled = True
@@ -256,24 +254,16 @@ namespace SKS
 			modMain.LogStatus("");
 		}
 
-		private void lstAccounts_DoubleClick(Object eventSender, EventArgs eventArgs)
-		{
-			cmdEdit_Click(cmdEdit, new EventArgs());
-		}
+		private void lstAccounts_DoubleClick(Object eventSender, EventArgs eventArgs) => cmdEdit_Click(cmdEdit, new EventArgs());
 
-		private void txtFullname_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			modFunctions.SelectAll(txtFullname);
-		}
 
-		private void txtPassword_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			modFunctions.SelectAll(txtPassword);
-		}
+		private void txtFullname_Enter(Object eventSender, EventArgs eventArgs) => modFunctions.SelectAll(txtFullname);
 
-		private void txtUsername_Enter(Object eventSender, EventArgs eventArgs)
-		{
-			modFunctions.SelectAll(txtUsername);
-		}
+
+		private void txtPassword_Enter(Object eventSender, EventArgs eventArgs) => modFunctions.SelectAll(txtPassword);
+
+
+		private void txtUsername_Enter(Object eventSender, EventArgs eventArgs) => modFunctions.SelectAll(txtUsername);
+
 	}
 }

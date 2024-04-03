@@ -163,6 +163,7 @@ namespace SKS
 			this.Label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label20.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this.Label20.Location = new System.Drawing.Point(49, 32);
+			this.Label20.MinimumSize = new System.Drawing.Size(119, 13);
 			this.Label20.Name = "Label20";
 			this.Label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label20.Size = new System.Drawing.Size(119, 13);
@@ -178,6 +179,7 @@ namespace SKS
 			this.Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label19.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this.Label19.Location = new System.Drawing.Point(49, 8);
+			this.Label19.MinimumSize = new System.Drawing.Size(50, 16);
 			this.Label19.Name = "Label19";
 			this.Label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label19.Size = new System.Drawing.Size(50, 16);
@@ -207,6 +209,7 @@ namespace SKS
 			this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label1.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this.Label1.Location = new System.Drawing.Point(125, 144);
+			this.Label1.MinimumSize = new System.Drawing.Size(62, 13);
 			this.Label1.Name = "Label1";
 			this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label1.Size = new System.Drawing.Size(62, 13);
@@ -223,6 +226,7 @@ namespace SKS
 			this.lblSrchBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblSrchBy.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
 			this.lblSrchBy.Location = new System.Drawing.Point(7, 72);
+			this.lblSrchBy.MinimumSize = new System.Drawing.Size(116, 13);
 			this.lblSrchBy.Name = "lblSrchBy";
 			this.lblSrchBy.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblSrchBy.Size = new System.Drawing.Size(116, 13);

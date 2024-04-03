@@ -66,10 +66,8 @@ namespace SKS
 		}
 
 
-		private void Form_Closed(Object eventSender, EventArgs eventArgs)
-		{
-			CurrentProductID = Convert.ToString(dcProducts.Recordset["ProductId"]);
-		}
+		private void Form_Closed(Object eventSender, EventArgs eventArgs) => CurrentProductID = Convert.ToString(dcProducts.Recordset["ProductId"]);
+
 
 		private void txtCategory_TextChanged(Object eventSender, EventArgs eventArgs)
 		{
@@ -77,26 +75,26 @@ namespace SKS
 			{
 				modFunctions.LoadCombo("Categories", cmbCategory, "CategoryName", "CategoryID");
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (String.IsNullOrEmpty(txtCategory.Text))
 			{
 				cmbCategory.SelectedIndex = -1;
 				return;
 			}
-			int Index = -1;
+			_ = -1;
 			int tempForEndVar = cmbCategory.Items.Count;
 			for (modMain.i = 0; modMain.i <= tempForEndVar; modMain.i++)
 			{
 				if (cmbCategory.GetItemData(modMain.i) == StringsHelper.ToDoubleSafe(txtCategory.Text))
 				{
-					Index = modMain.i;
+					_ = modMain.i;
 					break;
 				}
 			}
 			cmbCategory.SelectedIndex = modMain.i;
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			txtCategory.Height = 0;

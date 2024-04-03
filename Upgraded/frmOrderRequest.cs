@@ -65,7 +65,7 @@ namespace SKS
 		private void cmdAddProducts_Click(Object eventSender, EventArgs eventArgs)
 		{
 			frmAddProductTo.DefInstance.Id = currentIdCustomer;
-			frmAddProductTo.DefInstance.ObjectReferred = "Customer " + txtCustomerCompany.Text + "|" + txtCustomerContact.Text;
+			frmAddProductTo.DefInstance.ObjectReferred = $"Customer {txtCustomerCompany.Text}|{txtCustomerContact.Text}";
 			frmAddProductTo.DefInstance.Table = "ProductsByCustomer";
 			frmAddProductTo.DefInstance.ColumnName = "CustomerId";
 			frmAddProductTo.DefInstance.LoadData();
@@ -76,11 +76,9 @@ namespace SKS
 			}
 		}
 
-		//UPGRADE_NOTE: (7001) The following declaration (txtName_Change) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
-		//private void txtName_Change()
-		//{
-			//DoSearchCustomer();
-		//}
+		//UPGRADE_NOTE: (7001) The following declaration (txtName_Change) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
+		//private void txtName_Change() => DoSearchCustomer();
+		//
 
 		private void DoSearchCustomer(string Id = "")
 		{
@@ -88,45 +86,45 @@ namespace SKS
 			//If Not IsEmpty(Id) Then
 			if (Id != "")
 			{
-				filter = "CustomerID = " + Id;
+				filter = $"CustomerID = {Id}";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtCompanyName.Text))
 			{
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!String.IsNullOrEmpty(filter))
 				{
-					filter = filter + " AND ";
+					filter = $"{filter} AND ";
 				}
-				filter = "CompanyName LIKE '%" + txtCompanyName.Text + "%'";
+				filter = $"CompanyName LIKE '%{txtCompanyName.Text}%'";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtContactName.Text))
 			{
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!String.IsNullOrEmpty(filter))
 				{
-					filter = filter + " AND ";
+					filter = $"{filter} AND ";
 				}
-				filter = filter + "ContactFirstName LIKE '%" + txtContactName.Text + "%'";
+				filter = $"{filter}ContactFirstName LIKE '%{txtContactName.Text}%'";
 			}
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtContactLastName.Text))
 			{
-				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+				//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 				if (!String.IsNullOrEmpty(filter))
 				{
-					filter = filter + " AND ";
+					filter = $"{filter} AND ";
 				}
-				filter = filter + "ContactLastName LIKE '%" + txtContactLastName.Text + "%'";
+				filter = $"{filter}ContactLastName LIKE '%{txtContactLastName.Text}%'";
 			}
 
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(filter))
 			{
-				filter = "Where " + filter;
+				filter = $"Where {filter}";
 			}
-			modConnection.ExecuteSql("Select CustomerID, CompanyName, ContactFirstName, ContactLastName, City, StateOrProvince, 'Country/Region' From Customers " + filter);
+			modConnection.ExecuteSql($"Select CustomerID, CompanyName, ContactFirstName, ContactLastName, City, StateOrProvince, 'Country/Region' From Customers {filter}");
 			lvCustomers.Items.Clear();
 			ListViewItem x = null;
 			if (modConnection.rs.RecordCount == 0)
@@ -141,7 +139,7 @@ namespace SKS
 					int tempForEndVar = (modConnection.rs.FieldsMetadata.Count - 1);
 					for (modMain.i = 1; modMain.i <= tempForEndVar; modMain.i++)
 					{
-						//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+						//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 						if (!(modConnection.rs.GetField(modMain.i) is null))
 						{
 							ListViewHelper.GetListViewSubItem(x, modMain.i).Text = Convert.ToString(modConnection.rs[modMain.i]);
@@ -156,10 +154,8 @@ namespace SKS
 			}
 		}
 
-		private void cmdClose_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void cmdClose_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 		private void cmdCustomers_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -174,7 +170,7 @@ namespace SKS
 
 		private void cmdSave_Click(Object eventSender, EventArgs eventArgs)
 		{
-			int newOrderId = 0;
+			_ = 0;
 
 			try
 			{
@@ -184,10 +180,10 @@ namespace SKS
 				modConnection.rs["EmployeeId"] = modMain.UserId;
 				System.DateTime TempDate = DateTime.FromOADate(0);
 				modConnection.rs["OrderDate"] = (DateTime.TryParse(DateTimeHelper.ToString(DateTime.Today), out TempDate)) ? TempDate.ToString("MM/dd/yyyy") : DateTimeHelper.ToString(DateTime.Today);
-				//UPGRADE_WARNING: (1068) dtRequired.value of type Variant is being forced to string. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+				//UPGRADE_WARNING: (1068) dtRequired.value of type Variant is being forced to string. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1068
 				System.DateTime TempDate2 = DateTime.FromOADate(0);
 				modConnection.rs["RequiredByDate"] = (DateTime.TryParse(Convert.ToString(dtRequired.GetValue()), out TempDate2)) ? TempDate2.ToString("MM/dd/yyyy") : Convert.ToString(dtRequired.GetValue());
-				//UPGRADE_WARNING: (1068) dtPromised.value of type Variant is being forced to string. More Information: https://docs.mobilize.net/vbuc/ewis#1068
+				//UPGRADE_WARNING: (1068) dtPromised.value of type Variant is being forced to string. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1068
 				System.DateTime TempDate3 = DateTime.FromOADate(0);
 				modConnection.rs["PromisedByDate"] = (DateTime.TryParse(Convert.ToString(dtPromised.GetValue()), out TempDate3)) ? TempDate3.ToString("MM/dd/yyyy") : Convert.ToString(dtPromised.GetValue());
 				modConnection.rs["FreightCharge"] = currentFreightCharge;
@@ -197,7 +193,7 @@ namespace SKS
 
 				modConnection.ExecuteSql("SELECT last_insert_rowid() ");
 
-				newOrderId = Convert.ToInt32(modConnection.rs[0]);
+				int newOrderId = Convert.ToInt32(modConnection.rs[0]);
 
 
 				int tempForEndVar = fgProducts.RowsCount - 1;
@@ -205,16 +201,16 @@ namespace SKS
 				{
 					if (Convert.ToString(fgProducts[modMain.i, 0].Value) != "0")
 					{
-						modConnection.ExecuteSql("Insert into OrderRequestDetails (OrderID, ProductID, DateSold, Quantity, UnitPrice, SalePrice, LineTotal) Values (" + newOrderId.ToString() + ", '" + Convert.ToString(fgProducts[modMain.i, 1].Value) + "', '" + DateTime.Today.ToString("MM/dd/yyyy") + "'," + Convert.ToString(fgProducts[modMain.i, 0].Value) + "," + Convert.ToString(fgProducts[modMain.i, 3].Value) + "," + Convert.ToString(fgProducts[modMain.i, 4].Value) + "," + Convert.ToString(fgProducts[modMain.i, 4].Value) + ")");
+						modConnection.ExecuteSql($"Insert into OrderRequestDetails (OrderID, ProductID, DateSold, Quantity, UnitPrice, SalePrice, LineTotal) Values ({newOrderId.ToString()}, '{Convert.ToString(fgProducts[modMain.i, 1].Value)}', '{DateTime.Today.ToString("MM/dd/yyyy")}',{Convert.ToString(fgProducts[modMain.i, 0].Value)},{Convert.ToString(fgProducts[modMain.i, 3].Value)},{Convert.ToString(fgProducts[modMain.i, 4].Value)},{Convert.ToString(fgProducts[modMain.i, 4].Value)})");
 
-						modConnection.ExecuteSql("Update Products Set UnitsOnOrder = UnitsOnOrder + " + Convert.ToString(fgProducts[modMain.i, 0].Value) + 
-						                         " Where ProductId = '" + Convert.ToString(fgProducts[modMain.i, 1].Value) + "'");
+						modConnection.ExecuteSql($"Update Products Set UnitsOnOrder = UnitsOnOrder + {Convert.ToString(fgProducts[modMain.i, 0].Value)}" +
+						                         $" Where ProductId = '{Convert.ToString(fgProducts[modMain.i, 1].Value)}'");
 
 					}
 				}
 
 				editingData = false;
-				if (MessageBox.Show("Order added successfully" + Environment.NewLine + "Would you like to add a new order?", "New data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+				if (MessageBox.Show($"Order added successfully{Environment.NewLine}Would you like to add a new order?", "New data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
 				{
 					ClearFields();
 				}
@@ -225,23 +221,20 @@ namespace SKS
 			}
 			catch (System.Exception excep)
 			{
-				//UPGRADE_WARNING: (2081) Err.Number has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2081
-				MessageBox.Show("An error has occurred adding the data. Error: (" + Information.Err().Number.ToString() + ") " + excep.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				//UPGRADE_WARNING: (2081) Err.Number has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2081
+				MessageBox.Show($"An error has occurred adding the data. Error: ({Information.Err().Number.ToString()}) {excep.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 
-		private void dtPromised_ValueChanged(Object eventSender, EventArgs eventArgs)
-		{
-			editingData = true;
-		}
+		private void dtPromised_ValueChanged(Object eventSender, EventArgs eventArgs) => editingData = true;
 
-		private void dtRequired_ValueChanged(Object eventSender, EventArgs eventArgs)
-		{
+
+		private void dtRequired_ValueChanged(Object eventSender, EventArgs eventArgs) => 
 			//If dtPromised.value < dtRequired.value Then
 			//    dtPromised.value = dtRequired.value
 			//End If
 			editingData = true;
-		}
+
 
 		private void MakeTextBoxVisible(TextBox txtBox, UpgradeHelpers.DataGridViewFlex grid)
 		{
@@ -267,11 +260,9 @@ namespace SKS
 			modFunctions.SelectAll(txtEntry);
 		}
 
-		//UPGRADE_WARNING: (2050) MSFlexGridLib.MSFlexGrid Event fgProducts.EnterCell was not upgraded. More Information: https://docs.mobilize.net/vbuc/ewis#2050
-		private void fgProducts_EnterCell()
-		{
-			SaveEdits();
-		}
+		//UPGRADE_WARNING: (2050) MSFlexGridLib.MSFlexGrid Event fgProducts.EnterCell was not upgraded. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2050
+		private void fgProducts_EnterCell() => SaveEdits();
+
 
 		private void fgProducts_KeyPress(Object eventSender, KeyPressEventArgs eventArgs)
 		{
@@ -307,7 +298,7 @@ namespace SKS
 			}
 		}
 
-		//UPGRADE_NOTE: (7001) The following declaration (EditKeyCode) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
+		//UPGRADE_NOTE: (7001) The following declaration (EditKeyCode) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
 		//private void EditKeyCode(UpgradeHelpers.DataGridViewFlex grid, ref TextBox txtBox, int KeyCode, int Shift)
 		//{
 			//switch(KeyCode)
@@ -355,10 +346,8 @@ namespace SKS
 			//}
 		//}
 
-		private void txtEntry_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			SaveEdits();
-		}
+		private void txtEntry_Leave(Object eventSender, EventArgs eventArgs) => SaveEdits();
+
 
 
 		private void fgProducts_CellLeave(Object eventSender, EventArgs eventArgs)
@@ -375,11 +364,11 @@ namespace SKS
 			{
 				return;
 			}
-			double previousLinePrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
+			_ = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
 			fgProducts[fgProducts.CurrentRowIndex, fgProducts.CurrentColumnIndex].Value = txtEntry.Text;
 			double lineQuantity = modFunctions.DoubleValue(txtEntry.Text);
 			double lineUnitPrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 3].Value));
-			previousLinePrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
+			double previousLinePrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
 			double linePrice = lineQuantity * lineUnitPrice;
 			fgProducts[fgProducts.CurrentRowIndex, 4].Value = linePrice.ToString();
 			ReCalculateTotals(previousLinePrice, linePrice);
@@ -403,13 +392,13 @@ namespace SKS
 		private void Form_FormClosing(Object eventSender, FormClosingEventArgs eventArgs)
 		{
 			int Cancel = (eventArgs.Cancel) ? 1 : 0;
-			int UnloadMode = (int) eventArgs.CloseReason;
+			_ = (int) eventArgs.CloseReason;
 			try
 			{
-				DialogResult res = (DialogResult) 0;
+				_ = (DialogResult) 0;
 				if (editingData)
 				{
-					res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+					DialogResult res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 					if (res == System.Windows.Forms.DialogResult.Yes)
 					{
 						cmdSave_Click(cmdSave, new EventArgs());
@@ -426,17 +415,15 @@ namespace SKS
 			}
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			editingData = false;
 			ClearFields();
 		}
 
-		private void lvCustomers_ItemClick(ListViewItem Item)
-		{
-			RetrieveDataCustomer();
-		}
+		private void lvCustomers_ItemClick(ListViewItem Item) => RetrieveDataCustomer();
+
 
 		private void RetrieveDataCustomer()
 		{
@@ -449,13 +436,13 @@ namespace SKS
 			}
 
 			ListViewItem withVar = null;
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!(lvCustomers.FocusedItem is null))
 			{
 				withVar = lvCustomers.FocusedItem;
 				currentIdCustomer = Convert.ToInt32(Double.Parse(lvCustomers.FocusedItem.Text));
 				currentCompanyName = ListViewHelper.GetListViewSubItem(withVar, 1).Text;
-				currentContactName = ListViewHelper.GetListViewSubItem(withVar, 2).Text + " " + ListViewHelper.GetListViewSubItem(withVar, 3).Text;
+				currentContactName = $"{ListViewHelper.GetListViewSubItem(withVar, 2).Text} {ListViewHelper.GetListViewSubItem(withVar, 3).Text}";
 				txtCustomerCompany.Text = currentCompanyName;
 				txtCustomerContact.Text = currentContactName;
 				editingData = false;
@@ -474,7 +461,7 @@ namespace SKS
 			string ColumnName = "CustomerId";
 			int Id = currentIdCustomer;
 
-			modConnection.ExecuteSql("Select p.ProductID, p.ProductName, p.UnitPrice, p.UnitsInStock, p.UnitsOnOrder, p.QuantityPerUnit, p.Unit from Products as p, " + Table + " as pb Where pb." + ColumnName + " = " + Id.ToString() + " And pb.ProductId = p.ProductId");
+			modConnection.ExecuteSql($"Select p.ProductID, p.ProductName, p.UnitPrice, p.UnitsInStock, p.UnitsOnOrder, p.QuantityPerUnit, p.Unit from Products as p, {Table} as pb Where pb.{ColumnName} = {Id.ToString()} And pb.ProductId = p.ProductId");
 
 			//lvProducts.ListItems.Clear
 			//If rs.RecordCount > 0 Then
@@ -492,14 +479,14 @@ namespace SKS
 			//    End With
 			//End If
 
-			int lng = 0;
-			int intLoopCount = 0;
+			_ = 0;
+			_ = 0;
 			const int SCROOL_WIDTH = 320;
-			int i = 0;
+			_ = 0;
 			fgProducts.ColumnsCount = 8;
 			fgProducts.FixedColumns = 0;
 			fgProducts.RowsCount = 0;
-			fgProducts.AddItem("Quantity" + "\t" + "Code" + "\t" + "Product" + "\t" + "UnitPrice" + "\t" + "Price" + "\t" + "Existence" + "\t" + "Ordered" + "\t" + "Quantity per unit");
+			fgProducts.AddItem($"Quantity{"\t"}Code{"\t"}Product{"\t"}UnitPrice{"\t"}Price{"\t"}Existence{"\t"}Ordered{"\t"}Quantity per unit");
 			fgProducts.RowsCount = modConnection.rs.RecordCount + 1;
 			if (fgProducts.RowsCount == 1)
 			{
@@ -509,7 +496,7 @@ namespace SKS
 			{
 				fgProducts.FixedRows = 1;
 			}
-			i = 1;
+			int i = 1;
 			while (!modConnection.rs.EOF)
 			{
 				fgProducts[i, 0].Value = "0";
@@ -528,13 +515,13 @@ namespace SKS
 						fgProducts[i, j].Value = Convert.ToString(modConnection.rs[j - 2]);
 					}
 				}
-				fgProducts[i, 7].Value = Convert.ToString(modConnection.rs[5]) + Convert.ToString(modConnection.rs[6]);
+				fgProducts[i, 7].Value = $"{Convert.ToString(modConnection.rs[5])}{Convert.ToString(modConnection.rs[6])}";
 				modConnection.rs.MoveNext();
 				i++;
 			}
 		}
 
-		//UPGRADE_NOTE: (7001) The following declaration (lvProducts_ItemCheck) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis#7001
+		//UPGRADE_NOTE: (7001) The following declaration (lvProducts_ItemCheck) seems to be dead code More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-7001
 		//private void lvProducts_ItemCheck(ListViewItem Item)
 		//{
 			//if (Item.Checked)
@@ -547,20 +534,14 @@ namespace SKS
 			//}
 		//}
 
-		private void txtCompanyName_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchCustomer();
-		}
+		private void txtCompanyName_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchCustomer();
 
-		private void txtContactLastName_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchCustomer();
-		}
 
-		private void txtContactName_TextChanged(Object eventSender, EventArgs eventArgs)
-		{
-			DoSearchCustomer();
-		}
+		private void txtContactLastName_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchCustomer();
+
+
+		private void txtContactName_TextChanged(Object eventSender, EventArgs eventArgs) => DoSearchCustomer();
+
 
 		private void ClearFields()
 		{

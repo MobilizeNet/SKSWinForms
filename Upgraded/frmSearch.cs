@@ -46,26 +46,22 @@ namespace SKS
 			}
 		}
 		string SearchTable = "";
-		private void cboSrchBy_SelectedIndexChanged(Object eventSender, EventArgs eventArgs)
-		{
-			lblSrchBy.Text = cboSrchBy.Text;
-		}
+		private void cboSrchBy_SelectedIndexChanged(Object eventSender, EventArgs eventArgs) => lblSrchBy.Text = cboSrchBy.Text;
 
-		private void cmdClose_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+
+		private void cmdClose_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 
 		public void Search(string Table, string fieldToSearch, string itemToSearch)
 		{
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(itemToSearch))
 			{
-				Label20.Text = "Search for a " + itemToSearch;
+				Label20.Text = $"Search for a {itemToSearch}";
 			}
 			SearchTable = Table;
-			modConnection.ExecuteSql("Select * from " + Table + " limit 1;");
+			modConnection.ExecuteSql($"Select * from {Table} limit 1;");
 			int tempForEndVar = (modConnection.rs.FieldsMetadata.Count - 1);
 			for (modMain.i = 0; modMain.i <= tempForEndVar; modMain.i++)
 			{
@@ -82,7 +78,7 @@ namespace SKS
 			}
 			string txtToSearch = "";
 
-			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!String.IsNullOrEmpty(txtSrchStr.Text.Trim()))
 			{
 				txtToSearch = txtSrchStr.Text;
@@ -108,21 +104,21 @@ namespace SKS
 		//''
 		public void SearchCriteriaCustomers(string field, string value)
 		{
-			modConnection.ExecuteSql("Select * from Customers where " + field + " LIKE '" + value + "%'");
+			modConnection.ExecuteSql($"Select * from Customers where {field} LIKE '{value}%'");
 			if (modConnection.rs.RecordCount == 0)
 			{
 				MessageBox.Show("There are no records with the selected criteria", "Search", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 			else
 			{
-				modMain.LogStatus("There are " + modConnection.rs.RecordCount.ToString() + " that meet with the selected criteria");
+				modMain.LogStatus($"There are {modConnection.rs.RecordCount.ToString()} that meet with the selected criteria");
 				frmCustomers.DefInstance.dcCustomers.Recordset = modConnection.rs;
 			}
 		}
 
 		public void SearchCriteriaProducts(string field, string value)
 		{
-			modConnection.ExecuteSql("Select * from Products where " + field + " LIKE '" + value + "%'");
+			modConnection.ExecuteSql($"Select * from Products where {field} LIKE '{value}%'");
 			if (modConnection.rs.RecordCount == 0)
 			{
 				MessageBox.Show("There are no records with the selected criteria", "Search", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -135,14 +131,14 @@ namespace SKS
 
 		public void SearchCriteriaProviders(string field, string value)
 		{
-			modConnection.ExecuteSql("Select * from Providers where " + field + " LIKE '" + value + "%'");
+			modConnection.ExecuteSql($"Select * from Providers where {field} LIKE '{value}%'");
 			if (modConnection.rs.RecordCount == 0)
 			{
 				MessageBox.Show("There are no records with the selected criteria", "Search", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 			else
 			{
-				modMain.LogStatus("There are " + modConnection.rs.RecordCount.ToString() + " that meet with the selected criteria");
+				modMain.LogStatus($"There are {modConnection.rs.RecordCount.ToString()} that meet with the selected criteria");
 				frmProviders.DefInstance.dcProviders.Recordset = modConnection.rs;
 			}
 		}
