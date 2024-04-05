@@ -1,19 +1,19 @@
-Build started 4/4/2024 8:18:51 PM.
+Build started 4/5/2024 12:00:27 PM.
 Environment at start of build:
 AFULLMACHINENAME = BUILDARTIFACTORY.ARTINSOFT.COM
 agent.jobstatus = Succeeded
 AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN = true
 AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN = true
 AGENT_HOMEDIRECTORY = C:\A1
-AGENT_ID = 2701
+AGENT_ID = 2440
 AGENT_JOBNAME = Phase SKS Conversion
 AGENT_JOBSTATUS = Succeeded
-AGENT_MACHINENAME = S13-PR-S2-BA012
-AGENT_NAME = S13-PR-S2-BA012
+AGENT_MACHINENAME = S08-PR-S2-BA011
+AGENT_NAME = S08-PR-S2-BA011
 AGENT_OS = Windows_NT
 AGENT_OSARCHITECTURE = X64
 AGENT_READONLYVARIABLES = true
-AGENT_RELEASEDIRECTORY = C:\A1\_work\r5\a
+AGENT_RELEASEDIRECTORY = C:\A1\_work\r1\a
 AGENT_RETAINDEFAULTENCODING = false
 AGENT_ROOTDIRECTORY = C:\A1\_work
 AGENT_SERVEROMDIRECTORY = C:\A1\externals\vstsom
@@ -46,13 +46,13 @@ ARTIFACTVBNET = \\BUILDARTIFACTORY.ARTINSOFT.COM\VBNet
 ARTIFACTVBUC = \\BUILDARTIFACTORY.ARTINSOFT.COM\VBUC
 ARTIFACTWFNET = \\BUILDARTIFACTORY.ARTINSOFT.COM\WebMAPWinforms
 AUSER = devops
-AZURE_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1
+AZURE_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1
 BROWSERSLIST_IGNORE_OLD_DATA = true
 BUILDCONFIGURATION = debug
 BUILDPLATFORMS = x86
-BUILD_BUILDID = 870895
+BUILD_BUILDID = 871081
 BUILD_BUILDNUMBER = 10.1.1-rc.10
-BUILD_BUILDURI = vstfs:///Build/Build/870895
+BUILD_BUILDURI = vstfs:///Build/Build/871081
 BUILD_DEFINITIONID = 3425
 BUILD_DEFINITIONNAME = Mobilize.VBUC.ConversionTool
 BUILD_PROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
@@ -60,14 +60,14 @@ BUILD_PROJECTNAME = Product
 BUILD_REPOSITORY_ID = ef6a790e-0fae-4ca7-8546-5168061f25a7
 BUILD_REPOSITORY_NAME = VBUC
 BUILD_REPOSITORY_PROVIDER = TfsGit
-BUILD_REQUESTEDFOR = Josue Sandino
-BUILD_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+BUILD_REQUESTEDFOR = Miguel Gonzalez Carvajal
+BUILD_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 BUILD_SOURCEBRANCH = refs/heads/develop
 BUILD_SOURCEBRANCHNAME = develop
 BUILD_SOURCEVERSION = bc075f201a70360940d309893a8787b05af2ecd0
 BUILD_TYPE = Build
 ChocolateyInstall = C:\ProgramData\chocolatey
-ChocolateyLastPathUpdate = 132932146159963822
+ChocolateyLastPathUpdate = 132933162054152580
 ChocolateyToolsLocation = C:\tools
 CIEMAIL = devops@mobilize.net
 CIUSER = artinsoft\devops
@@ -75,7 +75,7 @@ CIUSERNAME = devops
 CommonProgramFiles = C:\Program Files (x86)\Common Files
 CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
 CommonProgramW6432 = C:\Program Files\Common Files
-COMPUTERNAME = S13-PR-S2-BA012
+COMPUTERNAME = S08-PR-S2-BA011
 ComSpec = C:\WINDOWS\system32\cmd.exe
 DEPLOYMENTBUILDNAME = Mobilize.VBUC.Deployment_TargetCode_SKS
 DOWNLOADBUILDARTIFACTS_BUILDNUMBER = 408072
@@ -93,7 +93,7 @@ ENVRUNNERCOMPILATIONERRORS = 0
 ENVRUNNERMODIFIEDLINES = -1
 ENVRUNNERREMOVEDLINES = -1
 ENVRUNNERSAMELINES = -1
-ENVRUNNERTIMELAPSE = 297571.8749
+ENVRUNNERTIMELAPSE = 339133.2929
 ENVRUNNERTOTALLOC = 4371
 ENVSOLUTIONFULLNAME = C:\A1\_work\Out\Upgraded\SKS.sln
 ENVTOOLVERSION = 10.1.1.10
@@ -114,18 +114,18 @@ LOCALAPPDATA = C:\Users\devops\AppData\Local
 LOGONSERVER = \\AISCRIT05
 MOBILIZE_ENVIRONMENT = Development
 MSBuildLoadMicrosoftTargetsReadOnly = true
-MSDEPLOY_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1
+MSDEPLOY_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1
 NODE_OPTIONS = --max_old_space_size=6144
 NODE_PATH = C:\Users\devops\AppData\Roaming\npm\node_modules
-NugetExePath = C:\A1\_work\4\s\build\nuget.exe
+NugetExePath = C:\A1\_work\5\s\Runner\build\nuget.exe
 NUGETEXETOOLPATH = C:\A1\_work\_tool\NuGet\5.8.1\x64\nuget.exe
 NUGET_PACKAGES = C:\A1\packages
-NUMBER_OF_PROCESSORS = 4
+NUMBER_OF_PROCESSORS = 6
 OneDrive = C:\Users\devops\OneDrive
 OS = Windows_NT
 OUTFOLDER = C:\A1\_work\out
 PARALLELISM = 1
-Path = C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.11.6\x64;C:\A1\externals\git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\A1\_work\_tool\NuGet\5.9.1\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.8.0\x64;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-maven-3.6.2\bin;C:\jdk-12.0.2\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;%appdata%\npm;C:\Program Files (x86)\Sybase\Shared\PowerBuilder\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\dev;C:\Program Files\Microsoft VS Code\bin;C:\tools\winfetch;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\devops\AppData\Roaming\npm;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Users\devops\scoop\shims;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools
+Path = C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.11.3\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.11.0\x64;C:\A1\externals\git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\A1\_work\_tool\NuGet\5.9.1\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.8.0\x64;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-maven-3.6.2\bin;C:\jdk-12.0.2\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;%appdata%\npm;C:\Program Files (x86)\Sybase\Shared\PowerBuilder\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\dev;C:\Program Files\Microsoft VS Code\bin;C:\tools\winfetch;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Pandoc\;C:\Program Files\R\R-4.1.2\bin;C:\Users\devops\scoop\shims;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\AppData\Roaming\npm;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Windows\System32\Wbem;
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
 PROCESSOR_ARCHITECTURE = x86
 PROCESSOR_ARCHITEW6432 = AMD64
@@ -139,9 +139,9 @@ ProgramW6432 = C:\Program Files
 PSExecutionPolicyPreference = Unrestricted
 PSModulePath = C:\Users\devops\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\PowerShell\Modules\
 PUBLIC = C:\Users\Public
-RELEASE_ARTIFACTS_CMDRUNNER_BUILDID = 870895
+RELEASE_ARTIFACTS_CMDRUNNER_BUILDID = 871081
 RELEASE_ARTIFACTS_CMDRUNNER_BUILDNUMBER = 10.1.1-rc.10
-RELEASE_ARTIFACTS_CMDRUNNER_BUILDURI = vstfs:///Build/Build/870895
+RELEASE_ARTIFACTS_CMDRUNNER_BUILDURI = vstfs:///Build/Build/871081
 RELEASE_ARTIFACTS_CMDRUNNER_DEFINITIONID = 3425
 RELEASE_ARTIFACTS_CMDRUNNER_DEFINITIONNAME = Mobilize.VBUC.ConversionTool
 RELEASE_ARTIFACTS_CMDRUNNER_PROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
@@ -149,8 +149,8 @@ RELEASE_ARTIFACTS_CMDRUNNER_PROJECTNAME = Product
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_ID = ef6a790e-0fae-4ca7-8546-5168061f25a7
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_NAME = VBUC
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_PROVIDER = TfsGit
-RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFOR = Josue Sandino
-RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEBRANCH = refs/heads/develop
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEBRANCHNAME = develop
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEVERSION = bc075f201a70360940d309893a8787b05af2ecd0
@@ -171,8 +171,8 @@ RELEASE_ARTIFACTS_ROSLYN_SOURCEBRANCH = refs/heads/master
 RELEASE_ARTIFACTS_ROSLYN_SOURCEBRANCHNAME = master
 RELEASE_ARTIFACTS_ROSLYN_SOURCEVERSION = acc0d085f4e6dce5b1bc0f2d217f3a5b76342405
 RELEASE_ARTIFACTS_ROSLYN_TYPE = Build
-RELEASE_ARTIFACTS_SRCCODE_BUILDID = 6d7283f5133380cc1f2d26351814568186fbc8e2
-RELEASE_ARTIFACTS_SRCCODE_BUILDNUMBER = 6d7283f5
+RELEASE_ARTIFACTS_SRCCODE_BUILDID = 53fe50d5a6938d7c82f413cf6ad78f0d195af13a
+RELEASE_ARTIFACTS_SRCCODE_BUILDNUMBER = 53fe50d5
 RELEASE_ARTIFACTS_SRCCODE_DEFINITIONID = e3422bc3-e90e-4fde-89bd-b52fba9f2012
 RELEASE_ARTIFACTS_SRCCODE_DEFINITIONNAME = WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_DEFINTIONID = e3422bc3-e90e-4fde-89bd-b52fba9f2012
@@ -183,7 +183,7 @@ RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_NAME = WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_PROVIDER = Git
 RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_URI = https://collaboration.artinsoft.com/tfs/Product/Product/_git/WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_SOURCEBRANCH = develop
-RELEASE_ARTIFACTS_SRCCODE_SOURCEVERSION = 6d7283f5133380cc1f2d26351814568186fbc8e2
+RELEASE_ARTIFACTS_SRCCODE_SOURCEVERSION = 53fe50d5a6938d7c82f413cf6ad78f0d195af13a
 RELEASE_ARTIFACTS_SRCCODE_TYPE = Git
 RELEASE_ARTIFACTS_TFSCONNECTOR_BUILDID = 408072
 RELEASE_ARTIFACTS_TFSCONNECTOR_BUILDNUMBER = 0.1.0-rc.233
@@ -205,38 +205,37 @@ RELEASE_ATTEMPTNUMBER = 1
 RELEASE_DEFINITIONENVIRONMENTID = 338
 RELEASE_DEFINITIONID = 103
 RELEASE_DEFINITIONNAME = Product.VBUC.Integration_netFramework
-RELEASE_DEPLOYMENTID = 343619
-RELEASE_DEPLOYMENT_REQUESTEDFOR = Josue Sandino
-RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL = jsandino@mobilize.net
-RELEASE_DEPLOYMENT_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
-RELEASE_DEPLOYMENT_STARTTIME = 2024-04-05 02:08:23Z
-RELEASE_DEPLOYPHASEID = 404880
-RELEASE_ENVIRONMENTID = 418313
+RELEASE_DEPLOYMENTID = 343747
+RELEASE_DEPLOYMENT_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL = mgonzalez@mobilize.net
+RELEASE_DEPLOYMENT_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
+RELEASE_DEPLOYMENT_STARTTIME = 2024-04-05 17:45:42Z
+RELEASE_DEPLOYPHASEID = 405076
+RELEASE_ENVIRONMENTID = 418557
 RELEASE_ENVIRONMENTNAME = Conversion SKS
-RELEASE_ENVIRONMENTS_CONVERSION_SCM_STATUS = Queued
+RELEASE_ENVIRONMENTS_CONVERSION_SCM_STATUS = InProgress
 RELEASE_ENVIRONMENTS_CONVERSION_SKS_STATUS = InProgress
-RELEASE_ENVIRONMENTS_CONVERSION_TW_STATUS = Queued
+RELEASE_ENVIRONMENTS_CONVERSION_TW_STATUS = InProgress
 RELEASE_ENVIRONMENTS_PRODUCTION_SCM_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_PRODUCTION_SKS_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_PRODUCTION_TW_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_SCM_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_SKS_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_TW_STATUS = NotStarted
-RELEASE_ENVIRONMENTURI = vstfs:///ReleaseManagement/Environment/418313
+RELEASE_ENVIRONMENTURI = vstfs:///ReleaseManagement/Environment/418557
 RELEASE_PRIMARYARTIFACTSOURCEALIAS = CmdRunner
 RELEASE_REASON = ContinuousIntegration
 RELEASE_RELEASEDESCRIPTION = Triggered by Mobilize.VBUC.ConversionTool 10.1.1-rc.10.
-RELEASE_RELEASEID = 95186
-RELEASE_RELEASENAME = 10.1.1-rc.10-95186
-RELEASE_RELEASEURI = vstfs:///ReleaseManagement/Release/95186
-RELEASE_RELEASEWEBURL = https://collaboration.artinsoft.com/tfs/Product/f3f83aa8-1efd-4d6f-9f78-fd17652d6595/_release?releaseId=95186&_a=release-summary
-RELEASE_REQUESTEDFOR = Josue Sandino
-RELEASE_REQUESTEDFOREMAIL = jsandino@mobilize.net
-RELEASE_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+RELEASE_RELEASEID = 95210
+RELEASE_RELEASENAME = 10.1.1-rc.10-95210
+RELEASE_RELEASEURI = vstfs:///ReleaseManagement/Release/95210
+RELEASE_RELEASEWEBURL = https://collaboration.artinsoft.com/tfs/Product/f3f83aa8-1efd-4d6f-9f78-fd17652d6595/_release?releaseId=95210&_a=release-summary
+RELEASE_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_REQUESTEDFOREMAIL = mgonzalez@mobilize.net
+RELEASE_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 RELEASE_SKIPARTIFACTSDOWNLOAD = False
 RELEASE_TRIGGERINGARTIFACT_ALIAS = CmdRunner
-REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
-sh = C:\Program Files\Git\bin\sh.exe
+REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 SOLUTIONCONFIGURATION = Debug
 SOLUTIONFILENAME = SKS_VB6
 SOLUTIONPLATFORM = Any CPU
@@ -245,13 +244,13 @@ SOURCEPATHTOUPLOAD =
 SYSTEM = release
 SystemDrive = C:
 SystemRoot = C:\WINDOWS
-SYSTEM_ACCESSTOKEN = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IlVVNHg3TS1CUUlLeHNtOGpCc3NsVkFIS01TZyJ9.eyJuYW1laWQiOiI3MGViZDY0ZS1jNzE4LTRhMzYtYTdiYy0yMTZjNzJlYWIzMGIiLCJzY3AiOiJhcHBfdG9rZW4iLCJhdWkiOiIyZTNkZTYxNi0zZWVlLTQxMzQtYTMyNC1iZDNkMDA5NDkyMDQiLCJzaWQiOiJlNjEyZWI4NC05YTFlLTQzODQtODUzOC1kNjk3ZjQ2ZDhkMDEiLCJvcmNoaWQiOiIyZTI1ZWYwOC0zYjhmLTQ5MDktYTcyYy03MGJiYjZlOWZiZDIuc3RhZ2VfZjNmODNhYTgxZWZkNGQ2ZjlmNzhmZDE3NjUyZDY1OTVfMzM4XzEucGhhc2VfMS5fX2RlZmF1bHQiLCJpc3MiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjEiLCJhdWQiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjF8dnNvOmFlMWI3NmQ3LWRjZmItNGM5My04ZWYxLTFkY2FlZDQ3YzM4YSIsIm5iZiI6MTcxMjI4MjMxNCwiZXhwIjoxNzEyNDU1NzE0fQ.XDWuFTmfMwzO7rtEvXHMljF74kziRL-EXf-OFYQ2OBCDHQnnJa992W54Y0uYIfcPUUwoWTKb_D1KZq2ymyfl0-qicuXsl8DzA_k1wmZl1h4PhWXFzWvuLeyPbWGRiMfzpoYVkN1uYb5A0E2Ik71ISPCgRurs6BxIizcU86Q5YaymPB6qmqCTBEoVfAdU80w_R4tHj48sDuak7l_wnH58D3YW1pTjb2Z6oQ5aujbTnJvWJ_8Z8I55Fi5AgZaixLfWkyVJryOxW5wYu5VEdFAWNyKQiC8pZ-ywJmzWLdSfbSnijHElAwcG7LomN8V_48Iq3PIg8r5m6-8vU7FeV_w4-g
-SYSTEM_ARTIFACTSDIRECTORY = C:\A1\_work\r5\a
+SYSTEM_ACCESSTOKEN = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IlVVNHg3TS1CUUlLeHNtOGpCc3NsVkFIS01TZyJ9.eyJuYW1laWQiOiI3MGViZDY0ZS1jNzE4LTRhMzYtYTdiYy0yMTZjNzJlYWIzMGIiLCJzY3AiOiJhcHBfdG9rZW4iLCJhdWkiOiIwM2IwYzdhNC1iNTUyLTRlOTAtOGYxZS0wYWRhYjFlMmM3MzQiLCJzaWQiOiJmMDUzNjExOS0yMzIwLTRkZmQtYWIwMS0zMzcyODExNDhiNTgiLCJvcmNoaWQiOiI4YTBjMjRiZS04ZTlkLTQ2MGQtYThhOC0yM2VhZGEwNmEzYzEuc3RhZ2VfZjNmODNhYTgxZWZkNGQ2ZjlmNzhmZDE3NjUyZDY1OTVfMzM4XzEucGhhc2VfMS5fX2RlZmF1bHQiLCJpc3MiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjEiLCJhdWQiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjF8dnNvOmFlMWI3NmQ3LWRjZmItNGM5My04ZWYxLTFkY2FlZDQ3YzM4YSIsIm5iZiI6MTcxMjMzODU1NCwiZXhwIjoxNzEyNTExOTU0fQ.QcvLICe7cSt3ue3e9p-_NcY7PP8-7aidFQrAG_m8iv_rLJJxn6uRkDfXbxZ-PsiQ_2tumNQVgw1jCciGNOQ4HbR77cDka8lC-rekXbm3xrpEaocONHsixjYBOegeQTuEJ-16D96xy-N_oYxGbNxA-o2KUXau2GS4U27UaKCev0vYK55F_rMQwwOFUh2Bn_PSeuI8WATgf2B4olmprE8nqaCmDPrbKEs-fDtgHS3oDEs_sSLF3J2F9kh-NCZJqL7odB0a5RokYZMDijd0Fad2HgKzDBCxAioCd83eJsLpK_kBcLkMnmpF5fg0VKML0FOqRZYuNb9W4toDvuE6kjjtXg
+SYSTEM_ARTIFACTSDIRECTORY = C:\A1\_work\r1\a
 SYSTEM_COLLECTIONID = ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a
 SYSTEM_COLLECTIONURI = https://collaboration.artinsoft.com/tfs/Product/
 SYSTEM_CULTURE = en-US
 SYSTEM_DEBUG = true
-SYSTEM_DEFAULTWORKINGDIRECTORY = C:\A1\_work\r5\a
+SYSTEM_DEFAULTWORKINGDIRECTORY = C:\A1\_work\r1\a
 SYSTEM_DEFINITIONID = 103
 SYSTEM_DEFINITIONNAME = Product.VBUC.Integration_netFramework
 SYSTEM_ENABLEACCESSTOKEN = True
@@ -269,8 +268,8 @@ SYSTEM_PHASEATTEMPT = 1
 SYSTEM_PHASEDISPLAYNAME = Phase SKS Conversion
 SYSTEM_PHASEID = 6eff3424-9a69-5279-2657-e08e8bedf627
 SYSTEM_PHASENAME = Phase_1
-SYSTEM_PIPELINESTARTTIME = 2024-04-04 20:08:33-06:00
-SYSTEM_PLANID = 2e25ef08-3b8f-4909-a72c-70bbb6e9fbd2
+SYSTEM_PIPELINESTARTTIME = 2024-04-05 11:45:53-06:00
+SYSTEM_PLANID = 8a0c24be-8e9d-460d-a8a8-23eada06a3c1
 SYSTEM_SERVERTYPE = OnPremises
 SYSTEM_STAGEATTEMPT = 1
 SYSTEM_STAGEDISPLAYNAME = Conversion SKS
@@ -284,7 +283,7 @@ SYSTEM_TEAMFOUNDATIONCOLLECTIONURI = https://collaboration.artinsoft.com/tfs/Pro
 SYSTEM_TEAMFOUNDATIONSERVERURI = https://collaboration.artinsoft.com/tfs/Product/
 SYSTEM_TEAMPROJECT = Product
 SYSTEM_TEAMPROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
-SYSTEM_TIMELINEID = 2e25ef08-3b8f-4909-a72c-70bbb6e9fbd2
+SYSTEM_TIMELINEID = 8a0c24be-8e9d-460d-a8a8-23eada06a3c1
 SYSTEM_TOTALJOBSINPHASE = 1
 SYSTEM_WORKFOLDER = C:\A1\_work
 TARGETFILENAMEONFTP = Conversion SKS_Attachment.zip
@@ -294,26 +293,26 @@ TARGETFRAMEWORKTESTPROJECTS = net48
 TASK_DISPLAYNAME = Build solution
 TECHNOLOGY = vbuc
 TEMP = C:\Users\devops\AppData\Local\Temp
-TESTMACHINE = S13-PR-S2-BA012
-TESTRUNTITLE = Product.VBUC.Integration_netFramework 10.1.1-rc.10-95186 Conversion SKS 1
+TESTMACHINE = S08-PR-S2-BA011
+TESTRUNTITLE = Product.VBUC.Integration_netFramework 10.1.1-rc.10-95210 Conversion SKS 1
 TF_BUILD = True
 TMP = C:\Users\devops\AppData\Local\Temp
 UPGRADEOPTIONS = 
-UPGRADEOPTIONS_SCM = C:\A1\_work\r5\a/SrcCode/src/WFNet/Source/SCM/VB6/Requirements
+UPGRADEOPTIONS_SCM = C:\A1\_work\r1\a/SrcCode/src/WFNet/Source/SCM/VB6/Requirements
 UPGRADEOPTIONS_SKS = 
-UPGRADEOPTIONS_TW = C:\A1\_work\r5\a/SrcCode/src/WFNet/Source/TailwindTraders-PointOfSale/VB6/Requirements
+UPGRADEOPTIONS_TW = C:\A1\_work\r1\a/SrcCode/src/WFNet/Source/TailwindTraders-PointOfSale/VB6/Requirements
 USERDNSDOMAIN = ARTINSOFT.COM
 USERDOMAIN = ARTINSOFT
 USERDOMAIN_ROAMINGPROFILE = ARTINSOFT
 USERNAME = devops
 USERPROFILE = C:\Users\devops
 VS140COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
-VSTS_PROCESS_LOOKUP_ID = vsts_7a150259-ad61-4f54-86a2-dac6c334ce24
+VSTS_PROCESS_LOOKUP_ID = vsts_476e0de3-9fea-46bc-b64b-82732b5dc451
 windir = C:\WINDOWS
 
 Logging verbosity is set to: Diagnostic.Process = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe"
 MSBuild executable path = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe"
-Command line arguments = ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe"  "C:\A1\_work\Out\Upgraded\SKS.sln" /nologo /nr:false /fl /flp:"logfile=C:\A1\_work\Out\Upgraded\SKS.sln.log;verbosity=diagnostic" /dl:CentralLogger,"C:\A1\_work\_tasks\MSBuild_c6c4c611-aa2e-4a33-b606-5eaba2196824\1.179.0\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll";"RootDetailId=a142e5de-b348-43a0-89d9-c9f8067020ae|SolutionDir=C:\A1\_work\Out\Upgraded"*ForwardingLogger,"C:\A1\_work\_tasks\MSBuild_c6c4c611-aa2e-4a33-b606-5eaba2196824\1.179.0\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll"  /p:platform="x86" /p:configuration="debug" /p:_MSDeployUserAgent="TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1""
+Command line arguments = ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe"  "C:\A1\_work\Out\Upgraded\SKS.sln" /nologo /nr:false /fl /flp:"logfile=C:\A1\_work\Out\Upgraded\SKS.sln.log;verbosity=diagnostic" /dl:CentralLogger,"C:\A1\_work\_tasks\MSBuild_c6c4c611-aa2e-4a33-b606-5eaba2196824\1.179.0\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll";"RootDetailId=cc48de97-806f-4bed-814f-9252f6f73fb2|SolutionDir=C:\A1\_work\Out\Upgraded"*ForwardingLogger,"C:\A1\_work\_tasks\MSBuild_c6c4c611-aa2e-4a33-b606-5eaba2196824\1.179.0\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll"  /p:platform="x86" /p:configuration="debug" /p:_MSDeployUserAgent="TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1""
 Current directory = "C:\A1\_work\_tasks\MSBuild_c6c4c611-aa2e-4a33-b606-5eaba2196824\1.179.0"
 MSBuild version = "16.11.2+f32259642"
 Project "C:\A1\_work\Out\Upgraded\SKS.sln" on node 1 (default targets).
@@ -331,21 +330,21 @@ _GenerateRestoreGraphProjectEntryInputProperties =
       SolutionPath=C:\A1\_work\Out\Upgraded\SKS.sln;
       SolutionExt=.sln;
     
-_MSDeployUserAgent = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1
+_MSDeployUserAgent = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1
 _RestoreSolutionFileUsed = true
 AFULLMACHINENAME = BUILDARTIFACTORY.ARTINSOFT.COM
 AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN = true
 AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN = true
 AGENT_HOMEDIRECTORY = C:\A1
-AGENT_ID = 2701
+AGENT_ID = 2440
 AGENT_JOBNAME = Phase SKS Conversion
 AGENT_JOBSTATUS = Succeeded
-AGENT_MACHINENAME = S13-PR-S2-BA012
-AGENT_NAME = S13-PR-S2-BA012
+AGENT_MACHINENAME = S08-PR-S2-BA011
+AGENT_NAME = S08-PR-S2-BA011
 AGENT_OS = Windows_NT
 AGENT_OSARCHITECTURE = X64
 AGENT_READONLYVARIABLES = true
-AGENT_RELEASEDIRECTORY = C:\A1\_work\r5\a
+AGENT_RELEASEDIRECTORY = C:\A1\_work\r1\a
 AGENT_RETAINDEFAULTENCODING = false
 AGENT_ROOTDIRECTORY = C:\A1\_work
 AGENT_SERVEROMDIRECTORY = C:\A1\externals\vstsom
@@ -380,11 +379,11 @@ ARTIFACTVBUC = \\BUILDARTIFACTORY.ARTINSOFT.COM\VBUC
 ARTIFACTWFNET = \\BUILDARTIFACTORY.ARTINSOFT.COM\WebMAPWinforms
 AspNetConfiguration = debug
 AUSER = devops
-AZURE_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1
+AZURE_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1
 BROWSERSLIST_IGNORE_OLD_DATA = true
-BUILD_BUILDID = 870895
+BUILD_BUILDID = 871081
 BUILD_BUILDNUMBER = 10.1.1-rc.10
-BUILD_BUILDURI = vstfs:///Build/Build/870895
+BUILD_BUILDURI = vstfs:///Build/Build/871081
 BUILD_DEFINITIONID = 3425
 BUILD_DEFINITIONNAME = Mobilize.VBUC.ConversionTool
 BUILD_PROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
@@ -392,8 +391,8 @@ BUILD_PROJECTNAME = Product
 BUILD_REPOSITORY_ID = ef6a790e-0fae-4ca7-8546-5168061f25a7
 BUILD_REPOSITORY_NAME = VBUC
 BUILD_REPOSITORY_PROVIDER = TfsGit
-BUILD_REQUESTEDFOR = Josue Sandino
-BUILD_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+BUILD_REQUESTEDFOR = Miguel Gonzalez Carvajal
+BUILD_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 BUILD_SOURCEBRANCH = refs/heads/develop
 BUILD_SOURCEBRANCHNAME = develop
 BUILD_SOURCEVERSION = bc075f201a70360940d309893a8787b05af2ecd0
@@ -401,14 +400,14 @@ BUILD_TYPE = Build
 BUILDCONFIGURATION = debug
 BUILDPLATFORMS = x86
 ChocolateyInstall = C:\ProgramData\chocolatey
-ChocolateyLastPathUpdate = 132932146159963822
+ChocolateyLastPathUpdate = 132933162054152580
 ChocolateyToolsLocation = C:\tools
 CIEMAIL = devops@mobilize.net
 CIUSER = artinsoft\devops
 CIUSERNAME = devops
 CommonProgramFiles = C:\Program Files (x86)\Common Files
 CommonProgramW6432 = C:\Program Files\Common Files
-COMPUTERNAME = S13-PR-S2-BA012
+COMPUTERNAME = S08-PR-S2-BA011
 ComSpec = C:\WINDOWS\system32\cmd.exe
 configuration = debug
 CurrentSolutionConfigurationContents = <SolutionConfiguration>
@@ -430,7 +429,7 @@ ENVRUNNERCOMPILATIONERRORS = 0
 ENVRUNNERMODIFIEDLINES = -1
 ENVRUNNERREMOVEDLINES = -1
 ENVRUNNERSAMELINES = -1
-ENVRUNNERTIMELAPSE = 297571.8749
+ENVRUNNERTIMELAPSE = 339133.2929
 ENVRUNNERTOTALLOC = 4371
 ENVSOLUTIONFULLNAME = C:\A1\_work\Out\Upgraded\SKS.sln
 ENVTOOLVERSION = 10.1.1.10
@@ -455,7 +454,7 @@ KILLPROCESSTASK = SKS.exe,TailwindPOS.exe,StarCarsManagement.exe
 LOCALAPPDATA = C:\Users\devops\AppData\Local
 LOGONSERVER = \\AISCRIT05
 MOBILIZE_ENVIRONMENT = Development
-MSBuildAllProjects = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\SolutionFile\ImportAfter\Microsoft.NuGet.Solution.ImportAfter.targets;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets
+MSBuildAllProjects = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets
 MSBuildAssemblyVersion = 16.0
 MSBuildBinPath = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin
 MSBuildDisableFeaturesFromVersion = 999.999
@@ -489,21 +488,21 @@ MSBuildToolsRoot = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 MSBuildToolsVersion = Current
 MSBuildUserExtensionsPath = C:\Users\devops\AppData\Local\Microsoft\MSBuild
 MSBuildVersion = 16.11.2
-MSDEPLOY_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1
+MSDEPLOY_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1
 NODE_OPTIONS = --max_old_space_size=6144
 NODE_PATH = C:\Users\devops\AppData\Roaming\npm\node_modules
 NUGET_PACKAGES = C:\A1\packages
-NugetExePath = C:\A1\_work\4\s\build\nuget.exe
+NugetExePath = C:\A1\_work\5\s\Runner\build\nuget.exe
 NUGETEXETOOLPATH = C:\A1\_work\_tool\NuGet\5.8.1\x64\nuget.exe
 NuGetInteractive = 
 NuGetRestoreTargets = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\..\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets
-NUMBER_OF_PROCESSORS = 4
+NUMBER_OF_PROCESSORS = 6
 OneDrive = C:\Users\devops\OneDrive
 OS = Windows_NT
 OUTFOLDER = C:\A1\_work\out
 PackageDownloadSupported = true
 PARALLELISM = 1
-Path = C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.11.6\x64;C:\A1\externals\git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\A1\_work\_tool\NuGet\5.9.1\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.8.0\x64;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-maven-3.6.2\bin;C:\jdk-12.0.2\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;%appdata%\npm;C:\Program Files (x86)\Sybase\Shared\PowerBuilder\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\dev;C:\Program Files\Microsoft VS Code\bin;C:\tools\winfetch;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\devops\AppData\Roaming\npm;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Users\devops\scoop\shims;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools
+Path = C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.11.3\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.11.0\x64;C:\A1\externals\git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\A1\_work\_tool\NuGet\5.9.1\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.8.0\x64;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-maven-3.6.2\bin;C:\jdk-12.0.2\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;%appdata%\npm;C:\Program Files (x86)\Sybase\Shared\PowerBuilder\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\dev;C:\Program Files\Microsoft VS Code\bin;C:\tools\winfetch;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Pandoc\;C:\Program Files\R\R-4.1.2\bin;C:\Users\devops\scoop\shims;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\AppData\Roaming\npm;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Windows\System32\Wbem;
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
 platform = x86
 PROCESSOR_ARCHITECTURE = x86
@@ -517,9 +516,9 @@ ProgramW6432 = C:\Program Files
 PSExecutionPolicyPreference = Unrestricted
 PSModulePath = C:\Users\devops\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\PowerShell\Modules\
 PUBLIC = C:\Users\Public
-RELEASE_ARTIFACTS_CMDRUNNER_BUILDID = 870895
+RELEASE_ARTIFACTS_CMDRUNNER_BUILDID = 871081
 RELEASE_ARTIFACTS_CMDRUNNER_BUILDNUMBER = 10.1.1-rc.10
-RELEASE_ARTIFACTS_CMDRUNNER_BUILDURI = vstfs:///Build/Build/870895
+RELEASE_ARTIFACTS_CMDRUNNER_BUILDURI = vstfs:///Build/Build/871081
 RELEASE_ARTIFACTS_CMDRUNNER_DEFINITIONID = 3425
 RELEASE_ARTIFACTS_CMDRUNNER_DEFINITIONNAME = Mobilize.VBUC.ConversionTool
 RELEASE_ARTIFACTS_CMDRUNNER_PROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
@@ -527,8 +526,8 @@ RELEASE_ARTIFACTS_CMDRUNNER_PROJECTNAME = Product
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_ID = ef6a790e-0fae-4ca7-8546-5168061f25a7
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_NAME = VBUC
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_PROVIDER = TfsGit
-RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFOR = Josue Sandino
-RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEBRANCH = refs/heads/develop
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEBRANCHNAME = develop
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEVERSION = bc075f201a70360940d309893a8787b05af2ecd0
@@ -549,8 +548,8 @@ RELEASE_ARTIFACTS_ROSLYN_SOURCEBRANCH = refs/heads/master
 RELEASE_ARTIFACTS_ROSLYN_SOURCEBRANCHNAME = master
 RELEASE_ARTIFACTS_ROSLYN_SOURCEVERSION = acc0d085f4e6dce5b1bc0f2d217f3a5b76342405
 RELEASE_ARTIFACTS_ROSLYN_TYPE = Build
-RELEASE_ARTIFACTS_SRCCODE_BUILDID = 6d7283f5133380cc1f2d26351814568186fbc8e2
-RELEASE_ARTIFACTS_SRCCODE_BUILDNUMBER = 6d7283f5
+RELEASE_ARTIFACTS_SRCCODE_BUILDID = 53fe50d5a6938d7c82f413cf6ad78f0d195af13a
+RELEASE_ARTIFACTS_SRCCODE_BUILDNUMBER = 53fe50d5
 RELEASE_ARTIFACTS_SRCCODE_DEFINITIONID = e3422bc3-e90e-4fde-89bd-b52fba9f2012
 RELEASE_ARTIFACTS_SRCCODE_DEFINITIONNAME = WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_DEFINTIONID = e3422bc3-e90e-4fde-89bd-b52fba9f2012
@@ -561,7 +560,7 @@ RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_NAME = WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_PROVIDER = Git
 RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_URI = https://collaboration.artinsoft.com/tfs/Product/Product/_git/WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_SOURCEBRANCH = develop
-RELEASE_ARTIFACTS_SRCCODE_SOURCEVERSION = 6d7283f5133380cc1f2d26351814568186fbc8e2
+RELEASE_ARTIFACTS_SRCCODE_SOURCEVERSION = 53fe50d5a6938d7c82f413cf6ad78f0d195af13a
 RELEASE_ARTIFACTS_SRCCODE_TYPE = Git
 RELEASE_ARTIFACTS_TFSCONNECTOR_BUILDID = 408072
 RELEASE_ARTIFACTS_TFSCONNECTOR_BUILDNUMBER = 0.1.0-rc.233
@@ -583,37 +582,37 @@ RELEASE_ATTEMPTNUMBER = 1
 RELEASE_DEFINITIONENVIRONMENTID = 338
 RELEASE_DEFINITIONID = 103
 RELEASE_DEFINITIONNAME = Product.VBUC.Integration_netFramework
-RELEASE_DEPLOYMENT_REQUESTEDFOR = Josue Sandino
-RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL = jsandino@mobilize.net
-RELEASE_DEPLOYMENT_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
-RELEASE_DEPLOYMENT_STARTTIME = 2024-04-05 02:08:23Z
-RELEASE_DEPLOYMENTID = 343619
-RELEASE_DEPLOYPHASEID = 404880
-RELEASE_ENVIRONMENTID = 418313
+RELEASE_DEPLOYMENT_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL = mgonzalez@mobilize.net
+RELEASE_DEPLOYMENT_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
+RELEASE_DEPLOYMENT_STARTTIME = 2024-04-05 17:45:42Z
+RELEASE_DEPLOYMENTID = 343747
+RELEASE_DEPLOYPHASEID = 405076
+RELEASE_ENVIRONMENTID = 418557
 RELEASE_ENVIRONMENTNAME = Conversion SKS
-RELEASE_ENVIRONMENTS_CONVERSION_SCM_STATUS = Queued
+RELEASE_ENVIRONMENTS_CONVERSION_SCM_STATUS = InProgress
 RELEASE_ENVIRONMENTS_CONVERSION_SKS_STATUS = InProgress
-RELEASE_ENVIRONMENTS_CONVERSION_TW_STATUS = Queued
+RELEASE_ENVIRONMENTS_CONVERSION_TW_STATUS = InProgress
 RELEASE_ENVIRONMENTS_PRODUCTION_SCM_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_PRODUCTION_SKS_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_PRODUCTION_TW_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_SCM_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_SKS_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_TW_STATUS = NotStarted
-RELEASE_ENVIRONMENTURI = vstfs:///ReleaseManagement/Environment/418313
+RELEASE_ENVIRONMENTURI = vstfs:///ReleaseManagement/Environment/418557
 RELEASE_PRIMARYARTIFACTSOURCEALIAS = CmdRunner
 RELEASE_REASON = ContinuousIntegration
 RELEASE_RELEASEDESCRIPTION = Triggered by Mobilize.VBUC.ConversionTool 10.1.1-rc.10.
-RELEASE_RELEASEID = 95186
-RELEASE_RELEASENAME = 10.1.1-rc.10-95186
-RELEASE_RELEASEURI = vstfs:///ReleaseManagement/Release/95186
-RELEASE_RELEASEWEBURL = https://collaboration.artinsoft.com/tfs/Product/f3f83aa8-1efd-4d6f-9f78-fd17652d6595/_release?releaseId=95186&_a=release-summary
-RELEASE_REQUESTEDFOR = Josue Sandino
-RELEASE_REQUESTEDFOREMAIL = jsandino@mobilize.net
-RELEASE_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+RELEASE_RELEASEID = 95210
+RELEASE_RELEASENAME = 10.1.1-rc.10-95210
+RELEASE_RELEASEURI = vstfs:///ReleaseManagement/Release/95210
+RELEASE_RELEASEWEBURL = https://collaboration.artinsoft.com/tfs/Product/f3f83aa8-1efd-4d6f-9f78-fd17652d6595/_release?releaseId=95210&_a=release-summary
+RELEASE_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_REQUESTEDFOREMAIL = mgonzalez@mobilize.net
+RELEASE_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 RELEASE_SKIPARTIFACTSDOWNLOAD = False
 RELEASE_TRIGGERINGARTIFACT_ALIAS = CmdRunner
-REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 RestoreBuildInParallel = true
 RestoreContinueOnError = WarnAndContinue
 RestoreRecursive = true
@@ -622,7 +621,6 @@ RestoreUseSkipNonexistentTargets = true
 RoslynTargetsPath = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn
 SDK35ToolsPath = 
 SDK40ToolsPath = C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\
-sh = C:\Program Files\Git\bin\sh.exe
 SOLUTIONCONFIGURATION = Debug
 SolutionDir = C:\A1\_work\Out\Upgraded\
 SolutionExt = .sln
@@ -633,13 +631,13 @@ SOLUTIONPLATFORM = Any CPU
 SonarQubeCLI = C:\Program Files\SonarQube\sonar-scanner-cli\sonar-scanner\bin
 SOURCEPATHTOUPLOAD = 
 SYSTEM = release
-SYSTEM_ACCESSTOKEN = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IlVVNHg3TS1CUUlLeHNtOGpCc3NsVkFIS01TZyJ9.eyJuYW1laWQiOiI3MGViZDY0ZS1jNzE4LTRhMzYtYTdiYy0yMTZjNzJlYWIzMGIiLCJzY3AiOiJhcHBfdG9rZW4iLCJhdWkiOiIyZTNkZTYxNi0zZWVlLTQxMzQtYTMyNC1iZDNkMDA5NDkyMDQiLCJzaWQiOiJlNjEyZWI4NC05YTFlLTQzODQtODUzOC1kNjk3ZjQ2ZDhkMDEiLCJvcmNoaWQiOiIyZTI1ZWYwOC0zYjhmLTQ5MDktYTcyYy03MGJiYjZlOWZiZDIuc3RhZ2VfZjNmODNhYTgxZWZkNGQ2ZjlmNzhmZDE3NjUyZDY1OTVfMzM4XzEucGhhc2VfMS5fX2RlZmF1bHQiLCJpc3MiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjEiLCJhdWQiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjF8dnNvOmFlMWI3NmQ3LWRjZmItNGM5My04ZWYxLTFkY2FlZDQ3YzM4YSIsIm5iZiI6MTcxMjI4MjMxNCwiZXhwIjoxNzEyNDU1NzE0fQ.XDWuFTmfMwzO7rtEvXHMljF74kziRL-EXf-OFYQ2OBCDHQnnJa992W54Y0uYIfcPUUwoWTKb_D1KZq2ymyfl0-qicuXsl8DzA_k1wmZl1h4PhWXFzWvuLeyPbWGRiMfzpoYVkN1uYb5A0E2Ik71ISPCgRurs6BxIizcU86Q5YaymPB6qmqCTBEoVfAdU80w_R4tHj48sDuak7l_wnH58D3YW1pTjb2Z6oQ5aujbTnJvWJ_8Z8I55Fi5AgZaixLfWkyVJryOxW5wYu5VEdFAWNyKQiC8pZ-ywJmzWLdSfbSnijHElAwcG7LomN8V_48Iq3PIg8r5m6-8vU7FeV_w4-g
-SYSTEM_ARTIFACTSDIRECTORY = C:\A1\_work\r5\a
+SYSTEM_ACCESSTOKEN = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IlVVNHg3TS1CUUlLeHNtOGpCc3NsVkFIS01TZyJ9.eyJuYW1laWQiOiI3MGViZDY0ZS1jNzE4LTRhMzYtYTdiYy0yMTZjNzJlYWIzMGIiLCJzY3AiOiJhcHBfdG9rZW4iLCJhdWkiOiIwM2IwYzdhNC1iNTUyLTRlOTAtOGYxZS0wYWRhYjFlMmM3MzQiLCJzaWQiOiJmMDUzNjExOS0yMzIwLTRkZmQtYWIwMS0zMzcyODExNDhiNTgiLCJvcmNoaWQiOiI4YTBjMjRiZS04ZTlkLTQ2MGQtYThhOC0yM2VhZGEwNmEzYzEuc3RhZ2VfZjNmODNhYTgxZWZkNGQ2ZjlmNzhmZDE3NjUyZDY1OTVfMzM4XzEucGhhc2VfMS5fX2RlZmF1bHQiLCJpc3MiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjEiLCJhdWQiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjF8dnNvOmFlMWI3NmQ3LWRjZmItNGM5My04ZWYxLTFkY2FlZDQ3YzM4YSIsIm5iZiI6MTcxMjMzODU1NCwiZXhwIjoxNzEyNTExOTU0fQ.QcvLICe7cSt3ue3e9p-_NcY7PP8-7aidFQrAG_m8iv_rLJJxn6uRkDfXbxZ-PsiQ_2tumNQVgw1jCciGNOQ4HbR77cDka8lC-rekXbm3xrpEaocONHsixjYBOegeQTuEJ-16D96xy-N_oYxGbNxA-o2KUXau2GS4U27UaKCev0vYK55F_rMQwwOFUh2Bn_PSeuI8WATgf2B4olmprE8nqaCmDPrbKEs-fDtgHS3oDEs_sSLF3J2F9kh-NCZJqL7odB0a5RokYZMDijd0Fad2HgKzDBCxAioCd83eJsLpK_kBcLkMnmpF5fg0VKML0FOqRZYuNb9W4toDvuE6kjjtXg
+SYSTEM_ARTIFACTSDIRECTORY = C:\A1\_work\r1\a
 SYSTEM_COLLECTIONID = ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a
 SYSTEM_COLLECTIONURI = https://collaboration.artinsoft.com/tfs/Product/
 SYSTEM_CULTURE = en-US
 SYSTEM_DEBUG = true
-SYSTEM_DEFAULTWORKINGDIRECTORY = C:\A1\_work\r5\a
+SYSTEM_DEFAULTWORKINGDIRECTORY = C:\A1\_work\r1\a
 SYSTEM_DEFINITIONID = 103
 SYSTEM_DEFINITIONNAME = Product.VBUC.Integration_netFramework
 SYSTEM_ENABLEACCESSTOKEN = True
@@ -657,8 +655,8 @@ SYSTEM_PHASEATTEMPT = 1
 SYSTEM_PHASEDISPLAYNAME = Phase SKS Conversion
 SYSTEM_PHASEID = 6eff3424-9a69-5279-2657-e08e8bedf627
 SYSTEM_PHASENAME = Phase_1
-SYSTEM_PIPELINESTARTTIME = 2024-04-04 20:08:33-06:00
-SYSTEM_PLANID = 2e25ef08-3b8f-4909-a72c-70bbb6e9fbd2
+SYSTEM_PIPELINESTARTTIME = 2024-04-05 11:45:53-06:00
+SYSTEM_PLANID = 8a0c24be-8e9d-460d-a8a8-23eada06a3c1
 SYSTEM_SERVERTYPE = OnPremises
 SYSTEM_STAGEATTEMPT = 1
 SYSTEM_STAGEDISPLAYNAME = Conversion SKS
@@ -672,7 +670,7 @@ SYSTEM_TEAMFOUNDATIONCOLLECTIONURI = https://collaboration.artinsoft.com/tfs/Pro
 SYSTEM_TEAMFOUNDATIONSERVERURI = https://collaboration.artinsoft.com/tfs/Product/
 SYSTEM_TEAMPROJECT = Product
 SYSTEM_TEAMPROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
-SYSTEM_TIMELINEID = 2e25ef08-3b8f-4909-a72c-70bbb6e9fbd2
+SYSTEM_TIMELINEID = 8a0c24be-8e9d-460d-a8a8-23eada06a3c1
 SYSTEM_TOTALJOBSINPHASE = 1
 SYSTEM_WORKFOLDER = C:\A1\_work
 SystemDrive = C:
@@ -685,14 +683,14 @@ TargetFrameworkVersion = v4.0
 TASK_DISPLAYNAME = Build solution
 TECHNOLOGY = vbuc
 TEMP = C:\Users\devops\AppData\Local\Temp
-TESTMACHINE = S13-PR-S2-BA012
-TESTRUNTITLE = Product.VBUC.Integration_netFramework 10.1.1-rc.10-95186 Conversion SKS 1
+TESTMACHINE = S08-PR-S2-BA011
+TESTRUNTITLE = Product.VBUC.Integration_netFramework 10.1.1-rc.10-95210 Conversion SKS 1
 TF_BUILD = True
 TMP = C:\Users\devops\AppData\Local\Temp
 UPGRADEOPTIONS = 
-UPGRADEOPTIONS_SCM = C:\A1\_work\r5\a/SrcCode/src/WFNet/Source/SCM/VB6/Requirements
+UPGRADEOPTIONS_SCM = C:\A1\_work\r1\a/SrcCode/src/WFNet/Source/SCM/VB6/Requirements
 UPGRADEOPTIONS_SKS = 
-UPGRADEOPTIONS_TW = C:\A1\_work\r5\a/SrcCode/src/WFNet/Source/TailwindTraders-PointOfSale/VB6/Requirements
+UPGRADEOPTIONS_TW = C:\A1\_work\r1\a/SrcCode/src/WFNet/Source/TailwindTraders-PointOfSale/VB6/Requirements
 USERDNSDOMAIN = ARTINSOFT.COM
 USERDOMAIN = ARTINSOFT
 USERDOMAIN_ROAMINGPROFILE = ARTINSOFT
@@ -707,7 +705,7 @@ VCTargetsPath14 = C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\
 VisualStudioVersion = 16.0
 VS140COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
 VsInstallRoot = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
-VSTS_PROCESS_LOOKUP_ID = vsts_7a150259-ad61-4f54-86a2-dac6c334ce24
+VSTS_PROCESS_LOOKUP_ID = vsts_476e0de3-9fea-46bc-b64b-82732b5dc451
 windir = C:\WINDOWS
 WindowsSDK80Path = C:\Program Files (x86)\Windows Kits\8.1\
 
@@ -1203,7 +1201,7 @@ _HandlePackageFileConflictsBefore = ResolveAssemblyReferences
 _InitialBaseIntermediateOutputPath = obj\
 _InitialMSBuildProjectExtensionsPath = C:\A1\_work\Out\Upgraded\obj\
 _MaxSupportedLangVersion = 7.3
-_MSDeployUserAgent = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1
+_MSDeployUserAgent = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1
 _NuGetRuntimeIdentifierPlatformTargetSuffix = -x86
 _NuGetRuntimeIdentifierWithoutAot = win-x86
 _OriginalConfiguration = Debug
@@ -1227,15 +1225,15 @@ AFULLMACHINENAME = BUILDARTIFACTORY.ARTINSOFT.COM
 AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN = true
 AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN = true
 AGENT_HOMEDIRECTORY = C:\A1
-AGENT_ID = 2701
+AGENT_ID = 2440
 AGENT_JOBNAME = Phase SKS Conversion
 AGENT_JOBSTATUS = Succeeded
-AGENT_MACHINENAME = S13-PR-S2-BA012
-AGENT_NAME = S13-PR-S2-BA012
+AGENT_MACHINENAME = S08-PR-S2-BA011
+AGENT_NAME = S08-PR-S2-BA011
 AGENT_OS = Windows_NT
 AGENT_OSARCHITECTURE = X64
 AGENT_READONLYVARIABLES = true
-AGENT_RELEASEDIRECTORY = C:\A1\_work\r5\a
+AGENT_RELEASEDIRECTORY = C:\A1\_work\r1\a
 AGENT_RETAINDEFAULTENCODING = false
 AGENT_ROOTDIRECTORY = C:\A1\_work
 AGENT_SERVEROMDIRECTORY = C:\A1\externals\vstsom
@@ -1307,14 +1305,14 @@ AssignTargetPathsDependsOn =
 AUSER = devops
 AutoUnifyAssemblyReferences = false
 AvailablePlatforms = Any CPU,x86,x64
-AZURE_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1
+AZURE_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1
 BaseIntermediateOutputPath = obj\
 BaseNuGetRuntimeIdentifier = win
 BaseOutputPath = bin\
 BROWSERSLIST_IGNORE_OLD_DATA = true
-BUILD_BUILDID = 870895
+BUILD_BUILDID = 871081
 BUILD_BUILDNUMBER = 10.1.1-rc.10
-BUILD_BUILDURI = vstfs:///Build/Build/870895
+BUILD_BUILDURI = vstfs:///Build/Build/871081
 BUILD_DEFINITIONID = 3425
 BUILD_DEFINITIONNAME = Mobilize.VBUC.ConversionTool
 BUILD_PROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
@@ -1322,8 +1320,8 @@ BUILD_PROJECTNAME = Product
 BUILD_REPOSITORY_ID = ef6a790e-0fae-4ca7-8546-5168061f25a7
 BUILD_REPOSITORY_NAME = VBUC
 BUILD_REPOSITORY_PROVIDER = TfsGit
-BUILD_REQUESTEDFOR = Josue Sandino
-BUILD_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+BUILD_REQUESTEDFOR = Miguel Gonzalez Carvajal
+BUILD_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 BUILD_SOURCEBRANCH = refs/heads/develop
 BUILD_SOURCEBRANCHNAME = develop
 BUILD_SOURCEVERSION = bc075f201a70360940d309893a8787b05af2ecd0
@@ -1359,7 +1357,7 @@ BuiltProjectOutputGroupDependenciesDependsOn =
     
 BuiltProjectOutputGroupDependsOn = PrepareForBuild
 ChocolateyInstall = C:\ProgramData\chocolatey
-ChocolateyLastPathUpdate = 132932146159963822
+ChocolateyLastPathUpdate = 132933162054152580
 ChocolateyToolsLocation = C:\tools
 CIEMAIL = devops@mobilize.net
 CIUSER = artinsoft\devops
@@ -1436,7 +1434,7 @@ CompileTargetNameForTemporaryAssembly = CompileTemporaryAssembly
 ComputeIntermediateSatelliteAssembliesDependsOn = 
       CreateManifestResourceNames
     
-COMPUTERNAME = S13-PR-S2-BA012
+COMPUTERNAME = S08-PR-S2-BA011
 ComReferenceExecuteAsTool = false
 ComReferenceNoClassMembers = false
 ComSpec = C:\WINDOWS\system32\cmd.exe
@@ -1594,7 +1592,7 @@ ENVRUNNERCOMPILATIONERRORS = 0
 ENVRUNNERMODIFIEDLINES = -1
 ENVRUNNERREMOVEDLINES = -1
 ENVRUNNERSAMELINES = -1
-ENVRUNNERTIMELAPSE = 297571.8749
+ENVRUNNERTIMELAPSE = 339133.2929
 ENVRUNNERTOTALLOC = 4371
 ENVSOLUTIONFULLNAME = C:\A1\_work\Out\Upgraded\SKS.sln
 ENVTOOLVERSION = 10.1.1.10
@@ -1800,7 +1798,7 @@ MSBuildUseVisualStudioDirectoryLayout = True
 MSBuildVersion = 16.11.2
 MSBuildWarningsAsErrors = 
 MSBuildWarningsAsMessages = 
-MSDEPLOY_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95186_418313_1
+MSDEPLOY_HTTP_USER_AGENT = TFS_ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a_Release__95210_418557_1
 MsTestToolsTargets = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VisualStudio\v16.0\TeamTest\Microsoft.TeamTest.targets
 MyType = WindowsFormsWithCustomSubMain
 NetFrameworkPropsPath = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.NETFramework.CurrentVersion.props
@@ -1809,7 +1807,7 @@ NoCompilerStandardLib = true
 NODE_OPTIONS = --max_old_space_size=6144
 NODE_PATH = C:\Users\devops\AppData\Roaming\npm\node_modules
 NUGET_PACKAGES = C:\A1\packages
-NugetExePath = C:\A1\_work\4\s\build\nuget.exe
+NugetExePath = C:\A1\_work\5\s\Runner\build\nuget.exe
 NUGETEXETOOLPATH = C:\A1\_work\_tool\NuGet\5.8.1\x64\nuget.exe
 NuGetInteractive = 
 NuGetProps = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\NuGet\16.0\Microsoft.NuGet.props
@@ -1820,7 +1818,7 @@ NuGetTargetFrameworkMonikerToInject = .NETCore,Version=v5.0
 NuGetTargetMoniker = .NETFramework,Version=v4.7
 NuGetTargetMonikerToInject = .NETCore,Version=v5.0
 NuGetTargets = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\NuGet\16.0\Microsoft.NuGet.targets
-NUMBER_OF_PROCESSORS = 4
+NUMBER_OF_PROCESSORS = 6
 OneDrive = C:\Users\devops\OneDrive
 OS = Windows_NT
 OSVersion = 5.1.2600.0
@@ -1832,7 +1830,7 @@ OverwriteReadOnlyFiles = false
 PackageAction = Pack
 PackageDownloadSupported = true
 PARALLELISM = 1
-Path = C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.11.6\x64;C:\A1\externals\git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\A1\_work\_tool\NuGet\5.9.1\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.8.0\x64;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-maven-3.6.2\bin;C:\jdk-12.0.2\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;%appdata%\npm;C:\Program Files (x86)\Sybase\Shared\PowerBuilder\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\dev;C:\Program Files\Microsoft VS Code\bin;C:\tools\winfetch;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\devops\AppData\Roaming\npm;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Users\devops\scoop\shims;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools
+Path = C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.11.3\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.11.0\x64;C:\A1\externals\git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\A1\_work\_tool\NuGet\5.9.1\x64;C:\A1\externals\git\cmd;C:\A1\_work\_tool\NuGet\5.8.1\x64;C:\A1\_work\_tool\NuGet\5.8.0\x64;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-maven-3.6.2\bin;C:\jdk-12.0.2\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;%appdata%\npm;C:\Program Files (x86)\Sybase\Shared\PowerBuilder\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\dev;C:\Program Files\Microsoft VS Code\bin;C:\tools\winfetch;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Pandoc\;C:\Program Files\R\R-4.1.2\bin;C:\Users\devops\scoop\shims;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\.dotnet\tools;C:\Users\devops\AppData\Local\Microsoft\WindowsApps;C:\Users\devops\AppData\Roaming\npm;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Windows\System32\Wbem;
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
 Platform = x86
 PlatformName = x86
@@ -1958,9 +1956,9 @@ ReferenceCopyLocalPathsOutputGroupDependsOn =
       ResolveReferences
     
     
-RELEASE_ARTIFACTS_CMDRUNNER_BUILDID = 870895
+RELEASE_ARTIFACTS_CMDRUNNER_BUILDID = 871081
 RELEASE_ARTIFACTS_CMDRUNNER_BUILDNUMBER = 10.1.1-rc.10
-RELEASE_ARTIFACTS_CMDRUNNER_BUILDURI = vstfs:///Build/Build/870895
+RELEASE_ARTIFACTS_CMDRUNNER_BUILDURI = vstfs:///Build/Build/871081
 RELEASE_ARTIFACTS_CMDRUNNER_DEFINITIONID = 3425
 RELEASE_ARTIFACTS_CMDRUNNER_DEFINITIONNAME = Mobilize.VBUC.ConversionTool
 RELEASE_ARTIFACTS_CMDRUNNER_PROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
@@ -1968,8 +1966,8 @@ RELEASE_ARTIFACTS_CMDRUNNER_PROJECTNAME = Product
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_ID = ef6a790e-0fae-4ca7-8546-5168061f25a7
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_NAME = VBUC
 RELEASE_ARTIFACTS_CMDRUNNER_REPOSITORY_PROVIDER = TfsGit
-RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFOR = Josue Sandino
-RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_ARTIFACTS_CMDRUNNER_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEBRANCH = refs/heads/develop
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEBRANCHNAME = develop
 RELEASE_ARTIFACTS_CMDRUNNER_SOURCEVERSION = bc075f201a70360940d309893a8787b05af2ecd0
@@ -1990,8 +1988,8 @@ RELEASE_ARTIFACTS_ROSLYN_SOURCEBRANCH = refs/heads/master
 RELEASE_ARTIFACTS_ROSLYN_SOURCEBRANCHNAME = master
 RELEASE_ARTIFACTS_ROSLYN_SOURCEVERSION = acc0d085f4e6dce5b1bc0f2d217f3a5b76342405
 RELEASE_ARTIFACTS_ROSLYN_TYPE = Build
-RELEASE_ARTIFACTS_SRCCODE_BUILDID = 6d7283f5133380cc1f2d26351814568186fbc8e2
-RELEASE_ARTIFACTS_SRCCODE_BUILDNUMBER = 6d7283f5
+RELEASE_ARTIFACTS_SRCCODE_BUILDID = 53fe50d5a6938d7c82f413cf6ad78f0d195af13a
+RELEASE_ARTIFACTS_SRCCODE_BUILDNUMBER = 53fe50d5
 RELEASE_ARTIFACTS_SRCCODE_DEFINITIONID = e3422bc3-e90e-4fde-89bd-b52fba9f2012
 RELEASE_ARTIFACTS_SRCCODE_DEFINITIONNAME = WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_DEFINTIONID = e3422bc3-e90e-4fde-89bd-b52fba9f2012
@@ -2002,7 +2000,7 @@ RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_NAME = WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_PROVIDER = Git
 RELEASE_ARTIFACTS_SRCCODE_REPOSITORY_URI = https://collaboration.artinsoft.com/tfs/Product/Product/_git/WebMAPDemos
 RELEASE_ARTIFACTS_SRCCODE_SOURCEBRANCH = develop
-RELEASE_ARTIFACTS_SRCCODE_SOURCEVERSION = 6d7283f5133380cc1f2d26351814568186fbc8e2
+RELEASE_ARTIFACTS_SRCCODE_SOURCEVERSION = 53fe50d5a6938d7c82f413cf6ad78f0d195af13a
 RELEASE_ARTIFACTS_SRCCODE_TYPE = Git
 RELEASE_ARTIFACTS_TFSCONNECTOR_BUILDID = 408072
 RELEASE_ARTIFACTS_TFSCONNECTOR_BUILDNUMBER = 0.1.0-rc.233
@@ -2024,38 +2022,38 @@ RELEASE_ATTEMPTNUMBER = 1
 RELEASE_DEFINITIONENVIRONMENTID = 338
 RELEASE_DEFINITIONID = 103
 RELEASE_DEFINITIONNAME = Product.VBUC.Integration_netFramework
-RELEASE_DEPLOYMENT_REQUESTEDFOR = Josue Sandino
-RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL = jsandino@mobilize.net
-RELEASE_DEPLOYMENT_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
-RELEASE_DEPLOYMENT_STARTTIME = 2024-04-05 02:08:23Z
-RELEASE_DEPLOYMENTID = 343619
-RELEASE_DEPLOYPHASEID = 404880
-RELEASE_ENVIRONMENTID = 418313
+RELEASE_DEPLOYMENT_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL = mgonzalez@mobilize.net
+RELEASE_DEPLOYMENT_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
+RELEASE_DEPLOYMENT_STARTTIME = 2024-04-05 17:45:42Z
+RELEASE_DEPLOYMENTID = 343747
+RELEASE_DEPLOYPHASEID = 405076
+RELEASE_ENVIRONMENTID = 418557
 RELEASE_ENVIRONMENTNAME = Conversion SKS
-RELEASE_ENVIRONMENTS_CONVERSION_SCM_STATUS = Queued
+RELEASE_ENVIRONMENTS_CONVERSION_SCM_STATUS = InProgress
 RELEASE_ENVIRONMENTS_CONVERSION_SKS_STATUS = InProgress
-RELEASE_ENVIRONMENTS_CONVERSION_TW_STATUS = Queued
+RELEASE_ENVIRONMENTS_CONVERSION_TW_STATUS = InProgress
 RELEASE_ENVIRONMENTS_PRODUCTION_SCM_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_PRODUCTION_SKS_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_PRODUCTION_TW_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_SCM_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_SKS_STATUS = NotStarted
 RELEASE_ENVIRONMENTS_TEST_TW_STATUS = NotStarted
-RELEASE_ENVIRONMENTURI = vstfs:///ReleaseManagement/Environment/418313
+RELEASE_ENVIRONMENTURI = vstfs:///ReleaseManagement/Environment/418557
 RELEASE_PRIMARYARTIFACTSOURCEALIAS = CmdRunner
 RELEASE_REASON = ContinuousIntegration
 RELEASE_RELEASEDESCRIPTION = Triggered by Mobilize.VBUC.ConversionTool 10.1.1-rc.10.
-RELEASE_RELEASEID = 95186
-RELEASE_RELEASENAME = 10.1.1-rc.10-95186
-RELEASE_RELEASEURI = vstfs:///ReleaseManagement/Release/95186
-RELEASE_RELEASEWEBURL = https://collaboration.artinsoft.com/tfs/Product/f3f83aa8-1efd-4d6f-9f78-fd17652d6595/_release?releaseId=95186&_a=release-summary
-RELEASE_REQUESTEDFOR = Josue Sandino
-RELEASE_REQUESTEDFOREMAIL = jsandino@mobilize.net
-RELEASE_REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+RELEASE_RELEASEID = 95210
+RELEASE_RELEASENAME = 10.1.1-rc.10-95210
+RELEASE_RELEASEURI = vstfs:///ReleaseManagement/Release/95210
+RELEASE_RELEASEWEBURL = https://collaboration.artinsoft.com/tfs/Product/f3f83aa8-1efd-4d6f-9f78-fd17652d6595/_release?releaseId=95210&_a=release-summary
+RELEASE_REQUESTEDFOR = Miguel Gonzalez Carvajal
+RELEASE_REQUESTEDFOREMAIL = mgonzalez@mobilize.net
+RELEASE_REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 RELEASE_SKIPARTIFACTSDOWNLOAD = False
 RELEASE_TRIGGERINGARTIFACT_ALIAS = CmdRunner
 ReportingServicesTargets = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VisualStudio\v16.0\ReportingServices\Microsoft.ReportingServices.targets
-REQUESTEDFORID = c0403206-2650-41cf-8f87-7031be69bc94
+REQUESTEDFORID = 50cb1fc1-49a1-4d87-9caa-9eb192eecf1b
 ResGenDependsOn = ResolveAssemblyReferences;SplitResourcesByCulture;BeforeResGen;CoreResGen;AfterResGen
 ResGenExecuteAsTool = false
 ResolveAssemblyConflicts = true
@@ -2141,7 +2139,6 @@ SGenFilesOutputGroupDependsOn =
 SGenShouldGenerateSerializer = true
 SGenUseKeep = false
 SGenUseProxyTypes = true
-sh = C:\Program Files\Git\bin\sh.exe
 ShouldMarkCertainSDKReferencesAsRuntimeOnly = true
 SkipCopyUnchangedFiles = true
 SOLUTIONCONFIGURATION = Debug
@@ -2166,13 +2163,13 @@ SupportedOutputTypes = Exe;WinExe;Library
 SuppressLegacyCodeAnalysisDeprecatedWarning = false
 SuppressOutOfDateMessageOnBuild = true
 SYSTEM = release
-SYSTEM_ACCESSTOKEN = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IlVVNHg3TS1CUUlLeHNtOGpCc3NsVkFIS01TZyJ9.eyJuYW1laWQiOiI3MGViZDY0ZS1jNzE4LTRhMzYtYTdiYy0yMTZjNzJlYWIzMGIiLCJzY3AiOiJhcHBfdG9rZW4iLCJhdWkiOiIyZTNkZTYxNi0zZWVlLTQxMzQtYTMyNC1iZDNkMDA5NDkyMDQiLCJzaWQiOiJlNjEyZWI4NC05YTFlLTQzODQtODUzOC1kNjk3ZjQ2ZDhkMDEiLCJvcmNoaWQiOiIyZTI1ZWYwOC0zYjhmLTQ5MDktYTcyYy03MGJiYjZlOWZiZDIuc3RhZ2VfZjNmODNhYTgxZWZkNGQ2ZjlmNzhmZDE3NjUyZDY1OTVfMzM4XzEucGhhc2VfMS5fX2RlZmF1bHQiLCJpc3MiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjEiLCJhdWQiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjF8dnNvOmFlMWI3NmQ3LWRjZmItNGM5My04ZWYxLTFkY2FlZDQ3YzM4YSIsIm5iZiI6MTcxMjI4MjMxNCwiZXhwIjoxNzEyNDU1NzE0fQ.XDWuFTmfMwzO7rtEvXHMljF74kziRL-EXf-OFYQ2OBCDHQnnJa992W54Y0uYIfcPUUwoWTKb_D1KZq2ymyfl0-qicuXsl8DzA_k1wmZl1h4PhWXFzWvuLeyPbWGRiMfzpoYVkN1uYb5A0E2Ik71ISPCgRurs6BxIizcU86Q5YaymPB6qmqCTBEoVfAdU80w_R4tHj48sDuak7l_wnH58D3YW1pTjb2Z6oQ5aujbTnJvWJ_8Z8I55Fi5AgZaixLfWkyVJryOxW5wYu5VEdFAWNyKQiC8pZ-ywJmzWLdSfbSnijHElAwcG7LomN8V_48Iq3PIg8r5m6-8vU7FeV_w4-g
-SYSTEM_ARTIFACTSDIRECTORY = C:\A1\_work\r5\a
+SYSTEM_ACCESSTOKEN = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IlVVNHg3TS1CUUlLeHNtOGpCc3NsVkFIS01TZyJ9.eyJuYW1laWQiOiI3MGViZDY0ZS1jNzE4LTRhMzYtYTdiYy0yMTZjNzJlYWIzMGIiLCJzY3AiOiJhcHBfdG9rZW4iLCJhdWkiOiIwM2IwYzdhNC1iNTUyLTRlOTAtOGYxZS0wYWRhYjFlMmM3MzQiLCJzaWQiOiJmMDUzNjExOS0yMzIwLTRkZmQtYWIwMS0zMzcyODExNDhiNTgiLCJvcmNoaWQiOiI4YTBjMjRiZS04ZTlkLTQ2MGQtYThhOC0yM2VhZGEwNmEzYzEuc3RhZ2VfZjNmODNhYTgxZWZkNGQ2ZjlmNzhmZDE3NjUyZDY1OTVfMzM4XzEucGhhc2VfMS5fX2RlZmF1bHQiLCJpc3MiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjEiLCJhdWQiOiIxMjQ4NTEyZS04MGMxLTRmN2YtYTk2YS04ZmRhMTBlZWMxYjF8dnNvOmFlMWI3NmQ3LWRjZmItNGM5My04ZWYxLTFkY2FlZDQ3YzM4YSIsIm5iZiI6MTcxMjMzODU1NCwiZXhwIjoxNzEyNTExOTU0fQ.QcvLICe7cSt3ue3e9p-_NcY7PP8-7aidFQrAG_m8iv_rLJJxn6uRkDfXbxZ-PsiQ_2tumNQVgw1jCciGNOQ4HbR77cDka8lC-rekXbm3xrpEaocONHsixjYBOegeQTuEJ-16D96xy-N_oYxGbNxA-o2KUXau2GS4U27UaKCev0vYK55F_rMQwwOFUh2Bn_PSeuI8WATgf2B4olmprE8nqaCmDPrbKEs-fDtgHS3oDEs_sSLF3J2F9kh-NCZJqL7odB0a5RokYZMDijd0Fad2HgKzDBCxAioCd83eJsLpK_kBcLkMnmpF5fg0VKML0FOqRZYuNb9W4toDvuE6kjjtXg
+SYSTEM_ARTIFACTSDIRECTORY = C:\A1\_work\r1\a
 SYSTEM_COLLECTIONID = ae1b76d7-dcfb-4c93-8ef1-1dcaed47c38a
 SYSTEM_COLLECTIONURI = https://collaboration.artinsoft.com/tfs/Product/
 SYSTEM_CULTURE = en-US
 SYSTEM_DEBUG = true
-SYSTEM_DEFAULTWORKINGDIRECTORY = C:\A1\_work\r5\a
+SYSTEM_DEFAULTWORKINGDIRECTORY = C:\A1\_work\r1\a
 SYSTEM_DEFINITIONID = 103
 SYSTEM_DEFINITIONNAME = Product.VBUC.Integration_netFramework
 SYSTEM_ENABLEACCESSTOKEN = True
@@ -2190,8 +2187,8 @@ SYSTEM_PHASEATTEMPT = 1
 SYSTEM_PHASEDISPLAYNAME = Phase SKS Conversion
 SYSTEM_PHASEID = 6eff3424-9a69-5279-2657-e08e8bedf627
 SYSTEM_PHASENAME = Phase_1
-SYSTEM_PIPELINESTARTTIME = 2024-04-04 20:08:33-06:00
-SYSTEM_PLANID = 2e25ef08-3b8f-4909-a72c-70bbb6e9fbd2
+SYSTEM_PIPELINESTARTTIME = 2024-04-05 11:45:53-06:00
+SYSTEM_PLANID = 8a0c24be-8e9d-460d-a8a8-23eada06a3c1
 SYSTEM_SERVERTYPE = OnPremises
 SYSTEM_STAGEATTEMPT = 1
 SYSTEM_STAGEDISPLAYNAME = Conversion SKS
@@ -2205,7 +2202,7 @@ SYSTEM_TEAMFOUNDATIONCOLLECTIONURI = https://collaboration.artinsoft.com/tfs/Pro
 SYSTEM_TEAMFOUNDATIONSERVERURI = https://collaboration.artinsoft.com/tfs/Product/
 SYSTEM_TEAMPROJECT = Product
 SYSTEM_TEAMPROJECTID = f3f83aa8-1efd-4d6f-9f78-fd17652d6595
-SYSTEM_TIMELINEID = 2e25ef08-3b8f-4909-a72c-70bbb6e9fbd2
+SYSTEM_TIMELINEID = 8a0c24be-8e9d-460d-a8a8-23eada06a3c1
 SYSTEM_TOTALJOBSINPHASE = 1
 SYSTEM_WORKFOLDER = C:\A1\_work
 SystemDrive = C:
@@ -2244,16 +2241,16 @@ TaskVersion = 4.0.0.0
 TECHNOLOGY = vbuc
 TEMP = C:\Users\devops\AppData\Local\Temp
 TemplateLanguage = CSharp
-TESTMACHINE = S13-PR-S2-BA012
-TESTRUNTITLE = Product.VBUC.Integration_netFramework 10.1.1-rc.10-95186 Conversion SKS 1
+TESTMACHINE = S08-PR-S2-BA011
+TESTRUNTITLE = Product.VBUC.Integration_netFramework 10.1.1-rc.10-95210 Conversion SKS 1
 TF_BUILD = True
 TMP = C:\Users\devops\AppData\Local\Temp
 UnmanagedRegistrationDependsOn = 
 UnmanagedUnregistrationDependsOn = 
 UPGRADEOPTIONS = 
-UPGRADEOPTIONS_SCM = C:\A1\_work\r5\a/SrcCode/src/WFNet/Source/SCM/VB6/Requirements
+UPGRADEOPTIONS_SCM = C:\A1\_work\r1\a/SrcCode/src/WFNet/Source/SCM/VB6/Requirements
 UPGRADEOPTIONS_SKS = 
-UPGRADEOPTIONS_TW = C:\A1\_work\r5\a/SrcCode/src/WFNet/Source/TailwindTraders-PointOfSale/VB6/Requirements
+UPGRADEOPTIONS_TW = C:\A1\_work\r1\a/SrcCode/src/WFNet/Source/TailwindTraders-PointOfSale/VB6/Requirements
 UpgradeSubsetToProfile = true
 UseCommonOutputDirectory = false
 UseHostCompilerIfAvailable = true
@@ -2274,7 +2271,7 @@ Version = 1.0.0.0
 VisualStudioVersion = 16.0
 VS140COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
 VsInstallRoot = C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
-VSTS_PROCESS_LOOKUP_ID = vsts_7a150259-ad61-4f54-86a2-dac6c334ce24
+VSTS_PROCESS_LOOKUP_ID = vsts_476e0de3-9fea-46bc-b64b-82732b5dc451
 WebReference_EnableLegacyEventingModel = false
 WebReference_EnableProperties = true
 WebReference_EnableSQLTypes = true
@@ -10119,25 +10116,25 @@ Task "Csc" (TaskId:29)
   Microsoft (R) Visual C# Compiler version 3.11.0-4.22108.8 (d9bef045) (TaskId:29)
   Copyright (C) Microsoft Corporation. All rights reserved. (TaskId:29)
 C:\A1\_work\Out\Upgraded\frmAddProductTo.cs(151,4): warning CS0162: Unreachable code detected [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmOrderReception.cs(492,14): warning CS0219: The variable 'SCROOL_WIDTH' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmOrderRequest.cs(484,14): warning CS0219: The variable 'SCROOL_WIDTH' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmCustomers.cs(85,11): warning CS0219: The variable 'x' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 C:\A1\_work\Out\Upgraded\frmProviders.cs(80,11): warning CS0219: The variable 'x' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmOrderRequest.cs(484,14): warning CS0219: The variable 'SCROOL_WIDTH' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmOrderReception.cs(492,14): warning CS0219: The variable 'SCROOL_WIDTH' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 C:\A1\_work\Out\Upgraded\frmProducts.cs(115,11): warning CS0219: The variable 'x' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmCustomers.cs(85,11): warning CS0219: The variable 'x' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmAddProductTo.cs(63,16): warning CS0414: The field 'frmAddProductTo.codeGeneratedChange' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmOrderAproval.cs(49,18): warning CS0414: The field 'frmReceptionApproval.Id' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmProducts.cs(52,16): warning CS0414: The field 'frmProducts.CancellingMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmProducts.cs(50,16): warning CS0414: The field 'frmProducts.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 C:\A1\_work\Out\Upgraded\frmAdjustStockManual.cs(65,34): warning CS0414: The field 'frmAdjustStockManual.unitPrice' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 C:\A1\_work\Out\Upgraded\frmProducts.cs(51,16): warning CS0414: The field 'frmProducts.EditMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmProducts.cs(52,16): warning CS0414: The field 'frmProducts.CancellingMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmAdjustStockManual.cs(65,18): warning CS0414: The field 'frmAdjustStockManual.stockPrice' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 C:\A1\_work\Out\Upgraded\frmProviders.cs(48,16): warning CS0414: The field 'frmProviders.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 C:\A1\_work\Out\Upgraded\frmAdjustStockManual.cs(64,18): warning CS0414: The field 'frmAdjustStockManual.quantity' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmCustomers.cs(49,16): warning CS0414: The field 'frmCustomers.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmProducts.cs(50,16): warning CS0414: The field 'frmProducts.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmOrderAproval.cs(49,18): warning CS0414: The field 'frmReceptionApproval.Id' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmAddProductTo.cs(63,16): warning CS0414: The field 'frmAddProductTo.codeGeneratedChange' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-C:\A1\_work\Out\Upgraded\frmProviders.cs(49,16): warning CS0414: The field 'frmProviders.EditMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 C:\A1\_work\Out\Upgraded\frmCustomers.cs(50,16): warning CS0414: The field 'frmCustomers.EditMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 C:\A1\_work\Out\Upgraded\frmRequestAproval.cs(49,18): warning CS0414: The field 'frmRequestApproval.Id' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  CompilerServer: server - server processed compilation - 16785fce-f873-415f-a30f-cedcda29d396 (TaskId:29)
+C:\A1\_work\Out\Upgraded\frmAdjustStockManual.cs(65,18): warning CS0414: The field 'frmAdjustStockManual.stockPrice' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmProviders.cs(49,16): warning CS0414: The field 'frmProviders.EditMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+C:\A1\_work\Out\Upgraded\frmCustomers.cs(49,16): warning CS0414: The field 'frmCustomers.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  CompilerServer: server - server processed compilation - b8e1eb8b-32f1-4046-a6d8-1f715bcc7e78 (TaskId:29)
 Done executing task "Csc". (TaskId:29)
 Removed Item(s): 
     _CoreCompileResourceInputs=
@@ -10376,22 +10373,22 @@ Task "Copy" (TaskId:30)
           C:\Program Files\IIS\Microsoft Web Deploy V3\Newtonsoft.Json.dll (TaskId:30)
   Task Parameter:OverwriteReadOnlyFiles=False (TaskId:30)
   Task Parameter:UseSymboliclinksIfPossible=False (TaskId:30)
-  Copying file from "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\MSDATASRC.dll" to "C:\A1\_work\Out\Upgraded\bin\MSDATASRC.dll". (TaskId:30)
-  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DB.ADO.Controls.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DB.ADO.Controls.dll". (TaskId:30)
-  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DataGridViewCommon.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DataGridViewCommon.dll". (TaskId:30)
-  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DataGridViewFlex.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DataGridViewFlex.dll". (TaskId:30)
   Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DB.Essentials.Controls.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DB.Essentials.Controls.dll". (TaskId:30)
-  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DB.Essentials.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DB.Essentials.dll". (TaskId:30)
-  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Gui.ContainerHelper.dll". (TaskId:30)
   Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DB.ADO.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DB.ADO.dll". (TaskId:30)
+  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DataGridViewFlex.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DataGridViewFlex.dll". (TaskId:30)
+  Copying file from "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\MSDATASRC.dll" to "C:\A1\_work\Out\Upgraded\bin\MSDATASRC.dll". (TaskId:30)
+  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DataGridViewCommon.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DataGridViewCommon.dll". (TaskId:30)
+  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DB.ADO.Controls.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DB.ADO.Controls.dll". (TaskId:30)
   Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Gui.Controls.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Gui.Controls.dll". (TaskId:30)
   Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Gui.Graphics.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Gui.Graphics.dll". (TaskId:30)
   Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Gui.Utils.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Gui.Utils.dll". (TaskId:30)
+  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.DB.Essentials.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.DB.Essentials.dll". (TaskId:30)
+  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Gui.ContainerHelper.dll". (TaskId:30)
   Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.SupportHelper.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.SupportHelper.dll". (TaskId:30)
   Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Utils.CursorHelper.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Utils.CursorHelper.dll". (TaskId:30)
   Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Utils.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Utils.dll". (TaskId:30)
-  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Utils.ReflectionHelper.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Utils.ReflectionHelper.dll". (TaskId:30)
   Copying file from "C:\Program Files\IIS\Microsoft Web Deploy V3\Newtonsoft.Json.dll" to "C:\A1\_work\Out\Upgraded\bin\Newtonsoft.Json.dll". (TaskId:30)
+  Copying file from "C:\A1\_work\Out\UpgradeSupport\UpgradeHelpers.Utils.ReflectionHelper.dll" to "C:\A1\_work\Out\Upgraded\bin\UpgradeHelpers.Utils.ReflectionHelper.dll". (TaskId:30)
   Output Item(s): 
       FileWritesShareable=
           bin\MSDATASRC.dll
@@ -10559,10 +10556,10 @@ Task "Copy" (TaskId:41)
           obj\x86\Debug\AxInterop.MSComCtl2.dll (TaskId:41)
   Task Parameter:OverwriteReadOnlyFiles=False (TaskId:41)
   Task Parameter:UseSymboliclinksIfPossible=False (TaskId:41)
+  Copying file from "C:\A1\_work\Out\Upgraded\obj\x86\Debug\Interop.MSDataListLib.dll" to "C:\A1\_work\Out\Upgraded\bin\Interop.MSDataListLib.dll". (TaskId:41)
   Copying file from "C:\A1\_work\Out\Upgraded\obj\x86\Debug\AxInterop.MSComCtl2.dll" to "C:\A1\_work\Out\Upgraded\bin\AxInterop.MSComCtl2.dll". (TaskId:41)
   Copying file from "C:\A1\_work\Out\Upgraded\obj\x86\Debug\AxInterop.MSDataListLib.dll" to "C:\A1\_work\Out\Upgraded\bin\AxInterop.MSDataListLib.dll". (TaskId:41)
   Copying file from "C:\A1\_work\Out\Upgraded\obj\x86\Debug\Interop.MSComCtl2.dll" to "C:\A1\_work\Out\Upgraded\bin\Interop.MSComCtl2.dll". (TaskId:41)
-  Copying file from "C:\A1\_work\Out\Upgraded\obj\x86\Debug\Interop.MSDataListLib.dll" to "C:\A1\_work\Out\Upgraded\bin\Interop.MSDataListLib.dll". (TaskId:41)
   Output Item(s): 
       FileWritesShareable=
           bin\Interop.MSDataListLib.dll
@@ -12100,26 +12097,26 @@ Build succeeded.
 "C:\A1\_work\Out\Upgraded\SKS.csproj" (default target) (2) ->
 (CoreCompile target) -> 
   C:\A1\_work\Out\Upgraded\frmAddProductTo.cs(151,4): warning CS0162: Unreachable code detected [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmOrderReception.cs(492,14): warning CS0219: The variable 'SCROOL_WIDTH' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmOrderRequest.cs(484,14): warning CS0219: The variable 'SCROOL_WIDTH' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmCustomers.cs(85,11): warning CS0219: The variable 'x' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
   C:\A1\_work\Out\Upgraded\frmProviders.cs(80,11): warning CS0219: The variable 'x' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmOrderRequest.cs(484,14): warning CS0219: The variable 'SCROOL_WIDTH' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmOrderReception.cs(492,14): warning CS0219: The variable 'SCROOL_WIDTH' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
   C:\A1\_work\Out\Upgraded\frmProducts.cs(115,11): warning CS0219: The variable 'x' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmCustomers.cs(85,11): warning CS0219: The variable 'x' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmAddProductTo.cs(63,16): warning CS0414: The field 'frmAddProductTo.codeGeneratedChange' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmOrderAproval.cs(49,18): warning CS0414: The field 'frmReceptionApproval.Id' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmProducts.cs(52,16): warning CS0414: The field 'frmProducts.CancellingMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmProducts.cs(50,16): warning CS0414: The field 'frmProducts.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
   C:\A1\_work\Out\Upgraded\frmAdjustStockManual.cs(65,34): warning CS0414: The field 'frmAdjustStockManual.unitPrice' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
   C:\A1\_work\Out\Upgraded\frmProducts.cs(51,16): warning CS0414: The field 'frmProducts.EditMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmProducts.cs(52,16): warning CS0414: The field 'frmProducts.CancellingMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmAdjustStockManual.cs(65,18): warning CS0414: The field 'frmAdjustStockManual.stockPrice' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
   C:\A1\_work\Out\Upgraded\frmProviders.cs(48,16): warning CS0414: The field 'frmProviders.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
   C:\A1\_work\Out\Upgraded\frmAdjustStockManual.cs(64,18): warning CS0414: The field 'frmAdjustStockManual.quantity' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmCustomers.cs(49,16): warning CS0414: The field 'frmCustomers.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmProducts.cs(50,16): warning CS0414: The field 'frmProducts.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmOrderAproval.cs(49,18): warning CS0414: The field 'frmReceptionApproval.Id' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmAddProductTo.cs(63,16): warning CS0414: The field 'frmAddProductTo.codeGeneratedChange' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
-  C:\A1\_work\Out\Upgraded\frmProviders.cs(49,16): warning CS0414: The field 'frmProviders.EditMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
   C:\A1\_work\Out\Upgraded\frmCustomers.cs(50,16): warning CS0414: The field 'frmCustomers.EditMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
   C:\A1\_work\Out\Upgraded\frmRequestAproval.cs(49,18): warning CS0414: The field 'frmRequestApproval.Id' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmAdjustStockManual.cs(65,18): warning CS0414: The field 'frmAdjustStockManual.stockPrice' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmProviders.cs(49,16): warning CS0414: The field 'frmProviders.EditMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
+  C:\A1\_work\Out\Upgraded\frmCustomers.cs(49,16): warning CS0414: The field 'frmCustomers.NewMode' is assigned but its value is never used [C:\A1\_work\Out\Upgraded\SKS.csproj]
 
     22 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:03.18
+Time Elapsed 00:00:05.95
