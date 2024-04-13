@@ -6,10 +6,10 @@
     <Setting Name="ProjectName" Value="SKS" />
     <Setting Name="OutputName" Value="SKS.csproj" />
     <Setting Name="OutputDir" Value="C:\A1\_work\out\Upgraded\" />
-    <Setting Name="ProjectPath" Value="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\SKS.vbp" />
+    <Setting Name="ProjectPath" Value="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\SKS.vbp" />
     <Setting Name="MigrateProjectTo" Value="WinExe" />
   </Settings>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmMain.frm" NewPath="C:\A1\_work\out\Upgraded\frmMain.cs" FileType="MDI Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmMain.frm" NewPath="C:\A1\_work\out\Upgraded\frmMain.cs" FileType="MDI Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="sbStatusBar_Panels_Panel1" ObjectType="MSComctlLib.Panel" PME="MinWidth" Qty="1">MSComctlLib.Panel property sbStatusBar_Panels_Panel1.MinWidth was not upgraded.</Issue>
     </Section>
@@ -17,7 +17,7 @@
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmAbout.frm" NewPath="C:\A1\_work\out\Upgraded\frmAbout.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmAbout.frm" NewPath="C:\A1\_work\out\Upgraded\frmAbout.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="lblTitle" ObjectType="Label" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="frmAbout" ObjectType="Form" PME="ClipControls" Qty="1">Form property frmAbout.ClipControls was not upgraded.</Issue>
@@ -31,12 +31,12 @@
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmLogin.frm" NewPath="C:\A1\_work\out\Upgraded\frmLogin.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmLogin.frm" NewPath="C:\A1\_work\out\Upgraded\frmLogin.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2038" ObjectName="frmLogin" ObjectType="Form" PME="ScaleMode" Qty="1">Form property Me.ScaleMode is not supported.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\modFunctions.bas" NewPath="C:\A1\_work\out\Upgraded\modFunctions.cs" FileType="Module" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\modFunctions.bas" NewPath="C:\A1\_work\out\Upgraded\modFunctions.cs" FileType="Module" Upgraded="True">
     <Section Name="AppendAND">
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="1">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
@@ -63,17 +63,17 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="1">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\modConnection.bas" NewPath="C:\A1\_work\out\Upgraded\modConnection.cs" FileType="Module" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\modConnection.bas" NewPath="C:\A1\_work\out\Upgraded\modConnection.cs" FileType="Module" Upgraded="True">
     <Section Name="OpenConnection">
       <Issue Type="ToDo" Number="7010" ObjectName="CurrentConnection" ObjectType="ADODB.Connection" PME="Open" Qty="1">The connection string must be verified to fullfill the .NET data provider connection string requirements.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\modMain.bas" NewPath="C:\A1\_work\out\Upgraded\modMain.cs" FileType="Module" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\modMain.bas" NewPath="C:\A1\_work\out\Upgraded\modMain.cs" FileType="Module" Upgraded="True">
     <Section Name="Main">
       <Issue Type="Runtime" Number="1047" Qty="1">Application will terminate when Sub Main() finishes.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmSearch.frm" NewPath="C:\A1\_work\out\Upgraded\frmSearch.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmSearch.frm" NewPath="C:\A1\_work\out\Upgraded\frmSearch.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="Label19" ObjectType="Label" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
       <Issue Type="Design" Number="2045" ObjectName="Label1" ObjectType="Label" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
@@ -86,7 +86,7 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="1">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmUsersManage.frm" NewPath="C:\A1\_work\out\Upgraded\frmUsersManage.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmUsersManage.frm" NewPath="C:\A1\_work\out\Upgraded\frmUsersManage.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="Label1_2" ObjectType="Label" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
       <Issue Type="Design" Number="2045" ObjectName="Label1_0" ObjectType="Label" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
@@ -104,7 +104,7 @@
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmCustomers.frm" NewPath="C:\A1\_work\out\Upgraded\frmCustomers.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmCustomers.frm" NewPath="C:\A1\_work\out\Upgraded\frmCustomers.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="dcCustomers" ObjectType="Adodc" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="dcCustomers" ObjectType="MSAdodcLib.Adodc" PME="ConnectionTimeout" Qty="1">MSAdodcLib.Adodc property dcCustomers.ConnectionTimeout was not upgraded.</Issue>
@@ -157,7 +157,7 @@
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmProducts.frm" NewPath="C:\A1\_work\out\Upgraded\frmProducts.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmProducts.frm" NewPath="C:\A1\_work\out\Upgraded\frmProducts.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="dcProducts" ObjectType="Adodc" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="_txtField_6" ObjectType="TextBox" PME="DataField" Qty="1">TextBox property _txtField_6.DataField was not upgraded.</Issue>
@@ -204,7 +204,7 @@
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmAdjustStockManual.frm" NewPath="C:\A1\_work\out\Upgraded\frmAdjustStockManual.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmAdjustStockManual.frm" NewPath="C:\A1\_work\out\Upgraded\frmAdjustStockManual.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="lvStocks" ObjectType="MSComctlLib.ListView" PME="LabelWrap" Qty="1">MSComctlLib.ListView property lvStocks.LabelWrap was not upgraded.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="lvStocks_ColumnHeader_2_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lvStocks_ColumnHeader_2_.SubItemIndex was not upgraded.</Issue>
@@ -238,7 +238,7 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="2">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmProviders.frm" NewPath="C:\A1\_work\out\Upgraded\frmProviders.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmProviders.frm" NewPath="C:\A1\_work\out\Upgraded\frmProviders.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2045" ObjectName="dcProviders" ObjectType="Adodc" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="dcProviders" ObjectType="MSAdodcLib.Adodc" PME="ConnectionTimeout" Qty="1">MSAdodcLib.Adodc property dcProviders.ConnectionTimeout was not upgraded.</Issue>
@@ -290,7 +290,7 @@
       <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmOrderRequest.frm" NewPath="C:\A1\_work\out\Upgraded\frmOrderRequest.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmOrderRequest.frm" NewPath="C:\A1\_work\out\Upgraded\frmOrderRequest.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="dtRequired" ObjectType="MSComCtl2.DTPicker" PME="CurrentDate" Qty="1">MSComCtl2.DTPicker method dtRequired.CurrentDate was not upgraded.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="lvCustomers" ObjectType="MSComctlLib.ListView" PME="LabelWrap" Qty="1">MSComctlLib.ListView property lvCustomers.LabelWrap was not upgraded.</Issue>
@@ -320,7 +320,7 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="1">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmAddStockManual.frm" NewPath="C:\A1\_work\out\Upgraded\frmAddStockManual.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmAddStockManual.frm" NewPath="C:\A1\_work\out\Upgraded\frmAddStockManual.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="_txtValues_2" ObjectType="TextBox" PME="DataFormat" Qty="1">TextBox property _txtValues_2.DataFormat was not upgraded.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="_txtValues_1" ObjectType="TextBox" PME="DataFormat" Qty="1">TextBox property _txtValues_1.DataFormat was not upgraded.</Issue>
@@ -349,7 +349,7 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="3">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmOrderReception.frm" NewPath="C:\A1\_work\out\Upgraded\frmOrderReception.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmOrderReception.frm" NewPath="C:\A1\_work\out\Upgraded\frmOrderReception.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="lvProviders" ObjectType="MSComctlLib.ListView" PME="LabelWrap" Qty="1">MSComctlLib.ListView property lvProviders.LabelWrap was not upgraded.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="lvProviders_ColumnHeader_2_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lvProviders_ColumnHeader_2_.SubItemIndex was not upgraded.</Issue>
@@ -375,7 +375,7 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="1">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmAddProductTo.frm" NewPath="C:\A1\_work\out\Upgraded\frmAddProductTo.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmAddProductTo.frm" NewPath="C:\A1\_work\out\Upgraded\frmAddProductTo.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="lvProducts" ObjectType="MSComctlLib.ListView" PME="LabelWrap" Qty="1">MSComctlLib.ListView property lvProducts.LabelWrap was not upgraded.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="lvProducts_ColumnHeader_2_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lvProducts_ColumnHeader_2_.SubItemIndex was not upgraded.</Issue>
@@ -402,7 +402,7 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="1">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmOrderAproval.frm" NewPath="C:\A1\_work\out\Upgraded\frmOrderAproval.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmOrderAproval.frm" NewPath="C:\A1\_work\out\Upgraded\frmOrderAproval.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2081" ObjectName="_HiddenModule" ObjectType="Variant" PME="array" Qty="1">Array has a new behavior.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="dtFrom" ObjectType="MSComCtl2.DTPicker" PME="CurrentDate" Qty="1">MSComCtl2.DTPicker method dtFrom.CurrentDate was not upgraded.</Issue>
@@ -417,7 +417,7 @@
       <Issue Type="Runtime" Number="1068" ObjectName="cmdInfo" ObjectType="CommandButton" PME="Click" Qty="1">dtTo.value of type Variant is being forced to DateTime.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmActionOrderReception.frm" NewPath="C:\A1\_work\out\Upgraded\frmActionOrderReception.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmActionOrderReception.frm" NewPath="C:\A1\_work\out\Upgraded\frmActionOrderReception.cs" FileType="Form" Upgraded="True">
     <Section Name="cmdApprove_Click">
       <Issue Type="Runtime" Number="2081" ObjectName="Information.err" ObjectType="ErrObject" PME="Number" Qty="1">Err.Number has a new behavior.</Issue>
     </Section>
@@ -434,7 +434,7 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="1">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmActionOrderRequest.frm" NewPath="C:\A1\_work\out\Upgraded\frmActionOrderRequest.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmActionOrderRequest.frm" NewPath="C:\A1\_work\out\Upgraded\frmActionOrderRequest.cs" FileType="Form" Upgraded="True">
     <Section Name="cmdApprove_Click">
       <Issue Type="Runtime" Number="2081" ObjectName="Information.err" ObjectType="ErrObject" PME="Number" Qty="1">Err.Number has a new behavior.</Issue>
     </Section>
@@ -451,7 +451,7 @@
       <Issue Type="Runtime" Number="2080" ObjectName="Information" ObjectType="Boolean" PME="IsEmpty" Qty="1">IsEmpty was upgraded to a comparison and has a new behavior.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmRequestAproval.frm" NewPath="C:\A1\_work\out\Upgraded\frmRequestAproval.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmRequestAproval.frm" NewPath="C:\A1\_work\out\Upgraded\frmRequestAproval.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2081" ObjectName="_HiddenModule" ObjectType="Variant" PME="array" Qty="1">Array has a new behavior.</Issue>
       <Issue Type="Design" Number="2064" ObjectName="dtFrom" ObjectType="MSComCtl2.DTPicker" PME="CurrentDate" Qty="1">MSComCtl2.DTPicker method dtFrom.CurrentDate was not upgraded.</Issue>
@@ -466,7 +466,7 @@
       <Issue Type="Runtime" Number="1068" ObjectName="cmdInfo" ObjectType="CommandButton" PME="Click" Qty="1">dtTo.value of type Variant is being forced to DateTime.</Issue>
     </Section>
   </File>
-  <File OldPath="C:\A1\_work\r2\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmSplash.frm" NewPath="C:\A1\_work\out\Upgraded\frmSplash.cs" FileType="Form" Upgraded="True">
+  <File OldPath="C:\A1\_work\r7\a\SrcCode\src\WFNet\Source\SKS\SKS_VB6\frmSplash.frm" NewPath="C:\A1\_work\out\Upgraded\frmSplash.cs" FileType="Form" Upgraded="True">
     <Section Name="(Layout)">
       <Issue Type="Design" Number="2064" ObjectName="frmSplash" ObjectType="Form" PME="ClipControls" Qty="1">Form property frmSplash.ClipControls was not upgraded.</Issue>
     </Section>
