@@ -82,7 +82,7 @@ namespace SKS
 				                         $"From OrderReceptionDetails Where OrderID = {OrderId.ToString()}");
 
 
-				_ = 0;
+				int newId = 0;
 				while (!modConnection.rs.EOF)
 				{
 
@@ -91,7 +91,7 @@ namespace SKS
 					                          $"('{Convert.ToString(modConnection.rs["ProductId"])}',{Convert.ToString(modConnection.rs["Quantity"])},{Convert.ToString(modConnection.rs["Quantity"])}, '{DateTimeHelper.ToString(DateTime.Today)}', '{DateTimeHelper.ToString(DateTime.Today)}', '{modMain.UserId}', {Convert.ToString(modConnection.rs["UnitPrice"])},{Convert.ToString(modConnection.rs["LineTotal"])})");
 
 					modConnection.ExecuteSql2("Select Max(StockID) as NewId From Stocks");
-					_ = Convert.ToInt32(modConnection.rs2["NewId"]);
+					newId = Convert.ToInt32(modConnection.rs2["NewId"]);
 
 					modConnection.ExecuteSql2($"Insert Into StockLog " +
 					                          $"(Date, DocID, DocType, ProductID, Quantity, StockID, StockPrice, User) Values " +
@@ -264,9 +264,9 @@ namespace SKS
 			modConnection.ExecuteSql($"Select d.Quantity, p.ProductID, p.ProductName, d.UnitPrice, d.SalePrice, p.UnitsInStock, p.UnitsOnOrder, p.QuantityPerUnit + p.Unit, d.LineTotal From Products as p, OrderReceptionDetails as d " +
 			                         $"Where d.OrderID = {OrderId.ToString()} And d.ProductId = p.ProductId");
 
-			_ = 0;
-			_ = 0;
-			_ = 0;
+			int lng = 0;
+			int intLoopCount = 0;
+			int i = 0;
 			fgDetails.RowsCount = 0;
 			fgDetails.ColumnsCount = 9;
 			fgDetails.FixedColumns = 0;
@@ -280,7 +280,7 @@ namespace SKS
 			{
 				fgDetails.FixedRows = 1;
 			}
-			int i = 1;
+			i = 1;
 			while (!modConnection.rs.EOF)
 			{
 				int tempForEndVar = modConnection.rs.FieldsMetadata.Count;

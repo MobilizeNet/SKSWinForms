@@ -81,13 +81,13 @@ namespace SKS
 				cmbCategory.SelectedIndex = -1;
 				return;
 			}
-			_ = -1;
+			int Index = -1;
 			int tempForEndVar = cmbCategory.Items.Count;
 			for (modMain.i = 0; modMain.i <= tempForEndVar; modMain.i++)
 			{
 				if (cmbCategory.GetItemData(modMain.i) == StringsHelper.ToDoubleSafe(txtCategory.Text))
 				{
-					_ = modMain.i;
+					Index = modMain.i;
 					break;
 				}
 			}

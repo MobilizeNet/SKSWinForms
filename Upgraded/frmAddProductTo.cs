@@ -167,13 +167,13 @@ namespace SKS
 		private void Form_FormClosing(Object eventSender, FormClosingEventArgs eventArgs)
 		{
 			int Cancel = (eventArgs.Cancel) ? 1 : 0;
-			_ = (int) eventArgs.CloseReason;
+			int UnloadMode = (int) eventArgs.CloseReason;
 			try
 			{
-				_ = (DialogResult) 0;
+				DialogResult res = (DialogResult) 0;
 				if (editingData)
 				{
-					DialogResult res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+					res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 					if (res == System.Windows.Forms.DialogResult.Yes)
 					{
 						cmdSave_Click(cmdSave, new EventArgs());
@@ -295,14 +295,14 @@ namespace SKS
 
 			ListViewItem y = null;
 			int i = 0;
-			_ = false;
+			bool found = false;
 			ListViewItem x = null;
 			//UPGRADE_WARNING: (2080) IsEmpty was upgraded to a comparison and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 			if (!(lvProducts.FocusedItem is null))
 			{
 				y = lvProducts.FocusedItem;
 				currentIdProduct = lvProducts.FocusedItem.Text;
-				bool found = false;
+				found = false;
 				int tempForEndVar = lvProductsBy.Items.Count;
 				for (i = 1; i <= tempForEndVar; i++)
 				{

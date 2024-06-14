@@ -101,7 +101,7 @@ namespace SKS
 
 		private void cmdSave_Click(Object eventSender, EventArgs eventArgs)
 		{
-			_ = "";
+			string SecId = "";
 			if (modFunctions.TextBoxEmpty(txtUsername))
 			{
 				return;

@@ -73,9 +73,9 @@ namespace SKS
 
 		private void cmdSave_Click(Object eventSender, EventArgs eventArgs)
 		{
-			_ = 0;
-			_ = 0;
-			_ = 0;
+			int newStockId = 0;
+			int newManualLogId = 0;
+			int newStockLogId = 0;
 			editingData = false;
 			try
 			{
@@ -91,7 +91,7 @@ namespace SKS
 				modConnection.rs["StockPrice"] = txtValues[1].Text;
 				modConnection.rs.Update();
 				modConnection.ExecuteSql("SELECT last_insert_rowid()");
-				int newStockId = Convert.ToInt32(modConnection.rs[0]);
+				newStockId = Convert.ToInt32(modConnection.rs[0]);
 
 				modConnection.ExecuteSql("Select * from ManualStocks");
 				modConnection.rs.AddNew();
@@ -103,7 +103,7 @@ namespace SKS
 				modConnection.rs["Action"] = "ADD";
 				modConnection.rs.Update();
 				modConnection.ExecuteSql("SELECT last_insert_rowid()");
-				int newManualLogId = Convert.ToInt32(modConnection.rs[0]);
+				newManualLogId = Convert.ToInt32(modConnection.rs[0]);
 
 				modConnection.ExecuteSql("Select * from StockLog");
 				modConnection.rs.AddNew();
@@ -117,7 +117,7 @@ namespace SKS
 				modConnection.rs["DocID"] = newManualLogId;
 				modConnection.rs.Update();
 				modConnection.ExecuteSql("SELECT last_insert_rowid()");
-				_ = Convert.ToInt32(modConnection.rs[0]);
+				newStockLogId = Convert.ToInt32(modConnection.rs[0]);
 
 				modConnection.ExecuteSql($"Update Products Set UnitsInStock = UnitsInStock + {txtValues[0].Text}" +
 				                         $" Where ProductId = '& currentIdProduct &'");
@@ -149,13 +149,13 @@ namespace SKS
 		private void Form_FormClosing(Object eventSender, FormClosingEventArgs eventArgs)
 		{
 			int Cancel = (eventArgs.Cancel) ? 1 : 0;
-			_ = (int) eventArgs.CloseReason;
+			int UnloadMode = (int) eventArgs.CloseReason;
 			try
 			{
-				_ = (DialogResult) 0;
+				DialogResult res = (DialogResult) 0;
 				if (editingData)
 				{
-					DialogResult res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+					res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 					if (res == System.Windows.Forms.DialogResult.Yes)
 					{
 						cmdSave_Click(cmdSave, new EventArgs());

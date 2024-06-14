@@ -170,7 +170,7 @@ namespace SKS
 
 		private void cmdSave_Click(Object eventSender, EventArgs eventArgs)
 		{
-			_ = 0;
+			int newOrderId = 0;
 
 			try
 			{
@@ -193,7 +193,7 @@ namespace SKS
 
 				modConnection.ExecuteSql("SELECT last_insert_rowid() ");
 
-				int newOrderId = Convert.ToInt32(modConnection.rs[0]);
+				newOrderId = Convert.ToInt32(modConnection.rs[0]);
 
 
 				int tempForEndVar = fgProducts.RowsCount - 1;
@@ -364,11 +364,11 @@ namespace SKS
 			{
 				return;
 			}
-			_ = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
+			double previousLinePrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
 			fgProducts[fgProducts.CurrentRowIndex, fgProducts.CurrentColumnIndex].Value = txtEntry.Text;
 			double lineQuantity = modFunctions.DoubleValue(txtEntry.Text);
 			double lineUnitPrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 3].Value));
-			double previousLinePrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
+			previousLinePrice = modFunctions.DoubleValue(Convert.ToString(fgProducts[fgProducts.CurrentRowIndex, 4].Value));
 			double linePrice = lineQuantity * lineUnitPrice;
 			fgProducts[fgProducts.CurrentRowIndex, 4].Value = linePrice.ToString();
 			ReCalculateTotals(previousLinePrice, linePrice);
@@ -392,13 +392,13 @@ namespace SKS
 		private void Form_FormClosing(Object eventSender, FormClosingEventArgs eventArgs)
 		{
 			int Cancel = (eventArgs.Cancel) ? 1 : 0;
-			_ = (int) eventArgs.CloseReason;
+			int UnloadMode = (int) eventArgs.CloseReason;
 			try
 			{
-				_ = (DialogResult) 0;
+				DialogResult res = (DialogResult) 0;
 				if (editingData)
 				{
-					DialogResult res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+					res = MessageBox.Show("Do you want to save the edited data?", "Save data", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 					if (res == System.Windows.Forms.DialogResult.Yes)
 					{
 						cmdSave_Click(cmdSave, new EventArgs());
@@ -479,10 +479,10 @@ namespace SKS
 			//    End With
 			//End If
 
-			_ = 0;
-			_ = 0;
+			int lng = 0;
+			int intLoopCount = 0;
 			const int SCROOL_WIDTH = 320;
-			_ = 0;
+			int i = 0;
 			fgProducts.ColumnsCount = 8;
 			fgProducts.FixedColumns = 0;
 			fgProducts.RowsCount = 0;
@@ -496,7 +496,7 @@ namespace SKS
 			{
 				fgProducts.FixedRows = 1;
 			}
-			int i = 1;
+			i = 1;
 			while (!modConnection.rs.EOF)
 			{
 				fgProducts[i, 0].Value = "0";

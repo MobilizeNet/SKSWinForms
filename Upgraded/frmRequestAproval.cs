@@ -63,10 +63,10 @@ namespace SKS
 
 		private void LoadActionOrderRequest(int Action = 0)
 		{
-			_ = 0;
+			int OrderId = 0;
 			if (fgOrders.CurrentRowIndex > 0)
 			{
-				int OrderId = Convert.ToInt32(Double.Parse(Convert.ToString(fgOrders[fgOrders.CurrentRowIndex, 1].Value)));
+				OrderId = Convert.ToInt32(Double.Parse(Convert.ToString(fgOrders[fgOrders.CurrentRowIndex, 1].Value)));
 				frmActionOrderRequest.DefInstance.OrderId = OrderId;
 				frmActionOrderRequest.DefInstance.Action = Action;
 				frmActionOrderRequest.DefInstance.LoadData();
@@ -198,7 +198,7 @@ namespace SKS
 			             $"{filter} Group by o.orderDate, o.OrderID, c.CompanyName, c.ContactFirstName + ' ' + c.ContactLastName, u.Fullname, o.Status ";
 			modConnection.ExecuteSql(sql);
 			modMain.LogStatus($"There are {modConnection.rs.RecordCount.ToString()} records with the selected criteria", this);
-			_ = 0;
+			int i = 0;
 			fgOrders.RowsCount = modConnection.rs.RecordCount + 1;
 			if (fgOrders.RowsCount == 1)
 			{
@@ -208,7 +208,7 @@ namespace SKS
 			{
 				fgOrders.FixedRows = 1;
 			}
-			int i = 1;
+			i = 1;
 			while (!modConnection.rs.EOF)
 			{
 				int tempForEndVar = modConnection.rs.FieldsMetadata.Count - 1;

@@ -236,9 +236,9 @@ namespace SKS
 
 			modConnection.ExecuteSql($"Select d.Quantity, p.ProductID, p.ProductName, d.UnitPrice, d.SalePrice, p.UnitsInStock, p.UnitsOnOrder, cast(p.QuantityPerUnit as text) + p.Unit, d.LineTotal From Products as p, OrderRequestDetails as d Where d.OrderID = {OrderId.ToString()} And d.ProductId = p.ProductId");
 
-			_ = 0;
-			_ = 0;
-			_ = 0;
+			int lng = 0;
+			int intLoopCount = 0;
+			int i = 0;
 			fgDetails.RowsCount = 0;
 			fgDetails.ColumnsCount = 9;
 			fgDetails.FixedColumns = 0;
@@ -252,7 +252,7 @@ namespace SKS
 			{
 				fgDetails.FixedRows = 1;
 			}
-			int i = 1;
+			i = 1;
 			while (!modConnection.rs.EOF)
 			{
 				int tempForEndVar = modConnection.rs.FieldsMetadata.Count;

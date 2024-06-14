@@ -83,7 +83,7 @@ namespace SKS
 		{
 			ToolStripItem Button = (ToolStripItem) eventSender;
 			object x = null;
-			_ = 0;
+			int newCustomerId = 0;
 			switch(Button.Text)
 			{
 				case "Add" : 
