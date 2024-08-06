@@ -94,786 +94,786 @@ namespace SKS
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdjustStockManual));
-			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
-			this.sbStatusBar = new System.Windows.Forms.StatusStrip();
-			this.sbStatusBar_Panels_Panel1 = new System.Windows.Forms.ToolStripStatusLabel();
-			this.txtStockID = new System.Windows.Forms.TextBox();
-			this.txtOriginalPrice = new System.Windows.Forms.TextBox();
-			this._txtValues_0 = new System.Windows.Forms.TextBox();
-			this.txtQuantityPerUnit = new System.Windows.Forms.TextBox();
-			this.txtProductName = new System.Windows.Forms.TextBox();
-			this.txtUnit = new System.Windows.Forms.TextBox();
-			this._txtValues_1 = new System.Windows.Forms.TextBox();
-			this.txtOriginalQuantity = new System.Windows.Forms.TextBox();
-			this.Frame3 = new System.Windows.Forms.GroupBox();
-			this.lvStocks = new System.Windows.Forms.ListView();
-			this.lvStocks_ColumnHeader_1_ = new System.Windows.Forms.ColumnHeader();
-			this.lvStocks_ColumnHeader_2_ = new System.Windows.Forms.ColumnHeader();
-			this.lvStocks_ColumnHeader_3_ = new System.Windows.Forms.ColumnHeader();
-			this.lvStocks_ColumnHeader_4_ = new System.Windows.Forms.ColumnHeader();
-			this.lvStocks_ColumnHeader_5_ = new System.Windows.Forms.ColumnHeader();
-			this.lvStocks_ColumnHeader_6_ = new System.Windows.Forms.ColumnHeader();
-			this.lvStocks_ColumnHeader_7_ = new System.Windows.Forms.ColumnHeader();
-			this.lvStocks_ColumnHeader_8_ = new System.Windows.Forms.ColumnHeader();
-			this.Frame1 = new System.Windows.Forms.GroupBox();
-			this.txtCode = new System.Windows.Forms.TextBox();
-			this.txtName = new System.Windows.Forms.TextBox();
-			this.cmdProducts = new System.Windows.Forms.Button();
-			this.Label5 = new System.Windows.Forms.Label();
-			this.Label4 = new System.Windows.Forms.Label();
-			this.cmdClose = new System.Windows.Forms.Button();
-			this.cmdSave = new System.Windows.Forms.Button();
-			this.lvProducts = new System.Windows.Forms.ListView();
-			this.lvProducts_ColumnHeader_1_ = new System.Windows.Forms.ColumnHeader();
-			this.lvProducts_ColumnHeader_2_ = new System.Windows.Forms.ColumnHeader();
-			this.lvProducts_ColumnHeader_3_ = new System.Windows.Forms.ColumnHeader();
-			this.lvProducts_ColumnHeader_4_ = new System.Windows.Forms.ColumnHeader();
-			this.lvProducts_ColumnHeader_5_ = new System.Windows.Forms.ColumnHeader();
-			this.lvProducts_ColumnHeader_6_ = new System.Windows.Forms.ColumnHeader();
-			this.lvProducts_ColumnHeader_7_ = new System.Windows.Forms.ColumnHeader();
-			this.Label14 = new System.Windows.Forms.Label();
-			this.lblNewQuantity = new System.Windows.Forms.Label();
-			this.Label12 = new System.Windows.Forms.Label();
-			this.lblCurrentQuantity = new System.Windows.Forms.Label();
-			this.Label11 = new System.Windows.Forms.Label();
-			this.Label10 = new System.Windows.Forms.Label();
-			this.Label8 = new System.Windows.Forms.Label();
-			this.Label9 = new System.Windows.Forms.Label();
-			this.Label7 = new System.Windows.Forms.Label();
-			this.Label6 = new System.Windows.Forms.Label();
-			this.Label2 = new System.Windows.Forms.Label();
-			this.Label1 = new System.Windows.Forms.Label();
-			this.Label3 = new System.Windows.Forms.Label();
-			this.sbStatusBar.SuspendLayout();
-			this.Frame3.SuspendLayout();
-			this.lvStocks.SuspendLayout();
-			this.Frame1.SuspendLayout();
-			this.lvProducts.SuspendLayout();
-			this.SuspendLayout();
-			this.listViewHelper1 = new UpgradeHelpers.Gui.Controls.ListViewHelper(this.components);
-			((System.ComponentModel.ISupportInitialize) this.listViewHelper1).BeginInit();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
+			ToolTipMain = new System.Windows.Forms.ToolTip(components);
+			sbStatusBar = new System.Windows.Forms.StatusStrip();
+			sbStatusBar_Panels_Panel1 = new System.Windows.Forms.ToolStripStatusLabel();
+			txtStockID = new System.Windows.Forms.TextBox();
+			txtOriginalPrice = new System.Windows.Forms.TextBox();
+			_txtValues_0 = new System.Windows.Forms.TextBox();
+			txtQuantityPerUnit = new System.Windows.Forms.TextBox();
+			txtProductName = new System.Windows.Forms.TextBox();
+			txtUnit = new System.Windows.Forms.TextBox();
+			_txtValues_1 = new System.Windows.Forms.TextBox();
+			txtOriginalQuantity = new System.Windows.Forms.TextBox();
+			Frame3 = new System.Windows.Forms.GroupBox();
+			lvStocks = new System.Windows.Forms.ListView();
+			lvStocks_ColumnHeader_1_ = new System.Windows.Forms.ColumnHeader();
+			lvStocks_ColumnHeader_2_ = new System.Windows.Forms.ColumnHeader();
+			lvStocks_ColumnHeader_3_ = new System.Windows.Forms.ColumnHeader();
+			lvStocks_ColumnHeader_4_ = new System.Windows.Forms.ColumnHeader();
+			lvStocks_ColumnHeader_5_ = new System.Windows.Forms.ColumnHeader();
+			lvStocks_ColumnHeader_6_ = new System.Windows.Forms.ColumnHeader();
+			lvStocks_ColumnHeader_7_ = new System.Windows.Forms.ColumnHeader();
+			lvStocks_ColumnHeader_8_ = new System.Windows.Forms.ColumnHeader();
+			Frame1 = new System.Windows.Forms.GroupBox();
+			txtCode = new System.Windows.Forms.TextBox();
+			txtName = new System.Windows.Forms.TextBox();
+			cmdProducts = new System.Windows.Forms.Button();
+			Label5 = new System.Windows.Forms.Label();
+			Label4 = new System.Windows.Forms.Label();
+			cmdClose = new System.Windows.Forms.Button();
+			cmdSave = new System.Windows.Forms.Button();
+			lvProducts = new System.Windows.Forms.ListView();
+			lvProducts_ColumnHeader_1_ = new System.Windows.Forms.ColumnHeader();
+			lvProducts_ColumnHeader_2_ = new System.Windows.Forms.ColumnHeader();
+			lvProducts_ColumnHeader_3_ = new System.Windows.Forms.ColumnHeader();
+			lvProducts_ColumnHeader_4_ = new System.Windows.Forms.ColumnHeader();
+			lvProducts_ColumnHeader_5_ = new System.Windows.Forms.ColumnHeader();
+			lvProducts_ColumnHeader_6_ = new System.Windows.Forms.ColumnHeader();
+			lvProducts_ColumnHeader_7_ = new System.Windows.Forms.ColumnHeader();
+			Label14 = new System.Windows.Forms.Label();
+			lblNewQuantity = new System.Windows.Forms.Label();
+			Label12 = new System.Windows.Forms.Label();
+			lblCurrentQuantity = new System.Windows.Forms.Label();
+			Label11 = new System.Windows.Forms.Label();
+			Label10 = new System.Windows.Forms.Label();
+			Label8 = new System.Windows.Forms.Label();
+			Label9 = new System.Windows.Forms.Label();
+			Label7 = new System.Windows.Forms.Label();
+			Label6 = new System.Windows.Forms.Label();
+			Label2 = new System.Windows.Forms.Label();
+			Label1 = new System.Windows.Forms.Label();
+			Label3 = new System.Windows.Forms.Label();
+			sbStatusBar.SuspendLayout();
+			Frame3.SuspendLayout();
+			lvStocks.SuspendLayout();
+			Frame1.SuspendLayout();
+			lvProducts.SuspendLayout();
+			SuspendLayout();
+			listViewHelper1 = new UpgradeHelpers.Gui.Controls.ListViewHelper(components);
+			((System.ComponentModel.ISupportInitialize) listViewHelper1).BeginInit();
+			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
 			// 
 			// sbStatusBar
 			// 
-			this.sbStatusBar.AllowDrop = true;
-			this.sbStatusBar.BackColor = System.Drawing.SystemColors.Control;
-			this.sbStatusBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.sbStatusBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.sbStatusBar.Location = new System.Drawing.Point(0, 538);
-			this.sbStatusBar.Name = "sbStatusBar";
-			this.sbStatusBar.ShowItemToolTips = true;
-			this.sbStatusBar.Size = new System.Drawing.Size(426, 25);
-			this.sbStatusBar.TabIndex = 28;
-			this.sbStatusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[]{this.sbStatusBar_Panels_Panel1});
+			sbStatusBar.AllowDrop = true;
+			sbStatusBar.BackColor = System.Drawing.SystemColors.Control;
+			sbStatusBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+			sbStatusBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			sbStatusBar.Location = new System.Drawing.Point(0, 538);
+			sbStatusBar.Name = "sbStatusBar";
+			sbStatusBar.ShowItemToolTips = true;
+			sbStatusBar.Size = new System.Drawing.Size(426, 25);
+			sbStatusBar.TabIndex = 28;
+			sbStatusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[]{sbStatusBar_Panels_Panel1});
 			// 
 			// sbStatusBar_Panels_Panel1
 			// 
-			this.sbStatusBar_Panels_Panel1.BorderSides = (System.Windows.Forms.ToolStripStatusLabelBorderSides) (System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom);
-			this.sbStatusBar_Panels_Panel1.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
-			this.sbStatusBar_Panels_Panel1.DoubleClickEnabled = true;
-			this.sbStatusBar_Panels_Panel1.Margin = new System.Windows.Forms.Padding(0);
-			this.sbStatusBar_Panels_Panel1.Size = new System.Drawing.Size(425, 25);
-			this.sbStatusBar_Panels_Panel1.Spring = true;
-			this.sbStatusBar_Panels_Panel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.sbStatusBar_Panels_Panel1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			sbStatusBar_Panels_Panel1.BorderSides = (System.Windows.Forms.ToolStripStatusLabelBorderSides) (System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom);
+			sbStatusBar_Panels_Panel1.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
+			sbStatusBar_Panels_Panel1.DoubleClickEnabled = true;
+			sbStatusBar_Panels_Panel1.Margin = new System.Windows.Forms.Padding(0);
+			sbStatusBar_Panels_Panel1.Size = new System.Drawing.Size(425, 25);
+			sbStatusBar_Panels_Panel1.Spring = true;
+			sbStatusBar_Panels_Panel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			sbStatusBar_Panels_Panel1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			// 
 			// txtStockID
 			// 
-			this.txtStockID.AcceptsReturn = true;
-			this.txtStockID.AllowDrop = true;
-			this.txtStockID.BackColor = System.Drawing.SystemColors.Menu;
-			this.txtStockID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtStockID.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtStockID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtStockID.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtStockID.Location = new System.Drawing.Point(96, 374);
-			this.txtStockID.MaxLength = 0;
-			this.txtStockID.Name = "txtStockID";
-			this.txtStockID.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtStockID.Size = new System.Drawing.Size(81, 20);
-			this.txtStockID.TabIndex = 26;
-			this.txtStockID.TabStop = false;
+			txtStockID.AcceptsReturn = true;
+			txtStockID.AllowDrop = true;
+			txtStockID.BackColor = System.Drawing.SystemColors.Menu;
+			txtStockID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtStockID.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtStockID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtStockID.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtStockID.Location = new System.Drawing.Point(96, 374);
+			txtStockID.MaxLength = 0;
+			txtStockID.Name = "txtStockID";
+			txtStockID.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtStockID.Size = new System.Drawing.Size(81, 20);
+			txtStockID.TabIndex = 26;
+			txtStockID.TabStop = false;
 			// 
 			// txtOriginalPrice
 			// 
-			this.txtOriginalPrice.AcceptsReturn = true;
-			this.txtOriginalPrice.AllowDrop = true;
-			this.txtOriginalPrice.BackColor = System.Drawing.SystemColors.Menu;
-			this.txtOriginalPrice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtOriginalPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtOriginalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtOriginalPrice.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtOriginalPrice.Location = new System.Drawing.Point(96, 403);
-			this.txtOriginalPrice.MaxLength = 0;
-			this.txtOriginalPrice.Name = "txtOriginalPrice";
-			this.txtOriginalPrice.ReadOnly = true;
-			this.txtOriginalPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtOriginalPrice.Size = new System.Drawing.Size(81, 20);
-			this.txtOriginalPrice.TabIndex = 25;
-			this.txtOriginalPrice.TabStop = false;
-			this.txtOriginalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			txtOriginalPrice.AcceptsReturn = true;
+			txtOriginalPrice.AllowDrop = true;
+			txtOriginalPrice.BackColor = System.Drawing.SystemColors.Menu;
+			txtOriginalPrice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtOriginalPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtOriginalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtOriginalPrice.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtOriginalPrice.Location = new System.Drawing.Point(96, 403);
+			txtOriginalPrice.MaxLength = 0;
+			txtOriginalPrice.Name = "txtOriginalPrice";
+			txtOriginalPrice.ReadOnly = true;
+			txtOriginalPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtOriginalPrice.Size = new System.Drawing.Size(81, 20);
+			txtOriginalPrice.TabIndex = 25;
+			txtOriginalPrice.TabStop = false;
+			txtOriginalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// _txtValues_0
 			// 
-			this._txtValues_0.AcceptsReturn = true;
-			this._txtValues_0.AllowDrop = true;
-			this._txtValues_0.BackColor = System.Drawing.SystemColors.Window;
-			this._txtValues_0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtValues_0.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtValues_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtValues_0.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtValues_0.Location = new System.Drawing.Point(328, 403);
-			this._txtValues_0.MaxLength = 0;
-			this._txtValues_0.Name = "_txtValues_0";
-			this._txtValues_0.ReadOnly = true;
-			this._txtValues_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtValues_0.Size = new System.Drawing.Size(81, 20);
-			this._txtValues_0.TabIndex = 4;
-			this._txtValues_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._txtValues_0.Enter += new System.EventHandler(this.txtValues_Enter);
-			this._txtValues_0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValues_KeyPress);
-			this._txtValues_0.TextChanged += new System.EventHandler(this.txtValues_TextChanged);
+			_txtValues_0.AcceptsReturn = true;
+			_txtValues_0.AllowDrop = true;
+			_txtValues_0.BackColor = System.Drawing.SystemColors.Window;
+			_txtValues_0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtValues_0.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtValues_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtValues_0.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtValues_0.Location = new System.Drawing.Point(328, 403);
+			_txtValues_0.MaxLength = 0;
+			_txtValues_0.Name = "_txtValues_0";
+			_txtValues_0.ReadOnly = true;
+			_txtValues_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtValues_0.Size = new System.Drawing.Size(81, 20);
+			_txtValues_0.TabIndex = 4;
+			_txtValues_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			_txtValues_0.Enter += new System.EventHandler(txtValues_Enter);
+			_txtValues_0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(txtValues_KeyPress);
+			_txtValues_0.TextChanged += new System.EventHandler(txtValues_TextChanged);
 			// 
 			// txtQuantityPerUnit
 			// 
-			this.txtQuantityPerUnit.AcceptsReturn = true;
-			this.txtQuantityPerUnit.AllowDrop = true;
-			this.txtQuantityPerUnit.BackColor = System.Drawing.SystemColors.Menu;
-			this.txtQuantityPerUnit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtQuantityPerUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtQuantityPerUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtQuantityPerUnit.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtQuantityPerUnit.Location = new System.Drawing.Point(328, 374);
-			this.txtQuantityPerUnit.MaxLength = 0;
-			this.txtQuantityPerUnit.Name = "txtQuantityPerUnit";
-			this.txtQuantityPerUnit.ReadOnly = true;
-			this.txtQuantityPerUnit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtQuantityPerUnit.Size = new System.Drawing.Size(81, 20);
-			this.txtQuantityPerUnit.TabIndex = 21;
-			this.txtQuantityPerUnit.TabStop = false;
-			this.txtQuantityPerUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			txtQuantityPerUnit.AcceptsReturn = true;
+			txtQuantityPerUnit.AllowDrop = true;
+			txtQuantityPerUnit.BackColor = System.Drawing.SystemColors.Menu;
+			txtQuantityPerUnit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtQuantityPerUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtQuantityPerUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtQuantityPerUnit.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtQuantityPerUnit.Location = new System.Drawing.Point(328, 374);
+			txtQuantityPerUnit.MaxLength = 0;
+			txtQuantityPerUnit.Name = "txtQuantityPerUnit";
+			txtQuantityPerUnit.ReadOnly = true;
+			txtQuantityPerUnit.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtQuantityPerUnit.Size = new System.Drawing.Size(81, 20);
+			txtQuantityPerUnit.TabIndex = 21;
+			txtQuantityPerUnit.TabStop = false;
+			txtQuantityPerUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// txtProductName
 			// 
-			this.txtProductName.AcceptsReturn = true;
-			this.txtProductName.AllowDrop = true;
-			this.txtProductName.BackColor = System.Drawing.SystemColors.Menu;
-			this.txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtProductName.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtProductName.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtProductName.Location = new System.Drawing.Point(96, 344);
-			this.txtProductName.MaxLength = 0;
-			this.txtProductName.Name = "txtProductName";
-			this.txtProductName.ReadOnly = true;
-			this.txtProductName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtProductName.Size = new System.Drawing.Size(145, 20);
-			this.txtProductName.TabIndex = 20;
-			this.txtProductName.TabStop = false;
+			txtProductName.AcceptsReturn = true;
+			txtProductName.AllowDrop = true;
+			txtProductName.BackColor = System.Drawing.SystemColors.Menu;
+			txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtProductName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtProductName.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtProductName.Location = new System.Drawing.Point(96, 344);
+			txtProductName.MaxLength = 0;
+			txtProductName.Name = "txtProductName";
+			txtProductName.ReadOnly = true;
+			txtProductName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtProductName.Size = new System.Drawing.Size(145, 20);
+			txtProductName.TabIndex = 20;
+			txtProductName.TabStop = false;
 			// 
 			// txtUnit
 			// 
-			this.txtUnit.AcceptsReturn = true;
-			this.txtUnit.AllowDrop = true;
-			this.txtUnit.BackColor = System.Drawing.SystemColors.Menu;
-			this.txtUnit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtUnit.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtUnit.Location = new System.Drawing.Point(328, 344);
-			this.txtUnit.MaxLength = 0;
-			this.txtUnit.Name = "txtUnit";
-			this.txtUnit.ReadOnly = true;
-			this.txtUnit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtUnit.Size = new System.Drawing.Size(81, 20);
-			this.txtUnit.TabIndex = 19;
-			this.txtUnit.TabStop = false;
+			txtUnit.AcceptsReturn = true;
+			txtUnit.AllowDrop = true;
+			txtUnit.BackColor = System.Drawing.SystemColors.Menu;
+			txtUnit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtUnit.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtUnit.Location = new System.Drawing.Point(328, 344);
+			txtUnit.MaxLength = 0;
+			txtUnit.Name = "txtUnit";
+			txtUnit.ReadOnly = true;
+			txtUnit.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtUnit.Size = new System.Drawing.Size(81, 20);
+			txtUnit.TabIndex = 19;
+			txtUnit.TabStop = false;
 			// 
 			// _txtValues_1
 			// 
-			this._txtValues_1.AcceptsReturn = true;
-			this._txtValues_1.AllowDrop = true;
-			this._txtValues_1.BackColor = System.Drawing.SystemColors.Window;
-			this._txtValues_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtValues_1.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtValues_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtValues_1.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtValues_1.Location = new System.Drawing.Point(328, 432);
-			this._txtValues_1.MaxLength = 0;
-			this._txtValues_1.Name = "_txtValues_1";
-			this._txtValues_1.ReadOnly = true;
-			this._txtValues_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtValues_1.Size = new System.Drawing.Size(81, 20);
-			this._txtValues_1.TabIndex = 5;
-			this._txtValues_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this._txtValues_1.Enter += new System.EventHandler(this.txtValues_Enter);
-			this._txtValues_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValues_KeyPress);
-			this._txtValues_1.TextChanged += new System.EventHandler(this.txtValues_TextChanged);
+			_txtValues_1.AcceptsReturn = true;
+			_txtValues_1.AllowDrop = true;
+			_txtValues_1.BackColor = System.Drawing.SystemColors.Window;
+			_txtValues_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtValues_1.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtValues_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtValues_1.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtValues_1.Location = new System.Drawing.Point(328, 432);
+			_txtValues_1.MaxLength = 0;
+			_txtValues_1.Name = "_txtValues_1";
+			_txtValues_1.ReadOnly = true;
+			_txtValues_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtValues_1.Size = new System.Drawing.Size(81, 20);
+			_txtValues_1.TabIndex = 5;
+			_txtValues_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			_txtValues_1.Enter += new System.EventHandler(txtValues_Enter);
+			_txtValues_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(txtValues_KeyPress);
+			_txtValues_1.TextChanged += new System.EventHandler(txtValues_TextChanged);
 			// 
 			// txtOriginalQuantity
 			// 
-			this.txtOriginalQuantity.AcceptsReturn = true;
-			this.txtOriginalQuantity.AllowDrop = true;
-			this.txtOriginalQuantity.BackColor = System.Drawing.SystemColors.Menu;
-			this.txtOriginalQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtOriginalQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtOriginalQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtOriginalQuantity.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtOriginalQuantity.Location = new System.Drawing.Point(96, 432);
-			this.txtOriginalQuantity.MaxLength = 0;
-			this.txtOriginalQuantity.Name = "txtOriginalQuantity";
-			this.txtOriginalQuantity.ReadOnly = true;
-			this.txtOriginalQuantity.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtOriginalQuantity.Size = new System.Drawing.Size(81, 20);
-			this.txtOriginalQuantity.TabIndex = 14;
-			this.txtOriginalQuantity.TabStop = false;
-			this.txtOriginalQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			txtOriginalQuantity.AcceptsReturn = true;
+			txtOriginalQuantity.AllowDrop = true;
+			txtOriginalQuantity.BackColor = System.Drawing.SystemColors.Menu;
+			txtOriginalQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtOriginalQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtOriginalQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtOriginalQuantity.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtOriginalQuantity.Location = new System.Drawing.Point(96, 432);
+			txtOriginalQuantity.MaxLength = 0;
+			txtOriginalQuantity.Name = "txtOriginalQuantity";
+			txtOriginalQuantity.ReadOnly = true;
+			txtOriginalQuantity.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtOriginalQuantity.Size = new System.Drawing.Size(81, 20);
+			txtOriginalQuantity.TabIndex = 14;
+			txtOriginalQuantity.TabStop = false;
+			txtOriginalQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			// 
 			// Frame3
 			// 
-			this.Frame3.AllowDrop = true;
-			this.Frame3.BackColor = System.Drawing.SystemColors.Control;
-			this.Frame3.Controls.Add(this.lvStocks);
-			this.Frame3.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
-			this.Frame3.Enabled = true;
-			this.Frame3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Frame3.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Frame3.Location = new System.Drawing.Point(8, 200);
-			this.Frame3.Name = "Frame3";
-			this.Frame3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Frame3.Size = new System.Drawing.Size(409, 137);
-			this.Frame3.TabIndex = 13;
-			this.Frame3.Visible = true;
+			Frame3.AllowDrop = true;
+			Frame3.BackColor = System.Drawing.SystemColors.Control;
+			Frame3.Controls.Add(lvStocks);
+			Frame3.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
+			Frame3.Enabled = true;
+			Frame3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Frame3.ForeColor = System.Drawing.SystemColors.ControlText;
+			Frame3.Location = new System.Drawing.Point(8, 200);
+			Frame3.Name = "Frame3";
+			Frame3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Frame3.Size = new System.Drawing.Size(409, 137);
+			Frame3.TabIndex = 13;
+			Frame3.Visible = true;
 			// 
 			// lvStocks
 			// 
-			this.lvStocks.AllowDrop = true;
-			this.lvStocks.BackColor = System.Drawing.SystemColors.Window;
-			this.lvStocks.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.lvStocks.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lvStocks.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.lvStocks.FullRowSelect = true;
-			this.lvStocks.GridLines = true;
-			this.lvStocks.HideSelection = false;
-			this.lvStocks.HotTracking = true;
-			this.lvStocks.LabelEdit = false;
-			this.lvStocks.Location = new System.Drawing.Point(8, 16);
-			this.lvStocks.MultiSelect = false;
-			this.lvStocks.Name = "lvStocks";
-			this.lvStocks.Size = new System.Drawing.Size(393, 113);
-			this.lvStocks.TabIndex = 3;
-			this.lvStocks.View = System.Windows.Forms.View.Details;
-			this.lvStocks.Columns.Add(this.lvStocks_ColumnHeader_1_);
-			this.lvStocks.Columns.Add(this.lvStocks_ColumnHeader_2_);
-			this.lvStocks.Columns.Add(this.lvStocks_ColumnHeader_3_);
-			this.lvStocks.Columns.Add(this.lvStocks_ColumnHeader_4_);
-			this.lvStocks.Columns.Add(this.lvStocks_ColumnHeader_5_);
-			this.lvStocks.Columns.Add(this.lvStocks_ColumnHeader_6_);
-			this.lvStocks.Columns.Add(this.lvStocks_ColumnHeader_7_);
-			this.lvStocks.Columns.Add(this.lvStocks_ColumnHeader_8_);
+			lvStocks.AllowDrop = true;
+			lvStocks.BackColor = System.Drawing.SystemColors.Window;
+			lvStocks.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			lvStocks.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lvStocks.ForeColor = System.Drawing.SystemColors.WindowText;
+			lvStocks.FullRowSelect = true;
+			lvStocks.GridLines = true;
+			lvStocks.HideSelection = false;
+			lvStocks.HotTracking = true;
+			lvStocks.LabelEdit = false;
+			lvStocks.Location = new System.Drawing.Point(8, 16);
+			lvStocks.MultiSelect = false;
+			lvStocks.Name = "lvStocks";
+			lvStocks.Size = new System.Drawing.Size(393, 113);
+			lvStocks.TabIndex = 3;
+			lvStocks.View = System.Windows.Forms.View.Details;
+			lvStocks.Columns.Add(lvStocks_ColumnHeader_1_);
+			lvStocks.Columns.Add(lvStocks_ColumnHeader_2_);
+			lvStocks.Columns.Add(lvStocks_ColumnHeader_3_);
+			lvStocks.Columns.Add(lvStocks_ColumnHeader_4_);
+			lvStocks.Columns.Add(lvStocks_ColumnHeader_5_);
+			lvStocks.Columns.Add(lvStocks_ColumnHeader_6_);
+			lvStocks.Columns.Add(lvStocks_ColumnHeader_7_);
+			lvStocks.Columns.Add(lvStocks_ColumnHeader_8_);
 			// 
 			// lvStocks_ColumnHeader_1_
 			// 
-			this.lvStocks_ColumnHeader_1_.Text = "Stock ID";
-			this.lvStocks_ColumnHeader_1_.Width = 97;
+			lvStocks_ColumnHeader_1_.Text = "Stock ID";
+			lvStocks_ColumnHeader_1_.Width = 97;
 			// 
 			// lvStocks_ColumnHeader_2_
 			// 
-			this.lvStocks_ColumnHeader_2_.Text = "Current Stock";
-			this.lvStocks_ColumnHeader_2_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvStocks_ColumnHeader_2_.Width = 97;
+			lvStocks_ColumnHeader_2_.Text = "Current Stock";
+			lvStocks_ColumnHeader_2_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvStocks_ColumnHeader_2_.Width = 97;
 			// 
 			// lvStocks_ColumnHeader_3_
 			// 
-			this.lvStocks_ColumnHeader_3_.Text = "Initial Stock";
-			this.lvStocks_ColumnHeader_3_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvStocks_ColumnHeader_3_.Width = 97;
+			lvStocks_ColumnHeader_3_.Text = "Initial Stock";
+			lvStocks_ColumnHeader_3_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvStocks_ColumnHeader_3_.Width = 97;
 			// 
 			// lvStocks_ColumnHeader_4_
 			// 
-			this.lvStocks_ColumnHeader_4_.Text = "Price";
-			this.lvStocks_ColumnHeader_4_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvStocks_ColumnHeader_4_.Width = 97;
+			lvStocks_ColumnHeader_4_.Text = "Price";
+			lvStocks_ColumnHeader_4_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvStocks_ColumnHeader_4_.Width = 97;
 			// 
 			// lvStocks_ColumnHeader_5_
 			// 
-			this.lvStocks_ColumnHeader_5_.Text = "Stock Price";
-			this.lvStocks_ColumnHeader_5_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvStocks_ColumnHeader_5_.Width = 97;
+			lvStocks_ColumnHeader_5_.Text = "Stock Price";
+			lvStocks_ColumnHeader_5_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvStocks_ColumnHeader_5_.Width = 97;
 			// 
 			// lvStocks_ColumnHeader_6_
 			// 
-			this.lvStocks_ColumnHeader_6_.Text = "Created";
-			this.lvStocks_ColumnHeader_6_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvStocks_ColumnHeader_6_.Width = 97;
+			lvStocks_ColumnHeader_6_.Text = "Created";
+			lvStocks_ColumnHeader_6_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvStocks_ColumnHeader_6_.Width = 97;
 			// 
 			// lvStocks_ColumnHeader_7_
 			// 
-			this.lvStocks_ColumnHeader_7_.Text = "Modified";
-			this.lvStocks_ColumnHeader_7_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvStocks_ColumnHeader_7_.Width = 97;
+			lvStocks_ColumnHeader_7_.Text = "Modified";
+			lvStocks_ColumnHeader_7_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvStocks_ColumnHeader_7_.Width = 97;
 			// 
 			// lvStocks_ColumnHeader_8_
 			// 
-			this.lvStocks_ColumnHeader_8_.Text = "User";
-			this.lvStocks_ColumnHeader_8_.Width = 97;
+			lvStocks_ColumnHeader_8_.Text = "User";
+			lvStocks_ColumnHeader_8_.Width = 97;
 			// 
 			// Frame1
 			// 
-			this.Frame1.AllowDrop = true;
-			this.Frame1.BackColor = System.Drawing.SystemColors.Control;
-			this.Frame1.Controls.Add(this.txtCode);
-			this.Frame1.Controls.Add(this.txtName);
-			this.Frame1.Controls.Add(this.cmdProducts);
-			this.Frame1.Controls.Add(this.Label5);
-			this.Frame1.Controls.Add(this.Label4);
-			this.Frame1.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
-			this.Frame1.Enabled = true;
-			this.Frame1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Frame1.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Frame1.Location = new System.Drawing.Point(8, 32);
-			this.Frame1.Name = "Frame1";
-			this.Frame1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Frame1.Size = new System.Drawing.Size(409, 65);
-			this.Frame1.TabIndex = 9;
-			this.Frame1.Text = "Search product ";
-			this.Frame1.Visible = true;
+			Frame1.AllowDrop = true;
+			Frame1.BackColor = System.Drawing.SystemColors.Control;
+			Frame1.Controls.Add(txtCode);
+			Frame1.Controls.Add(txtName);
+			Frame1.Controls.Add(cmdProducts);
+			Frame1.Controls.Add(Label5);
+			Frame1.Controls.Add(Label4);
+			Frame1.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
+			Frame1.Enabled = true;
+			Frame1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Frame1.ForeColor = System.Drawing.SystemColors.ControlText;
+			Frame1.Location = new System.Drawing.Point(8, 32);
+			Frame1.Name = "Frame1";
+			Frame1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Frame1.Size = new System.Drawing.Size(409, 65);
+			Frame1.TabIndex = 9;
+			Frame1.Text = "Search product ";
+			Frame1.Visible = true;
 			// 
 			// txtCode
 			// 
-			this.txtCode.AcceptsReturn = true;
-			this.txtCode.AllowDrop = true;
-			this.txtCode.BackColor = System.Drawing.SystemColors.Window;
-			this.txtCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtCode.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtCode.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtCode.Location = new System.Drawing.Point(112, 16);
-			this.txtCode.MaxLength = 0;
-			this.txtCode.Name = "txtCode";
-			this.txtCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtCode.Size = new System.Drawing.Size(97, 20);
-			this.txtCode.TabIndex = 0;
-			this.txtCode.TextChanged += new System.EventHandler(this.txtCode_TextChanged);
+			txtCode.AcceptsReturn = true;
+			txtCode.AllowDrop = true;
+			txtCode.BackColor = System.Drawing.SystemColors.Window;
+			txtCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtCode.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtCode.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtCode.Location = new System.Drawing.Point(112, 16);
+			txtCode.MaxLength = 0;
+			txtCode.Name = "txtCode";
+			txtCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtCode.Size = new System.Drawing.Size(97, 20);
+			txtCode.TabIndex = 0;
+			txtCode.TextChanged += new System.EventHandler(txtCode_TextChanged);
 			// 
 			// txtName
 			// 
-			this.txtName.AcceptsReturn = true;
-			this.txtName.AllowDrop = true;
-			this.txtName.BackColor = System.Drawing.SystemColors.Window;
-			this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtName.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtName.Location = new System.Drawing.Point(112, 40);
-			this.txtName.MaxLength = 0;
-			this.txtName.Name = "txtName";
-			this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtName.Size = new System.Drawing.Size(145, 20);
-			this.txtName.TabIndex = 1;
-			this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+			txtName.AcceptsReturn = true;
+			txtName.AllowDrop = true;
+			txtName.BackColor = System.Drawing.SystemColors.Window;
+			txtName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtName.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtName.Location = new System.Drawing.Point(112, 40);
+			txtName.MaxLength = 0;
+			txtName.Name = "txtName";
+			txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtName.Size = new System.Drawing.Size(145, 20);
+			txtName.TabIndex = 1;
+			txtName.TextChanged += new System.EventHandler(txtName_TextChanged);
 			// 
 			// cmdProducts
 			// 
-			this.cmdProducts.AllowDrop = true;
-			this.cmdProducts.BackColor = System.Drawing.SystemColors.Control;
-			this.cmdProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.cmdProducts.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.cmdProducts.Location = new System.Drawing.Point(360, 16);
-			this.cmdProducts.Name = "cmdProducts";
-			this.cmdProducts.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.cmdProducts.Size = new System.Drawing.Size(25, 21);
-			this.cmdProducts.TabIndex = 10;
-			this.cmdProducts.TabStop = false;
-			this.cmdProducts.Text = "...";
-			this.cmdProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.cmdProducts.UseVisualStyleBackColor = false;
-			this.cmdProducts.Click += new System.EventHandler(this.cmdProducts_Click);
+			cmdProducts.AllowDrop = true;
+			cmdProducts.BackColor = System.Drawing.SystemColors.Control;
+			cmdProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			cmdProducts.ForeColor = System.Drawing.SystemColors.ControlText;
+			cmdProducts.Location = new System.Drawing.Point(360, 16);
+			cmdProducts.Name = "cmdProducts";
+			cmdProducts.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			cmdProducts.Size = new System.Drawing.Size(25, 21);
+			cmdProducts.TabIndex = 10;
+			cmdProducts.TabStop = false;
+			cmdProducts.Text = "...";
+			cmdProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			cmdProducts.UseVisualStyleBackColor = false;
+			cmdProducts.Click += new System.EventHandler(cmdProducts_Click);
 			// 
 			// Label5
 			// 
-			this.Label5.AllowDrop = true;
-			this.Label5.BackColor = System.Drawing.SystemColors.Control;
-			this.Label5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label5.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label5.Location = new System.Drawing.Point(16, 16);
-			this.Label5.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label5.Name = "Label5";
-			this.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label5.Size = new System.Drawing.Size(89, 17);
-			this.Label5.TabIndex = 12;
-			this.Label5.Text = "Code";
+			Label5.AllowDrop = true;
+			Label5.BackColor = System.Drawing.SystemColors.Control;
+			Label5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label5.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label5.Location = new System.Drawing.Point(16, 16);
+			Label5.MinimumSize = new System.Drawing.Size(89, 17);
+			Label5.Name = "Label5";
+			Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label5.Size = new System.Drawing.Size(89, 17);
+			Label5.TabIndex = 12;
+			Label5.Text = "Code";
 			// 
 			// Label4
 			// 
-			this.Label4.AllowDrop = true;
-			this.Label4.BackColor = System.Drawing.SystemColors.Control;
-			this.Label4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label4.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label4.Location = new System.Drawing.Point(16, 40);
-			this.Label4.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label4.Name = "Label4";
-			this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label4.Size = new System.Drawing.Size(89, 17);
-			this.Label4.TabIndex = 11;
-			this.Label4.Text = "Name";
+			Label4.AllowDrop = true;
+			Label4.BackColor = System.Drawing.SystemColors.Control;
+			Label4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label4.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label4.Location = new System.Drawing.Point(16, 40);
+			Label4.MinimumSize = new System.Drawing.Size(89, 17);
+			Label4.Name = "Label4";
+			Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label4.Size = new System.Drawing.Size(89, 17);
+			Label4.TabIndex = 11;
+			Label4.Text = "Name";
 			// 
 			// cmdClose
 			// 
-			this.cmdClose.AllowDrop = true;
-			this.cmdClose.BackColor = System.Drawing.SystemColors.Control;
-			this.cmdClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.cmdClose.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.cmdClose.Location = new System.Drawing.Point(344, 504);
-			this.cmdClose.Name = "cmdClose";
-			this.cmdClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.cmdClose.Size = new System.Drawing.Size(73, 25);
-			this.cmdClose.TabIndex = 7;
-			this.cmdClose.Text = "&Close";
-			this.cmdClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.cmdClose.UseVisualStyleBackColor = false;
-			this.cmdClose.Click += new System.EventHandler(this.cmdClose_Click);
+			cmdClose.AllowDrop = true;
+			cmdClose.BackColor = System.Drawing.SystemColors.Control;
+			cmdClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			cmdClose.ForeColor = System.Drawing.SystemColors.ControlText;
+			cmdClose.Location = new System.Drawing.Point(344, 504);
+			cmdClose.Name = "cmdClose";
+			cmdClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			cmdClose.Size = new System.Drawing.Size(73, 25);
+			cmdClose.TabIndex = 7;
+			cmdClose.Text = "&Close";
+			cmdClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			cmdClose.UseVisualStyleBackColor = false;
+			cmdClose.Click += new System.EventHandler(cmdClose_Click);
 			// 
 			// cmdSave
 			// 
-			this.cmdSave.AllowDrop = true;
-			this.cmdSave.BackColor = System.Drawing.SystemColors.Control;
-			this.cmdSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.cmdSave.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.cmdSave.Location = new System.Drawing.Point(264, 504);
-			this.cmdSave.Name = "cmdSave";
-			this.cmdSave.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.cmdSave.Size = new System.Drawing.Size(73, 25);
-			this.cmdSave.TabIndex = 6;
-			this.cmdSave.Text = "&Save";
-			this.cmdSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.cmdSave.UseVisualStyleBackColor = false;
-			this.cmdSave.Click += new System.EventHandler(this.cmdSave_Click);
+			cmdSave.AllowDrop = true;
+			cmdSave.BackColor = System.Drawing.SystemColors.Control;
+			cmdSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			cmdSave.ForeColor = System.Drawing.SystemColors.ControlText;
+			cmdSave.Location = new System.Drawing.Point(264, 504);
+			cmdSave.Name = "cmdSave";
+			cmdSave.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			cmdSave.Size = new System.Drawing.Size(73, 25);
+			cmdSave.TabIndex = 6;
+			cmdSave.Text = "&Save";
+			cmdSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			cmdSave.UseVisualStyleBackColor = false;
+			cmdSave.Click += new System.EventHandler(cmdSave_Click);
 			// 
 			// lvProducts
 			// 
-			this.lvProducts.AllowDrop = true;
-			this.lvProducts.BackColor = System.Drawing.SystemColors.Window;
-			this.lvProducts.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.lvProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lvProducts.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.lvProducts.FullRowSelect = true;
-			this.lvProducts.GridLines = true;
-			this.lvProducts.HideSelection = false;
-			this.lvProducts.HotTracking = true;
-			this.lvProducts.LabelEdit = false;
-			this.lvProducts.Location = new System.Drawing.Point(8, 104);
-			this.lvProducts.MultiSelect = false;
-			this.lvProducts.Name = "lvProducts";
-			this.lvProducts.Size = new System.Drawing.Size(409, 97);
-			this.lvProducts.TabIndex = 2;
-			this.lvProducts.View = System.Windows.Forms.View.Details;
-			this.lvProducts.Columns.Add(this.lvProducts_ColumnHeader_1_);
-			this.lvProducts.Columns.Add(this.lvProducts_ColumnHeader_2_);
-			this.lvProducts.Columns.Add(this.lvProducts_ColumnHeader_3_);
-			this.lvProducts.Columns.Add(this.lvProducts_ColumnHeader_4_);
-			this.lvProducts.Columns.Add(this.lvProducts_ColumnHeader_5_);
-			this.lvProducts.Columns.Add(this.lvProducts_ColumnHeader_6_);
-			this.lvProducts.Columns.Add(this.lvProducts_ColumnHeader_7_);
+			lvProducts.AllowDrop = true;
+			lvProducts.BackColor = System.Drawing.SystemColors.Window;
+			lvProducts.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			lvProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lvProducts.ForeColor = System.Drawing.SystemColors.WindowText;
+			lvProducts.FullRowSelect = true;
+			lvProducts.GridLines = true;
+			lvProducts.HideSelection = false;
+			lvProducts.HotTracking = true;
+			lvProducts.LabelEdit = false;
+			lvProducts.Location = new System.Drawing.Point(8, 104);
+			lvProducts.MultiSelect = false;
+			lvProducts.Name = "lvProducts";
+			lvProducts.Size = new System.Drawing.Size(409, 97);
+			lvProducts.TabIndex = 2;
+			lvProducts.View = System.Windows.Forms.View.Details;
+			lvProducts.Columns.Add(lvProducts_ColumnHeader_1_);
+			lvProducts.Columns.Add(lvProducts_ColumnHeader_2_);
+			lvProducts.Columns.Add(lvProducts_ColumnHeader_3_);
+			lvProducts.Columns.Add(lvProducts_ColumnHeader_4_);
+			lvProducts.Columns.Add(lvProducts_ColumnHeader_5_);
+			lvProducts.Columns.Add(lvProducts_ColumnHeader_6_);
+			lvProducts.Columns.Add(lvProducts_ColumnHeader_7_);
 			// 
 			// lvProducts_ColumnHeader_1_
 			// 
-			this.lvProducts_ColumnHeader_1_.Text = "Code";
-			this.lvProducts_ColumnHeader_1_.Width = 97;
+			lvProducts_ColumnHeader_1_.Text = "Code";
+			lvProducts_ColumnHeader_1_.Width = 97;
 			// 
 			// lvProducts_ColumnHeader_2_
 			// 
-			this.lvProducts_ColumnHeader_2_.Text = "Name";
-			this.lvProducts_ColumnHeader_2_.Width = 97;
+			lvProducts_ColumnHeader_2_.Text = "Name";
+			lvProducts_ColumnHeader_2_.Width = 97;
 			// 
 			// lvProducts_ColumnHeader_3_
 			// 
-			this.lvProducts_ColumnHeader_3_.Text = "Price";
-			this.lvProducts_ColumnHeader_3_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvProducts_ColumnHeader_3_.Width = 97;
+			lvProducts_ColumnHeader_3_.Text = "Price";
+			lvProducts_ColumnHeader_3_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvProducts_ColumnHeader_3_.Width = 97;
 			// 
 			// lvProducts_ColumnHeader_4_
 			// 
-			this.lvProducts_ColumnHeader_4_.Text = "Existence";
-			this.lvProducts_ColumnHeader_4_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvProducts_ColumnHeader_4_.Width = 97;
+			lvProducts_ColumnHeader_4_.Text = "Existence";
+			lvProducts_ColumnHeader_4_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvProducts_ColumnHeader_4_.Width = 97;
 			// 
 			// lvProducts_ColumnHeader_5_
 			// 
-			this.lvProducts_ColumnHeader_5_.Text = "Ordered";
-			this.lvProducts_ColumnHeader_5_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvProducts_ColumnHeader_5_.Width = 97;
+			lvProducts_ColumnHeader_5_.Text = "Ordered";
+			lvProducts_ColumnHeader_5_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvProducts_ColumnHeader_5_.Width = 97;
 			// 
 			// lvProducts_ColumnHeader_6_
 			// 
-			this.lvProducts_ColumnHeader_6_.Text = "Quantity per Unit";
-			this.lvProducts_ColumnHeader_6_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.lvProducts_ColumnHeader_6_.Width = 97;
+			lvProducts_ColumnHeader_6_.Text = "Quantity per Unit";
+			lvProducts_ColumnHeader_6_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			lvProducts_ColumnHeader_6_.Width = 97;
 			// 
 			// lvProducts_ColumnHeader_7_
 			// 
-			this.lvProducts_ColumnHeader_7_.Text = "Unit";
-			this.lvProducts_ColumnHeader_7_.Width = 97;
+			lvProducts_ColumnHeader_7_.Text = "Unit";
+			lvProducts_ColumnHeader_7_.Width = 97;
 			// 
 			// Label14
 			// 
-			this.Label14.AllowDrop = true;
-			this.Label14.BackColor = System.Drawing.SystemColors.Control;
-			this.Label14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label14.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label14.Location = new System.Drawing.Point(216, 472);
-			this.Label14.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label14.Name = "Label14";
-			this.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label14.Size = new System.Drawing.Size(89, 17);
-			this.Label14.TabIndex = 32;
-			this.Label14.Text = "Adjusted quantity";
+			Label14.AllowDrop = true;
+			Label14.BackColor = System.Drawing.SystemColors.Control;
+			Label14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label14.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label14.Location = new System.Drawing.Point(216, 472);
+			Label14.MinimumSize = new System.Drawing.Size(89, 17);
+			Label14.Name = "Label14";
+			Label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label14.Size = new System.Drawing.Size(89, 17);
+			Label14.TabIndex = 32;
+			Label14.Text = "Adjusted quantity";
 			// 
 			// lblNewQuantity
 			// 
-			this.lblNewQuantity.AllowDrop = true;
-			this.lblNewQuantity.BackColor = System.Drawing.SystemColors.Control;
-			this.lblNewQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblNewQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblNewQuantity.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblNewQuantity.Location = new System.Drawing.Point(312, 472);
-			this.lblNewQuantity.MinimumSize = new System.Drawing.Size(89, 17);
-			this.lblNewQuantity.Name = "lblNewQuantity";
-			this.lblNewQuantity.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblNewQuantity.Size = new System.Drawing.Size(89, 17);
-			this.lblNewQuantity.TabIndex = 31;
+			lblNewQuantity.AllowDrop = true;
+			lblNewQuantity.BackColor = System.Drawing.SystemColors.Control;
+			lblNewQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblNewQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblNewQuantity.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblNewQuantity.Location = new System.Drawing.Point(312, 472);
+			lblNewQuantity.MinimumSize = new System.Drawing.Size(89, 17);
+			lblNewQuantity.Name = "lblNewQuantity";
+			lblNewQuantity.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblNewQuantity.Size = new System.Drawing.Size(89, 17);
+			lblNewQuantity.TabIndex = 31;
 			// 
 			// Label12
 			// 
-			this.Label12.AllowDrop = true;
-			this.Label12.BackColor = System.Drawing.SystemColors.Control;
-			this.Label12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label12.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label12.Location = new System.Drawing.Point(16, 472);
-			this.Label12.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label12.Name = "Label12";
-			this.Label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label12.Size = new System.Drawing.Size(89, 17);
-			this.Label12.TabIndex = 30;
-			this.Label12.Text = "Stock quantity";
+			Label12.AllowDrop = true;
+			Label12.BackColor = System.Drawing.SystemColors.Control;
+			Label12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label12.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label12.Location = new System.Drawing.Point(16, 472);
+			Label12.MinimumSize = new System.Drawing.Size(89, 17);
+			Label12.Name = "Label12";
+			Label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label12.Size = new System.Drawing.Size(89, 17);
+			Label12.TabIndex = 30;
+			Label12.Text = "Stock quantity";
 			// 
 			// lblCurrentQuantity
 			// 
-			this.lblCurrentQuantity.AllowDrop = true;
-			this.lblCurrentQuantity.BackColor = System.Drawing.SystemColors.Control;
-			this.lblCurrentQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblCurrentQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblCurrentQuantity.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblCurrentQuantity.Location = new System.Drawing.Point(112, 472);
-			this.lblCurrentQuantity.MinimumSize = new System.Drawing.Size(89, 17);
-			this.lblCurrentQuantity.Name = "lblCurrentQuantity";
-			this.lblCurrentQuantity.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblCurrentQuantity.Size = new System.Drawing.Size(89, 17);
-			this.lblCurrentQuantity.TabIndex = 29;
+			lblCurrentQuantity.AllowDrop = true;
+			lblCurrentQuantity.BackColor = System.Drawing.SystemColors.Control;
+			lblCurrentQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblCurrentQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblCurrentQuantity.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblCurrentQuantity.Location = new System.Drawing.Point(112, 472);
+			lblCurrentQuantity.MinimumSize = new System.Drawing.Size(89, 17);
+			lblCurrentQuantity.Name = "lblCurrentQuantity";
+			lblCurrentQuantity.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblCurrentQuantity.Size = new System.Drawing.Size(89, 17);
+			lblCurrentQuantity.TabIndex = 29;
 			// 
 			// Label11
 			// 
-			this.Label11.AllowDrop = true;
-			this.Label11.BackColor = System.Drawing.SystemColors.Control;
-			this.Label11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label11.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label11.Location = new System.Drawing.Point(16, 376);
-			this.Label11.MinimumSize = new System.Drawing.Size(65, 17);
-			this.Label11.Name = "Label11";
-			this.Label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label11.Size = new System.Drawing.Size(65, 17);
-			this.Label11.TabIndex = 27;
-			this.Label11.Text = "Stock ID:";
+			Label11.AllowDrop = true;
+			Label11.BackColor = System.Drawing.SystemColors.Control;
+			Label11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label11.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label11.Location = new System.Drawing.Point(16, 376);
+			Label11.MinimumSize = new System.Drawing.Size(65, 17);
+			Label11.Name = "Label11";
+			Label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label11.Size = new System.Drawing.Size(65, 17);
+			Label11.TabIndex = 27;
+			Label11.Text = "Stock ID:";
 			// 
 			// Label10
 			// 
-			this.Label10.AllowDrop = true;
-			this.Label10.BackColor = System.Drawing.SystemColors.Control;
-			this.Label10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label10.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label10.Location = new System.Drawing.Point(216, 376);
-			this.Label10.MinimumSize = new System.Drawing.Size(73, 17);
-			this.Label10.Name = "Label10";
-			this.Label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label10.Size = new System.Drawing.Size(73, 17);
-			this.Label10.TabIndex = 24;
-			this.Label10.Text = "Quantity";
+			Label10.AllowDrop = true;
+			Label10.BackColor = System.Drawing.SystemColors.Control;
+			Label10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label10.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label10.Location = new System.Drawing.Point(216, 376);
+			Label10.MinimumSize = new System.Drawing.Size(73, 17);
+			Label10.Name = "Label10";
+			Label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label10.Size = new System.Drawing.Size(73, 17);
+			Label10.TabIndex = 24;
+			Label10.Text = "Quantity";
 			// 
 			// Label8
 			// 
-			this.Label8.AllowDrop = true;
-			this.Label8.BackColor = System.Drawing.SystemColors.Control;
-			this.Label8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label8.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label8.Location = new System.Drawing.Point(16, 344);
-			this.Label8.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label8.Name = "Label8";
-			this.Label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label8.Size = new System.Drawing.Size(89, 17);
-			this.Label8.TabIndex = 23;
-			this.Label8.Text = "Product";
+			Label8.AllowDrop = true;
+			Label8.BackColor = System.Drawing.SystemColors.Control;
+			Label8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label8.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label8.Location = new System.Drawing.Point(16, 344);
+			Label8.MinimumSize = new System.Drawing.Size(89, 17);
+			Label8.Name = "Label8";
+			Label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label8.Size = new System.Drawing.Size(89, 17);
+			Label8.TabIndex = 23;
+			Label8.Text = "Product";
 			// 
 			// Label9
 			// 
-			this.Label9.AllowDrop = true;
-			this.Label9.BackColor = System.Drawing.SystemColors.Control;
-			this.Label9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label9.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label9.Location = new System.Drawing.Point(272, 344);
-			this.Label9.MinimumSize = new System.Drawing.Size(41, 17);
-			this.Label9.Name = "Label9";
-			this.Label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label9.Size = new System.Drawing.Size(41, 17);
-			this.Label9.TabIndex = 22;
-			this.Label9.Text = "Unit";
+			Label9.AllowDrop = true;
+			Label9.BackColor = System.Drawing.SystemColors.Control;
+			Label9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label9.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label9.Location = new System.Drawing.Point(272, 344);
+			Label9.MinimumSize = new System.Drawing.Size(41, 17);
+			Label9.Name = "Label9";
+			Label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label9.Size = new System.Drawing.Size(41, 17);
+			Label9.TabIndex = 22;
+			Label9.Text = "Unit";
 			// 
 			// Label7
 			// 
-			this.Label7.AllowDrop = true;
-			this.Label7.BackColor = System.Drawing.SystemColors.Control;
-			this.Label7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label7.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label7.Location = new System.Drawing.Point(216, 435);
-			this.Label7.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label7.Name = "Label7";
-			this.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label7.Size = new System.Drawing.Size(89, 17);
-			this.Label7.TabIndex = 18;
-			this.Label7.Text = "New Quantity";
+			Label7.AllowDrop = true;
+			Label7.BackColor = System.Drawing.SystemColors.Control;
+			Label7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label7.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label7.Location = new System.Drawing.Point(216, 435);
+			Label7.MinimumSize = new System.Drawing.Size(89, 17);
+			Label7.Name = "Label7";
+			Label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label7.Size = new System.Drawing.Size(89, 17);
+			Label7.TabIndex = 18;
+			Label7.Text = "New Quantity";
 			// 
 			// Label6
 			// 
-			this.Label6.AllowDrop = true;
-			this.Label6.BackColor = System.Drawing.SystemColors.Control;
-			this.Label6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label6.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label6.Location = new System.Drawing.Point(216, 406);
-			this.Label6.MinimumSize = new System.Drawing.Size(73, 17);
-			this.Label6.Name = "Label6";
-			this.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label6.Size = new System.Drawing.Size(73, 17);
-			this.Label6.TabIndex = 17;
-			this.Label6.Text = "New Price";
+			Label6.AllowDrop = true;
+			Label6.BackColor = System.Drawing.SystemColors.Control;
+			Label6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label6.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label6.Location = new System.Drawing.Point(216, 406);
+			Label6.MinimumSize = new System.Drawing.Size(73, 17);
+			Label6.Name = "Label6";
+			Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label6.Size = new System.Drawing.Size(73, 17);
+			Label6.TabIndex = 17;
+			Label6.Text = "New Price";
 			// 
 			// Label2
 			// 
-			this.Label2.AllowDrop = true;
-			this.Label2.BackColor = System.Drawing.SystemColors.Control;
-			this.Label2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label2.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label2.Location = new System.Drawing.Point(16, 435);
-			this.Label2.MinimumSize = new System.Drawing.Size(81, 17);
-			this.Label2.Name = "Label2";
-			this.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label2.Size = new System.Drawing.Size(81, 17);
-			this.Label2.TabIndex = 16;
-			this.Label2.Text = "Quantity";
+			Label2.AllowDrop = true;
+			Label2.BackColor = System.Drawing.SystemColors.Control;
+			Label2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label2.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label2.Location = new System.Drawing.Point(16, 435);
+			Label2.MinimumSize = new System.Drawing.Size(81, 17);
+			Label2.Name = "Label2";
+			Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label2.Size = new System.Drawing.Size(81, 17);
+			Label2.TabIndex = 16;
+			Label2.Text = "Quantity";
 			// 
 			// Label1
 			// 
-			this.Label1.AllowDrop = true;
-			this.Label1.BackColor = System.Drawing.SystemColors.Control;
-			this.Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label1.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label1.Location = new System.Drawing.Point(16, 406);
-			this.Label1.MinimumSize = new System.Drawing.Size(73, 17);
-			this.Label1.Name = "Label1";
-			this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label1.Size = new System.Drawing.Size(73, 17);
-			this.Label1.TabIndex = 15;
-			this.Label1.Text = "Old Price";
+			Label1.AllowDrop = true;
+			Label1.BackColor = System.Drawing.SystemColors.Control;
+			Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label1.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label1.Location = new System.Drawing.Point(16, 406);
+			Label1.MinimumSize = new System.Drawing.Size(73, 17);
+			Label1.Name = "Label1";
+			Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label1.Size = new System.Drawing.Size(73, 17);
+			Label1.TabIndex = 15;
+			Label1.Text = "Old Price";
 			// 
 			// Label3
 			// 
-			this.Label3.AllowDrop = true;
-			this.Label3.BackColor = System.Drawing.SystemColors.Control;
-			this.Label3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label3.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label3.Location = new System.Drawing.Point(16, 8);
-			this.Label3.MinimumSize = new System.Drawing.Size(121, 17);
-			this.Label3.Name = "Label3";
-			this.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label3.Size = new System.Drawing.Size(121, 17);
-			this.Label3.TabIndex = 8;
-			this.Label3.Text = "Select a product first";
+			Label3.AllowDrop = true;
+			Label3.BackColor = System.Drawing.SystemColors.Control;
+			Label3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label3.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label3.Location = new System.Drawing.Point(16, 8);
+			Label3.MinimumSize = new System.Drawing.Size(121, 17);
+			Label3.Name = "Label3";
+			Label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label3.Size = new System.Drawing.Size(121, 17);
+			Label3.TabIndex = 8;
+			Label3.Text = "Select a product first";
 			// 
 			// frmAdjustStockManual
 			// 
-			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.AutoScroll = true;
-			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(426, 563);
-			this.Controls.Add(this.sbStatusBar);
-			this.Controls.Add(this.txtStockID);
-			this.Controls.Add(this.txtOriginalPrice);
-			this.Controls.Add(this._txtValues_0);
-			this.Controls.Add(this.txtQuantityPerUnit);
-			this.Controls.Add(this.txtProductName);
-			this.Controls.Add(this.txtUnit);
-			this.Controls.Add(this._txtValues_1);
-			this.Controls.Add(this.txtOriginalQuantity);
-			this.Controls.Add(this.Frame3);
-			this.Controls.Add(this.Frame1);
-			this.Controls.Add(this.cmdClose);
-			this.Controls.Add(this.cmdSave);
-			this.Controls.Add(this.lvProducts);
-			this.Controls.Add(this.Label14);
-			this.Controls.Add(this.lblNewQuantity);
-			this.Controls.Add(this.Label12);
-			this.Controls.Add(this.lblCurrentQuantity);
-			this.Controls.Add(this.Label11);
-			this.Controls.Add(this.Label10);
-			this.Controls.Add(this.Label8);
-			this.Controls.Add(this.Label9);
-			this.Controls.Add(this.Label7);
-			this.Controls.Add(this.Label6);
-			this.Controls.Add(this.Label2);
-			this.Controls.Add(this.Label1);
-			this.Controls.Add(this.Label3);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Location = new System.Drawing.Point(3, 25);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "frmAdjustStockManual";
-			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "Inventory Adjust";
-			this.commandButtonHelper1.SetStyle(this.cmdProducts, 0);
-			this.commandButtonHelper1.SetStyle(this.cmdClose, 0);
-			this.commandButtonHelper1.SetStyle(this.cmdSave, 0);
-			this.Activated += new System.EventHandler(this.frmAdjustStockManual_Activated);
-			this.Closed += new System.EventHandler(this.Form_Closed);
-			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
-			this.listViewHelper1.SetItemClickMethod(this.lvStocks, "lvStocks_ItemClick");
-			this.listViewHelper1.SetCorrectEventsBehavior(this.lvStocks, true);
-			this.listViewHelper1.SetItemClickMethod(this.lvProducts, "lvProducts_ItemClick");
-			this.listViewHelper1.SetCorrectEventsBehavior(this.lvProducts, true);
-			((System.ComponentModel.ISupportInitialize) this.listViewHelper1).EndInit();
-			this.sbStatusBar.ResumeLayout(false);
-			this.Frame3.ResumeLayout(false);
-			this.lvStocks.ResumeLayout(false);
-			this.Frame1.ResumeLayout(false);
-			this.lvProducts.ResumeLayout(false);
-			this.ResumeLayout(false);
+			AllowDrop = true;
+			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			AutoScroll = true;
+			BackColor = System.Drawing.SystemColors.Control;
+			ClientSize = new System.Drawing.Size(426, 563);
+			Controls.Add(sbStatusBar);
+			Controls.Add(txtStockID);
+			Controls.Add(txtOriginalPrice);
+			Controls.Add(_txtValues_0);
+			Controls.Add(txtQuantityPerUnit);
+			Controls.Add(txtProductName);
+			Controls.Add(txtUnit);
+			Controls.Add(_txtValues_1);
+			Controls.Add(txtOriginalQuantity);
+			Controls.Add(Frame3);
+			Controls.Add(Frame1);
+			Controls.Add(cmdClose);
+			Controls.Add(cmdSave);
+			Controls.Add(lvProducts);
+			Controls.Add(Label14);
+			Controls.Add(lblNewQuantity);
+			Controls.Add(Label12);
+			Controls.Add(lblCurrentQuantity);
+			Controls.Add(Label11);
+			Controls.Add(Label10);
+			Controls.Add(Label8);
+			Controls.Add(Label9);
+			Controls.Add(Label7);
+			Controls.Add(Label6);
+			Controls.Add(Label2);
+			Controls.Add(Label1);
+			Controls.Add(Label3);
+			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			Location = new System.Drawing.Point(3, 25);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "frmAdjustStockManual";
+			RightToLeft = System.Windows.Forms.RightToLeft.No;
+			StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+			Text = "Inventory Adjust";
+			commandButtonHelper1.SetStyle(cmdProducts, 0);
+			commandButtonHelper1.SetStyle(cmdClose, 0);
+			commandButtonHelper1.SetStyle(cmdSave, 0);
+			Activated += new System.EventHandler(frmAdjustStockManual_Activated);
+			Closed += new System.EventHandler(Form_Closed);
+			FormClosing += new System.Windows.Forms.FormClosingEventHandler(Form_FormClosing);
+			listViewHelper1.SetItemClickMethod(lvStocks, "lvStocks_ItemClick");
+			listViewHelper1.SetCorrectEventsBehavior(lvStocks, true);
+			listViewHelper1.SetItemClickMethod(lvProducts, "lvProducts_ItemClick");
+			listViewHelper1.SetCorrectEventsBehavior(lvProducts, true);
+			((System.ComponentModel.ISupportInitialize) listViewHelper1).EndInit();
+			sbStatusBar.ResumeLayout(false);
+			Frame3.ResumeLayout(false);
+			lvStocks.ResumeLayout(false);
+			Frame1.ResumeLayout(false);
+			lvProducts.ResumeLayout(false);
+			ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents)
 		{
@@ -883,14 +883,14 @@ namespace SKS
 			// functionality of automatically
 			// loading and showing an MDI
 			// child's parent.
-			this.MdiParent = SKS.frmMain.DefInstance;
+			MdiParent = SKS.frmMain.DefInstance;
 			SKS.frmMain.DefInstance.Show();
 		}
 		void InitializetxtValues()
 		{
-			this.txtValues = new System.Windows.Forms.TextBox[2];
-			this.txtValues[0] = _txtValues_0;
-			this.txtValues[1] = _txtValues_1;
+			txtValues = new System.Windows.Forms.TextBox[2];
+			txtValues[0] = _txtValues_0;
+			txtValues[1] = _txtValues_1;
 		}
 		#endregion
 	}

@@ -83,709 +83,709 @@ namespace SKS
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProviders));
-			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
-			this.dcProviders = new UpgradeHelpers.DB.ADO.ADODataControlHelper();
-			this.Frame1 = new System.Windows.Forms.GroupBox();
-			this._txtField_1 = new System.Windows.Forms.TextBox();
-			this._txtField_4 = new System.Windows.Forms.TextBox();
-			this._txtField_0 = new System.Windows.Forms.TextBox();
-			this._txtField_6 = new System.Windows.Forms.TextBox();
-			this._txtField_7 = new System.Windows.Forms.TextBox();
-			this._txtField_2 = new System.Windows.Forms.TextBox();
-			this._txtField_5 = new System.Windows.Forms.TextBox();
-			this.Frame2 = new System.Windows.Forms.GroupBox();
-			this._txtField_11 = new System.Windows.Forms.TextBox();
-			this._txtField_13 = new System.Windows.Forms.TextBox();
-			this._txtField_12 = new System.Windows.Forms.TextBox();
-			this.Label7 = new System.Windows.Forms.Label();
-			this.Label3 = new System.Windows.Forms.Label();
-			this.Label2 = new System.Windows.Forms.Label();
-			this._txtField_8 = new System.Windows.Forms.TextBox();
-			this._txtField_10 = new System.Windows.Forms.TextBox();
-			this._txtField_14 = new System.Windows.Forms.TextBox();
-			this._txtField_9 = new System.Windows.Forms.TextBox();
-			this.Label4 = new System.Windows.Forms.Label();
-			this.Label15 = new System.Windows.Forms.Label();
-			this.Label14 = new System.Windows.Forms.Label();
-			this.Label13 = new System.Windows.Forms.Label();
-			this.Label12 = new System.Windows.Forms.Label();
-			this.Label11 = new System.Windows.Forms.Label();
-			this.Label10 = new System.Windows.Forms.Label();
-			this.Label9 = new System.Windows.Forms.Label();
-			this.Label8 = new System.Windows.Forms.Label();
-			this.Label6 = new System.Windows.Forms.Label();
-			this.Label1 = new System.Windows.Forms.Label();
-			this.ImageList1 = new System.Windows.Forms.ImageList();
-			this.Toolbar1 = new System.Windows.Forms.ToolStrip();
-			this.Toolbar1_Buttons_Button1 = new System.Windows.Forms.ToolStripButton();
-			this.Toolbar1_Buttons_Button2 = new System.Windows.Forms.ToolStripButton();
-			this.Toolbar1_Buttons_Button3 = new System.Windows.Forms.ToolStripButton();
-			this.Toolbar1_Buttons_Button4 = new System.Windows.Forms.ToolStripButton();
-			this.Toolbar1_Buttons_Button5 = new System.Windows.Forms.ToolStripButton();
-			this.Toolbar1_Buttons_Button6 = new System.Windows.Forms.ToolStripButton();
-			((System.ComponentModel.ISupportInitialize) this.dcProviders).BeginInit();
-			this.Frame1.SuspendLayout();
-			this.Frame2.SuspendLayout();
-			this.Toolbar1.SuspendLayout();
-			this.SuspendLayout();
+			ToolTipMain = new System.Windows.Forms.ToolTip(components);
+			dcProviders = new UpgradeHelpers.DB.ADO.ADODataControlHelper();
+			Frame1 = new System.Windows.Forms.GroupBox();
+			_txtField_1 = new System.Windows.Forms.TextBox();
+			_txtField_4 = new System.Windows.Forms.TextBox();
+			_txtField_0 = new System.Windows.Forms.TextBox();
+			_txtField_6 = new System.Windows.Forms.TextBox();
+			_txtField_7 = new System.Windows.Forms.TextBox();
+			_txtField_2 = new System.Windows.Forms.TextBox();
+			_txtField_5 = new System.Windows.Forms.TextBox();
+			Frame2 = new System.Windows.Forms.GroupBox();
+			_txtField_11 = new System.Windows.Forms.TextBox();
+			_txtField_13 = new System.Windows.Forms.TextBox();
+			_txtField_12 = new System.Windows.Forms.TextBox();
+			Label7 = new System.Windows.Forms.Label();
+			Label3 = new System.Windows.Forms.Label();
+			Label2 = new System.Windows.Forms.Label();
+			_txtField_8 = new System.Windows.Forms.TextBox();
+			_txtField_10 = new System.Windows.Forms.TextBox();
+			_txtField_14 = new System.Windows.Forms.TextBox();
+			_txtField_9 = new System.Windows.Forms.TextBox();
+			Label4 = new System.Windows.Forms.Label();
+			Label15 = new System.Windows.Forms.Label();
+			Label14 = new System.Windows.Forms.Label();
+			Label13 = new System.Windows.Forms.Label();
+			Label12 = new System.Windows.Forms.Label();
+			Label11 = new System.Windows.Forms.Label();
+			Label10 = new System.Windows.Forms.Label();
+			Label9 = new System.Windows.Forms.Label();
+			Label8 = new System.Windows.Forms.Label();
+			Label6 = new System.Windows.Forms.Label();
+			Label1 = new System.Windows.Forms.Label();
+			ImageList1 = new System.Windows.Forms.ImageList();
+			Toolbar1 = new System.Windows.Forms.ToolStrip();
+			Toolbar1_Buttons_Button1 = new System.Windows.Forms.ToolStripButton();
+			Toolbar1_Buttons_Button2 = new System.Windows.Forms.ToolStripButton();
+			Toolbar1_Buttons_Button3 = new System.Windows.Forms.ToolStripButton();
+			Toolbar1_Buttons_Button4 = new System.Windows.Forms.ToolStripButton();
+			Toolbar1_Buttons_Button5 = new System.Windows.Forms.ToolStripButton();
+			Toolbar1_Buttons_Button6 = new System.Windows.Forms.ToolStripButton();
+			((System.ComponentModel.ISupportInitialize) dcProviders).BeginInit();
+			Frame1.SuspendLayout();
+			Frame2.SuspendLayout();
+			Toolbar1.SuspendLayout();
+			SuspendLayout();
 			// 
 			// dcProviders
 			// 
-			this.dcProviders.AllowDrop = true;
-			this.dcProviders.BackColor = System.Drawing.SystemColors.Window;
-			this.dcProviders.BOFAction = UpgradeHelpers.DB.BOFActionEnum.MoveFirst;
-			this.dcProviders.ConnectionString = "Driver=SQLite3 ODBC Driver; Database=Orders.db;";
-			this.dcProviders.CursorLocation = UpgradeHelpers.DB.ADO.CursorLocationEnum.adUseClient;
-			this.dcProviders.Enabled = true;
-			this.dcProviders.EOFAction = UpgradeHelpers.DB.EOFActionEnum.MoveLast;
-			this.dcProviders.FactoryName = "Access";
-			this.dcProviders.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.dcProviders.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.dcProviders.Location = new System.Drawing.Point(8, 408);
-			this.dcProviders.LockType = UpgradeHelpers.DB.LockTypeEnum.LockOptimistic;
-			this.dcProviders.Name = "dcProviders";
-			this.dcProviders.Password = "";
-			this.dcProviders.QueryTimeout = 30;
-			this.dcProviders.QueryType = System.Data.CommandType.Text;
-			this.dcProviders.RecordSource = "Select * from Providers";
-			this.dcProviders.Text = "Suppliers";
-			this.dcProviders.UserName = "";
-			this.dcProviders.Width = 177;
+			dcProviders.AllowDrop = true;
+			dcProviders.BackColor = System.Drawing.SystemColors.Window;
+			dcProviders.BOFAction = UpgradeHelpers.DB.BOFActionEnum.MoveFirst;
+			dcProviders.ConnectionString = "Driver=SQLite3 ODBC Driver; Database=Orders.db;";
+			dcProviders.CursorLocation = UpgradeHelpers.DB.ADO.CursorLocationEnum.adUseClient;
+			dcProviders.Enabled = true;
+			dcProviders.EOFAction = UpgradeHelpers.DB.EOFActionEnum.MoveLast;
+			dcProviders.FactoryName = "Access";
+			dcProviders.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			dcProviders.ForeColor = System.Drawing.SystemColors.WindowText;
+			dcProviders.Location = new System.Drawing.Point(8, 408);
+			dcProviders.LockType = UpgradeHelpers.DB.LockTypeEnum.LockOptimistic;
+			dcProviders.Name = "dcProviders";
+			dcProviders.Password = "";
+			dcProviders.QueryTimeout = 30;
+			dcProviders.QueryType = System.Data.CommandType.Text;
+			dcProviders.RecordSource = "Select * from Providers";
+			dcProviders.Text = "Suppliers";
+			dcProviders.UserName = "";
+			dcProviders.Width = 177;
 			// 
 			// Frame1
 			// 
-			this.Frame1.AllowDrop = true;
-			this.Frame1.BackColor = System.Drawing.SystemColors.Control;
-			this.Frame1.Controls.Add(this._txtField_1);
-			this.Frame1.Controls.Add(this._txtField_4);
-			this.Frame1.Controls.Add(this._txtField_0);
-			this.Frame1.Controls.Add(this._txtField_6);
-			this.Frame1.Controls.Add(this._txtField_7);
-			this.Frame1.Controls.Add(this._txtField_2);
-			this.Frame1.Controls.Add(this._txtField_5);
-			this.Frame1.Controls.Add(this.Frame2);
-			this.Frame1.Controls.Add(this._txtField_8);
-			this.Frame1.Controls.Add(this._txtField_10);
-			this.Frame1.Controls.Add(this._txtField_14);
-			this.Frame1.Controls.Add(this._txtField_9);
-			this.Frame1.Controls.Add(this.Label4);
-			this.Frame1.Controls.Add(this.Label15);
-			this.Frame1.Controls.Add(this.Label14);
-			this.Frame1.Controls.Add(this.Label13);
-			this.Frame1.Controls.Add(this.Label12);
-			this.Frame1.Controls.Add(this.Label11);
-			this.Frame1.Controls.Add(this.Label10);
-			this.Frame1.Controls.Add(this.Label9);
-			this.Frame1.Controls.Add(this.Label8);
-			this.Frame1.Controls.Add(this.Label6);
-			this.Frame1.Controls.Add(this.Label1);
-			this.Frame1.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
-			this.Frame1.Enabled = true;
-			this.Frame1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Frame1.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Frame1.Location = new System.Drawing.Point(8, 48);
-			this.Frame1.Name = "Frame1";
-			this.Frame1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Frame1.Size = new System.Drawing.Size(433, 353);
-			this.Frame1.TabIndex = 14;
-			this.Frame1.Text = "Supplier information";
-			this.Frame1.Visible = true;
+			Frame1.AllowDrop = true;
+			Frame1.BackColor = System.Drawing.SystemColors.Control;
+			Frame1.Controls.Add(_txtField_1);
+			Frame1.Controls.Add(_txtField_4);
+			Frame1.Controls.Add(_txtField_0);
+			Frame1.Controls.Add(_txtField_6);
+			Frame1.Controls.Add(_txtField_7);
+			Frame1.Controls.Add(_txtField_2);
+			Frame1.Controls.Add(_txtField_5);
+			Frame1.Controls.Add(Frame2);
+			Frame1.Controls.Add(_txtField_8);
+			Frame1.Controls.Add(_txtField_10);
+			Frame1.Controls.Add(_txtField_14);
+			Frame1.Controls.Add(_txtField_9);
+			Frame1.Controls.Add(Label4);
+			Frame1.Controls.Add(Label15);
+			Frame1.Controls.Add(Label14);
+			Frame1.Controls.Add(Label13);
+			Frame1.Controls.Add(Label12);
+			Frame1.Controls.Add(Label11);
+			Frame1.Controls.Add(Label10);
+			Frame1.Controls.Add(Label9);
+			Frame1.Controls.Add(Label8);
+			Frame1.Controls.Add(Label6);
+			Frame1.Controls.Add(Label1);
+			Frame1.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
+			Frame1.Enabled = true;
+			Frame1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Frame1.ForeColor = System.Drawing.SystemColors.ControlText;
+			Frame1.Location = new System.Drawing.Point(8, 48);
+			Frame1.Name = "Frame1";
+			Frame1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Frame1.Size = new System.Drawing.Size(433, 353);
+			Frame1.TabIndex = 14;
+			Frame1.Text = "Supplier information";
+			Frame1.Visible = true;
 			// 
 			// _txtField_1
 			// 
-			this._txtField_1.AcceptsReturn = true;
-			this._txtField_1.AllowDrop = true;
-			this._txtField_1.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_1.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_1.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_1.Location = new System.Drawing.Point(16, 288);
-			this._txtField_1.MaxLength = 0;
-			this._txtField_1.Multiline = true;
-			this._txtField_1.Name = "_txtField_1";
-			this._txtField_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_1.Size = new System.Drawing.Size(401, 52);
-			this._txtField_1.TabIndex = 29;
-			this._txtField_1.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_1.AcceptsReturn = true;
+			_txtField_1.AllowDrop = true;
+			_txtField_1.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_1.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_1.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_1.Location = new System.Drawing.Point(16, 288);
+			_txtField_1.MaxLength = 0;
+			_txtField_1.Multiline = true;
+			_txtField_1.Name = "_txtField_1";
+			_txtField_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_1.Size = new System.Drawing.Size(401, 52);
+			_txtField_1.TabIndex = 29;
+			_txtField_1.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_4
 			// 
-			this._txtField_4.AcceptsReturn = true;
-			this._txtField_4.AllowDrop = true;
-			this._txtField_4.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_4.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_4.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_4.Location = new System.Drawing.Point(104, 83);
-			this._txtField_4.MaxLength = 0;
-			this._txtField_4.Name = "_txtField_4";
-			this._txtField_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_4.Size = new System.Drawing.Size(105, 20);
-			this._txtField_4.TabIndex = 5;
-			this._txtField_4.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_4.AcceptsReturn = true;
+			_txtField_4.AllowDrop = true;
+			_txtField_4.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_4.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_4.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_4.Location = new System.Drawing.Point(104, 83);
+			_txtField_4.MaxLength = 0;
+			_txtField_4.Name = "_txtField_4";
+			_txtField_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_4.Size = new System.Drawing.Size(105, 20);
+			_txtField_4.TabIndex = 5;
+			_txtField_4.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_0
 			// 
-			this._txtField_0.AcceptsReturn = true;
-			this._txtField_0.AllowDrop = true;
-			this._txtField_0.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_0.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_0.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_0.Location = new System.Drawing.Point(104, 24);
-			this._txtField_0.MaxLength = 0;
-			this._txtField_0.Name = "_txtField_0";
-			this._txtField_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_0.Size = new System.Drawing.Size(105, 20);
-			this._txtField_0.TabIndex = 0;
-			this._txtField_0.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_0.AcceptsReturn = true;
+			_txtField_0.AllowDrop = true;
+			_txtField_0.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_0.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_0.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_0.Location = new System.Drawing.Point(104, 24);
+			_txtField_0.MaxLength = 0;
+			_txtField_0.Name = "_txtField_0";
+			_txtField_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_0.Size = new System.Drawing.Size(105, 20);
+			_txtField_0.TabIndex = 0;
+			_txtField_0.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_6
 			// 
-			this._txtField_6.AcceptsReturn = true;
-			this._txtField_6.AllowDrop = true;
-			this._txtField_6.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_6.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_6.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_6.Location = new System.Drawing.Point(104, 145);
-			this._txtField_6.MaxLength = 0;
-			this._txtField_6.Name = "_txtField_6";
-			this._txtField_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_6.Size = new System.Drawing.Size(105, 20);
-			this._txtField_6.TabIndex = 7;
-			this._txtField_6.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_6.AcceptsReturn = true;
+			_txtField_6.AllowDrop = true;
+			_txtField_6.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_6.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_6.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_6.Location = new System.Drawing.Point(104, 145);
+			_txtField_6.MaxLength = 0;
+			_txtField_6.Name = "_txtField_6";
+			_txtField_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_6.Size = new System.Drawing.Size(105, 20);
+			_txtField_6.TabIndex = 7;
+			_txtField_6.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_7
 			// 
-			this._txtField_7.AcceptsReturn = true;
-			this._txtField_7.AllowDrop = true;
-			this._txtField_7.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_7.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_7.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_7.Location = new System.Drawing.Point(104, 176);
-			this._txtField_7.MaxLength = 0;
-			this._txtField_7.Name = "_txtField_7";
-			this._txtField_7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_7.Size = new System.Drawing.Size(105, 20);
-			this._txtField_7.TabIndex = 8;
-			this._txtField_7.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_7.AcceptsReturn = true;
+			_txtField_7.AllowDrop = true;
+			_txtField_7.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_7.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_7.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_7.Location = new System.Drawing.Point(104, 176);
+			_txtField_7.MaxLength = 0;
+			_txtField_7.Name = "_txtField_7";
+			_txtField_7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_7.Size = new System.Drawing.Size(105, 20);
+			_txtField_7.TabIndex = 8;
+			_txtField_7.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_2
 			// 
-			this._txtField_2.AcceptsReturn = true;
-			this._txtField_2.AllowDrop = true;
-			this._txtField_2.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_2.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_2.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_2.Location = new System.Drawing.Point(104, 54);
-			this._txtField_2.MaxLength = 0;
-			this._txtField_2.Name = "_txtField_2";
-			this._txtField_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_2.Size = new System.Drawing.Size(105, 20);
-			this._txtField_2.TabIndex = 1;
-			this._txtField_2.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_2.AcceptsReturn = true;
+			_txtField_2.AllowDrop = true;
+			_txtField_2.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_2.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_2.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_2.Location = new System.Drawing.Point(104, 54);
+			_txtField_2.MaxLength = 0;
+			_txtField_2.Name = "_txtField_2";
+			_txtField_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_2.Size = new System.Drawing.Size(105, 20);
+			_txtField_2.TabIndex = 1;
+			_txtField_2.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_5
 			// 
-			this._txtField_5.AcceptsReturn = true;
-			this._txtField_5.AllowDrop = true;
-			this._txtField_5.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_5.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_5.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_5.Location = new System.Drawing.Point(104, 114);
-			this._txtField_5.MaxLength = 0;
-			this._txtField_5.Name = "_txtField_5";
-			this._txtField_5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_5.Size = new System.Drawing.Size(105, 20);
-			this._txtField_5.TabIndex = 6;
-			this._txtField_5.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_5.AcceptsReturn = true;
+			_txtField_5.AllowDrop = true;
+			_txtField_5.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_5.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_5.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_5.Location = new System.Drawing.Point(104, 114);
+			_txtField_5.MaxLength = 0;
+			_txtField_5.Name = "_txtField_5";
+			_txtField_5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_5.Size = new System.Drawing.Size(105, 20);
+			_txtField_5.TabIndex = 6;
+			_txtField_5.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// Frame2
 			// 
-			this.Frame2.AllowDrop = true;
-			this.Frame2.BackColor = System.Drawing.SystemColors.Control;
-			this.Frame2.Controls.Add(this._txtField_11);
-			this.Frame2.Controls.Add(this._txtField_13);
-			this.Frame2.Controls.Add(this._txtField_12);
-			this.Frame2.Controls.Add(this.Label7);
-			this.Frame2.Controls.Add(this.Label3);
-			this.Frame2.Controls.Add(this.Label2);
-			this.Frame2.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
-			this.Frame2.Enabled = true;
-			this.Frame2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Frame2.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Frame2.Location = new System.Drawing.Point(224, 14);
-			this.Frame2.Name = "Frame2";
-			this.Frame2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Frame2.Size = new System.Drawing.Size(194, 97);
-			this.Frame2.TabIndex = 24;
-			this.Frame2.Text = "Contact";
-			this.Frame2.Visible = true;
+			Frame2.AllowDrop = true;
+			Frame2.BackColor = System.Drawing.SystemColors.Control;
+			Frame2.Controls.Add(_txtField_11);
+			Frame2.Controls.Add(_txtField_13);
+			Frame2.Controls.Add(_txtField_12);
+			Frame2.Controls.Add(Label7);
+			Frame2.Controls.Add(Label3);
+			Frame2.Controls.Add(Label2);
+			Frame2.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
+			Frame2.Enabled = true;
+			Frame2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Frame2.ForeColor = System.Drawing.SystemColors.ControlText;
+			Frame2.Location = new System.Drawing.Point(224, 14);
+			Frame2.Name = "Frame2";
+			Frame2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Frame2.Size = new System.Drawing.Size(194, 97);
+			Frame2.TabIndex = 24;
+			Frame2.Text = "Contact";
+			Frame2.Visible = true;
 			// 
 			// _txtField_11
 			// 
-			this._txtField_11.AcceptsReturn = true;
-			this._txtField_11.AllowDrop = true;
-			this._txtField_11.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_11.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_11.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_11.Location = new System.Drawing.Point(64, 16);
-			this._txtField_11.MaxLength = 0;
-			this._txtField_11.Name = "_txtField_11";
-			this._txtField_11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_11.Size = new System.Drawing.Size(121, 20);
-			this._txtField_11.TabIndex = 2;
-			this._txtField_11.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_11.AcceptsReturn = true;
+			_txtField_11.AllowDrop = true;
+			_txtField_11.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_11.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_11.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_11.Location = new System.Drawing.Point(64, 16);
+			_txtField_11.MaxLength = 0;
+			_txtField_11.Name = "_txtField_11";
+			_txtField_11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_11.Size = new System.Drawing.Size(121, 20);
+			_txtField_11.TabIndex = 2;
+			_txtField_11.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_13
 			// 
-			this._txtField_13.AcceptsReturn = true;
-			this._txtField_13.AllowDrop = true;
-			this._txtField_13.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_13.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_13.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_13.Location = new System.Drawing.Point(64, 64);
-			this._txtField_13.MaxLength = 0;
-			this._txtField_13.Name = "_txtField_13";
-			this._txtField_13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_13.Size = new System.Drawing.Size(121, 20);
-			this._txtField_13.TabIndex = 4;
-			this._txtField_13.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_13.AcceptsReturn = true;
+			_txtField_13.AllowDrop = true;
+			_txtField_13.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_13.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_13.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_13.Location = new System.Drawing.Point(64, 64);
+			_txtField_13.MaxLength = 0;
+			_txtField_13.Name = "_txtField_13";
+			_txtField_13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_13.Size = new System.Drawing.Size(121, 20);
+			_txtField_13.TabIndex = 4;
+			_txtField_13.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_12
 			// 
-			this._txtField_12.AcceptsReturn = true;
-			this._txtField_12.AllowDrop = true;
-			this._txtField_12.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_12.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_12.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_12.Location = new System.Drawing.Point(64, 40);
-			this._txtField_12.MaxLength = 0;
-			this._txtField_12.Name = "_txtField_12";
-			this._txtField_12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_12.Size = new System.Drawing.Size(121, 20);
-			this._txtField_12.TabIndex = 3;
-			this._txtField_12.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_12.AcceptsReturn = true;
+			_txtField_12.AllowDrop = true;
+			_txtField_12.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_12.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_12.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_12.Location = new System.Drawing.Point(64, 40);
+			_txtField_12.MaxLength = 0;
+			_txtField_12.Name = "_txtField_12";
+			_txtField_12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_12.Size = new System.Drawing.Size(121, 20);
+			_txtField_12.TabIndex = 3;
+			_txtField_12.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// Label7
 			// 
-			this.Label7.AllowDrop = true;
-			this.Label7.BackColor = System.Drawing.SystemColors.Control;
-			this.Label7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label7.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label7.Location = new System.Drawing.Point(8, 16);
-			this.Label7.MinimumSize = new System.Drawing.Size(49, 17);
-			this.Label7.Name = "Label7";
-			this.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label7.Size = new System.Drawing.Size(49, 17);
-			this.Label7.TabIndex = 27;
-			this.Label7.Text = "Title:";
+			Label7.AllowDrop = true;
+			Label7.BackColor = System.Drawing.SystemColors.Control;
+			Label7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label7.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label7.Location = new System.Drawing.Point(8, 16);
+			Label7.MinimumSize = new System.Drawing.Size(49, 17);
+			Label7.Name = "Label7";
+			Label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label7.Size = new System.Drawing.Size(49, 17);
+			Label7.TabIndex = 27;
+			Label7.Text = "Title:";
 			// 
 			// Label3
 			// 
-			this.Label3.AllowDrop = true;
-			this.Label3.BackColor = System.Drawing.SystemColors.Control;
-			this.Label3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label3.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label3.Location = new System.Drawing.Point(8, 69);
-			this.Label3.MinimumSize = new System.Drawing.Size(57, 17);
-			this.Label3.Name = "Label3";
-			this.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label3.Size = new System.Drawing.Size(57, 17);
-			this.Label3.TabIndex = 26;
-			this.Label3.Text = "Last name:";
+			Label3.AllowDrop = true;
+			Label3.BackColor = System.Drawing.SystemColors.Control;
+			Label3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label3.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label3.Location = new System.Drawing.Point(8, 69);
+			Label3.MinimumSize = new System.Drawing.Size(57, 17);
+			Label3.Name = "Label3";
+			Label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label3.Size = new System.Drawing.Size(57, 17);
+			Label3.TabIndex = 26;
+			Label3.Text = "Last name:";
 			// 
 			// Label2
 			// 
-			this.Label2.AllowDrop = true;
-			this.Label2.BackColor = System.Drawing.SystemColors.Control;
-			this.Label2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label2.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label2.Location = new System.Drawing.Point(8, 43);
-			this.Label2.MinimumSize = new System.Drawing.Size(57, 17);
-			this.Label2.Name = "Label2";
-			this.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label2.Size = new System.Drawing.Size(57, 17);
-			this.Label2.TabIndex = 25;
-			this.Label2.Text = "First name:";
+			Label2.AllowDrop = true;
+			Label2.BackColor = System.Drawing.SystemColors.Control;
+			Label2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label2.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label2.Location = new System.Drawing.Point(8, 43);
+			Label2.MinimumSize = new System.Drawing.Size(57, 17);
+			Label2.Name = "Label2";
+			Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label2.Size = new System.Drawing.Size(57, 17);
+			Label2.TabIndex = 25;
+			Label2.Text = "First name:";
 			// 
 			// _txtField_8
 			// 
-			this._txtField_8.AcceptsReturn = true;
-			this._txtField_8.AllowDrop = true;
-			this._txtField_8.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_8.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_8.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_8.Location = new System.Drawing.Point(312, 115);
-			this._txtField_8.MaxLength = 0;
-			this._txtField_8.Name = "_txtField_8";
-			this._txtField_8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_8.Size = new System.Drawing.Size(105, 20);
-			this._txtField_8.TabIndex = 9;
-			this._txtField_8.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_8.AcceptsReturn = true;
+			_txtField_8.AllowDrop = true;
+			_txtField_8.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_8.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_8.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_8.Location = new System.Drawing.Point(312, 115);
+			_txtField_8.MaxLength = 0;
+			_txtField_8.Name = "_txtField_8";
+			_txtField_8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_8.Size = new System.Drawing.Size(105, 20);
+			_txtField_8.TabIndex = 9;
+			_txtField_8.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_10
 			// 
-			this._txtField_10.AcceptsReturn = true;
-			this._txtField_10.AllowDrop = true;
-			this._txtField_10.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_10.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_10.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_10.Location = new System.Drawing.Point(312, 176);
-			this._txtField_10.MaxLength = 0;
-			this._txtField_10.Name = "_txtField_10";
-			this._txtField_10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_10.Size = new System.Drawing.Size(105, 20);
-			this._txtField_10.TabIndex = 11;
-			this._txtField_10.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_10.AcceptsReturn = true;
+			_txtField_10.AllowDrop = true;
+			_txtField_10.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_10.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_10.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_10.Location = new System.Drawing.Point(312, 176);
+			_txtField_10.MaxLength = 0;
+			_txtField_10.Name = "_txtField_10";
+			_txtField_10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_10.Size = new System.Drawing.Size(105, 20);
+			_txtField_10.TabIndex = 11;
+			_txtField_10.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_14
 			// 
-			this._txtField_14.AcceptsReturn = true;
-			this._txtField_14.AllowDrop = true;
-			this._txtField_14.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_14.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_14.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_14.Location = new System.Drawing.Point(16, 216);
-			this._txtField_14.MaxLength = 0;
-			this._txtField_14.Multiline = true;
-			this._txtField_14.Name = "_txtField_14";
-			this._txtField_14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_14.Size = new System.Drawing.Size(401, 52);
-			this._txtField_14.TabIndex = 12;
-			this._txtField_14.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_14.AcceptsReturn = true;
+			_txtField_14.AllowDrop = true;
+			_txtField_14.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_14.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_14.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_14.Location = new System.Drawing.Point(16, 216);
+			_txtField_14.MaxLength = 0;
+			_txtField_14.Multiline = true;
+			_txtField_14.Name = "_txtField_14";
+			_txtField_14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_14.Size = new System.Drawing.Size(401, 52);
+			_txtField_14.TabIndex = 12;
+			_txtField_14.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// _txtField_9
 			// 
-			this._txtField_9.AcceptsReturn = true;
-			this._txtField_9.AllowDrop = true;
-			this._txtField_9.BackColor = System.Drawing.SystemColors.Window;
-			this._txtField_9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this._txtField_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this._txtField_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this._txtField_9.ForeColor = System.Drawing.SystemColors.WindowText;
-			this._txtField_9.Location = new System.Drawing.Point(312, 145);
-			this._txtField_9.MaxLength = 0;
-			this._txtField_9.Name = "_txtField_9";
-			this._txtField_9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this._txtField_9.Size = new System.Drawing.Size(105, 20);
-			this._txtField_9.TabIndex = 10;
-			this._txtField_9.TextChanged += new System.EventHandler(this.txtField_TextChanged);
+			_txtField_9.AcceptsReturn = true;
+			_txtField_9.AllowDrop = true;
+			_txtField_9.BackColor = System.Drawing.SystemColors.Window;
+			_txtField_9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			_txtField_9.Cursor = System.Windows.Forms.Cursors.IBeam;
+			_txtField_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			_txtField_9.ForeColor = System.Drawing.SystemColors.WindowText;
+			_txtField_9.Location = new System.Drawing.Point(312, 145);
+			_txtField_9.MaxLength = 0;
+			_txtField_9.Name = "_txtField_9";
+			_txtField_9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			_txtField_9.Size = new System.Drawing.Size(105, 20);
+			_txtField_9.TabIndex = 10;
+			_txtField_9.TextChanged += new System.EventHandler(txtField_TextChanged);
 			// 
 			// Label4
 			// 
-			this.Label4.AllowDrop = true;
-			this.Label4.BackColor = System.Drawing.SystemColors.Control;
-			this.Label4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label4.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label4.Location = new System.Drawing.Point(16, 272);
-			this.Label4.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label4.Name = "Label4";
-			this.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label4.Size = new System.Drawing.Size(89, 17);
-			this.Label4.TabIndex = 30;
-			this.Label4.Text = "Payment Terms:";
+			Label4.AllowDrop = true;
+			Label4.BackColor = System.Drawing.SystemColors.Control;
+			Label4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label4.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label4.Location = new System.Drawing.Point(16, 272);
+			Label4.MinimumSize = new System.Drawing.Size(89, 17);
+			Label4.Name = "Label4";
+			Label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label4.Size = new System.Drawing.Size(89, 17);
+			Label4.TabIndex = 30;
+			Label4.Text = "Payment Terms:";
 			// 
 			// Label15
 			// 
-			this.Label15.AllowDrop = true;
-			this.Label15.BackColor = System.Drawing.SystemColors.Control;
-			this.Label15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label15.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label15.Location = new System.Drawing.Point(16, 83);
-			this.Label15.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label15.Name = "Label15";
-			this.Label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label15.Size = new System.Drawing.Size(89, 17);
-			this.Label15.TabIndex = 28;
-			this.Label15.Text = "Zip code:";
+			Label15.AllowDrop = true;
+			Label15.BackColor = System.Drawing.SystemColors.Control;
+			Label15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label15.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label15.Location = new System.Drawing.Point(16, 83);
+			Label15.MinimumSize = new System.Drawing.Size(89, 17);
+			Label15.Name = "Label15";
+			Label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label15.Size = new System.Drawing.Size(89, 17);
+			Label15.TabIndex = 28;
+			Label15.Text = "Zip code:";
 			// 
 			// Label14
 			// 
-			this.Label14.AllowDrop = true;
-			this.Label14.BackColor = System.Drawing.SystemColors.Control;
-			this.Label14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label14.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label14.Location = new System.Drawing.Point(16, 176);
-			this.Label14.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label14.Name = "Label14";
-			this.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label14.Size = new System.Drawing.Size(89, 17);
-			this.Label14.TabIndex = 23;
-			this.Label14.Text = "Country";
+			Label14.AllowDrop = true;
+			Label14.BackColor = System.Drawing.SystemColors.Control;
+			Label14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label14.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label14.Location = new System.Drawing.Point(16, 176);
+			Label14.MinimumSize = new System.Drawing.Size(89, 17);
+			Label14.Name = "Label14";
+			Label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label14.Size = new System.Drawing.Size(89, 17);
+			Label14.TabIndex = 23;
+			Label14.Text = "Country";
 			// 
 			// Label13
 			// 
-			this.Label13.AllowDrop = true;
-			this.Label13.BackColor = System.Drawing.SystemColors.Control;
-			this.Label13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label13.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label13.Location = new System.Drawing.Point(16, 145);
-			this.Label13.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label13.Name = "Label13";
-			this.Label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label13.Size = new System.Drawing.Size(89, 17);
-			this.Label13.TabIndex = 22;
-			this.Label13.Text = "State/Prov";
+			Label13.AllowDrop = true;
+			Label13.BackColor = System.Drawing.SystemColors.Control;
+			Label13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label13.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label13.Location = new System.Drawing.Point(16, 145);
+			Label13.MinimumSize = new System.Drawing.Size(89, 17);
+			Label13.Name = "Label13";
+			Label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label13.Size = new System.Drawing.Size(89, 17);
+			Label13.TabIndex = 22;
+			Label13.Text = "State/Prov";
 			// 
 			// Label12
 			// 
-			this.Label12.AllowDrop = true;
-			this.Label12.BackColor = System.Drawing.SystemColors.Control;
-			this.Label12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label12.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label12.Location = new System.Drawing.Point(16, 200);
-			this.Label12.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label12.Name = "Label12";
-			this.Label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label12.Size = new System.Drawing.Size(89, 17);
-			this.Label12.TabIndex = 21;
-			this.Label12.Text = "Notes:";
+			Label12.AllowDrop = true;
+			Label12.BackColor = System.Drawing.SystemColors.Control;
+			Label12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label12.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label12.Location = new System.Drawing.Point(16, 200);
+			Label12.MinimumSize = new System.Drawing.Size(89, 17);
+			Label12.Name = "Label12";
+			Label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label12.Size = new System.Drawing.Size(89, 17);
+			Label12.TabIndex = 21;
+			Label12.Text = "Notes:";
 			// 
 			// Label11
 			// 
-			this.Label11.AllowDrop = true;
-			this.Label11.BackColor = System.Drawing.SystemColors.Control;
-			this.Label11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label11.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label11.Location = new System.Drawing.Point(16, 54);
-			this.Label11.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label11.Name = "Label11";
-			this.Label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label11.Size = new System.Drawing.Size(89, 17);
-			this.Label11.TabIndex = 20;
-			this.Label11.Text = "Email:";
+			Label11.AllowDrop = true;
+			Label11.BackColor = System.Drawing.SystemColors.Control;
+			Label11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label11.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label11.Location = new System.Drawing.Point(16, 54);
+			Label11.MinimumSize = new System.Drawing.Size(89, 17);
+			Label11.Name = "Label11";
+			Label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label11.Size = new System.Drawing.Size(89, 17);
+			Label11.TabIndex = 20;
+			Label11.Text = "Email:";
 			// 
 			// Label10
 			// 
-			this.Label10.AllowDrop = true;
-			this.Label10.BackColor = System.Drawing.SystemColors.Control;
-			this.Label10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label10.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label10.Location = new System.Drawing.Point(232, 176);
-			this.Label10.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label10.Name = "Label10";
-			this.Label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label10.Size = new System.Drawing.Size(89, 17);
-			this.Label10.TabIndex = 19;
-			this.Label10.Text = "Fax";
+			Label10.AllowDrop = true;
+			Label10.BackColor = System.Drawing.SystemColors.Control;
+			Label10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label10.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label10.Location = new System.Drawing.Point(232, 176);
+			Label10.MinimumSize = new System.Drawing.Size(89, 17);
+			Label10.Name = "Label10";
+			Label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label10.Size = new System.Drawing.Size(89, 17);
+			Label10.TabIndex = 19;
+			Label10.Text = "Fax";
 			// 
 			// Label9
 			// 
-			this.Label9.AllowDrop = true;
-			this.Label9.BackColor = System.Drawing.SystemColors.Control;
-			this.Label9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label9.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label9.Location = new System.Drawing.Point(232, 145);
-			this.Label9.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label9.Name = "Label9";
-			this.Label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label9.Size = new System.Drawing.Size(89, 17);
-			this.Label9.TabIndex = 18;
-			this.Label9.Text = "Ext";
+			Label9.AllowDrop = true;
+			Label9.BackColor = System.Drawing.SystemColors.Control;
+			Label9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label9.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label9.Location = new System.Drawing.Point(232, 145);
+			Label9.MinimumSize = new System.Drawing.Size(89, 17);
+			Label9.Name = "Label9";
+			Label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label9.Size = new System.Drawing.Size(89, 17);
+			Label9.TabIndex = 18;
+			Label9.Text = "Ext";
 			// 
 			// Label8
 			// 
-			this.Label8.AllowDrop = true;
-			this.Label8.BackColor = System.Drawing.SystemColors.Control;
-			this.Label8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label8.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label8.Location = new System.Drawing.Point(232, 115);
-			this.Label8.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label8.Name = "Label8";
-			this.Label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label8.Size = new System.Drawing.Size(89, 17);
-			this.Label8.TabIndex = 17;
-			this.Label8.Text = "Phone";
+			Label8.AllowDrop = true;
+			Label8.BackColor = System.Drawing.SystemColors.Control;
+			Label8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label8.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label8.Location = new System.Drawing.Point(232, 115);
+			Label8.MinimumSize = new System.Drawing.Size(89, 17);
+			Label8.Name = "Label8";
+			Label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label8.Size = new System.Drawing.Size(89, 17);
+			Label8.TabIndex = 17;
+			Label8.Text = "Phone";
 			// 
 			// Label6
 			// 
-			this.Label6.AllowDrop = true;
-			this.Label6.BackColor = System.Drawing.SystemColors.Control;
-			this.Label6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label6.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label6.Location = new System.Drawing.Point(16, 114);
-			this.Label6.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label6.Name = "Label6";
-			this.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label6.Size = new System.Drawing.Size(89, 17);
-			this.Label6.TabIndex = 16;
-			this.Label6.Text = "City:";
+			Label6.AllowDrop = true;
+			Label6.BackColor = System.Drawing.SystemColors.Control;
+			Label6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label6.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label6.Location = new System.Drawing.Point(16, 114);
+			Label6.MinimumSize = new System.Drawing.Size(89, 17);
+			Label6.Name = "Label6";
+			Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label6.Size = new System.Drawing.Size(89, 17);
+			Label6.TabIndex = 16;
+			Label6.Text = "City:";
 			// 
 			// Label1
 			// 
-			this.Label1.AllowDrop = true;
-			this.Label1.BackColor = System.Drawing.SystemColors.Control;
-			this.Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label1.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label1.Location = new System.Drawing.Point(16, 24);
-			this.Label1.MinimumSize = new System.Drawing.Size(89, 17);
-			this.Label1.Name = "Label1";
-			this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label1.Size = new System.Drawing.Size(89, 17);
-			this.Label1.TabIndex = 15;
-			this.Label1.Text = "Name";
+			Label1.AllowDrop = true;
+			Label1.BackColor = System.Drawing.SystemColors.Control;
+			Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label1.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label1.Location = new System.Drawing.Point(16, 24);
+			Label1.MinimumSize = new System.Drawing.Size(89, 17);
+			Label1.Name = "Label1";
+			Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label1.Size = new System.Drawing.Size(89, 17);
+			Label1.TabIndex = 15;
+			Label1.Text = "Name";
 			// 
 			// ImageList1
 			// 
-			this.ImageList1.ImageSize = new System.Drawing.Size(16, 16);
-			this.ImageList1.ImageStream = (System.Windows.Forms.ImageListStreamer) resources.GetObject("ImageList1.ImageStream");
-			this.ImageList1.TransparentColor = System.Drawing.Color.White;
-			this.ImageList1.Images.SetKeyName(0, "");
-			this.ImageList1.Images.SetKeyName(1, "");
-			this.ImageList1.Images.SetKeyName(2, "");
-			this.ImageList1.Images.SetKeyName(3, "");
-			this.ImageList1.Images.SetKeyName(4, "");
-			this.ImageList1.Images.SetKeyName(5, "");
+			ImageList1.ImageSize = new System.Drawing.Size(16, 16);
+			ImageList1.ImageStream = (System.Windows.Forms.ImageListStreamer) resources.GetObject("ImageList1.ImageStream");
+			ImageList1.TransparentColor = System.Drawing.Color.White;
+			ImageList1.Images.SetKeyName(0, "");
+			ImageList1.Images.SetKeyName(1, "");
+			ImageList1.Images.SetKeyName(2, "");
+			ImageList1.Images.SetKeyName(3, "");
+			ImageList1.Images.SetKeyName(4, "");
+			ImageList1.Images.SetKeyName(5, "");
 			// 
 			// Toolbar1
 			// 
-			this.Toolbar1.AllowDrop = true;
-			this.Toolbar1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.Toolbar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Toolbar1.ImageList = ImageList1;
-			this.Toolbar1.Location = new System.Drawing.Point(0, 0);
-			this.Toolbar1.Name = "Toolbar1";
-			this.Toolbar1.ShowItemToolTips = true;
-			this.Toolbar1.Size = new System.Drawing.Size(454, 44);
-			this.Toolbar1.TabIndex = 13;
-			this.Toolbar1.Items.Add(this.Toolbar1_Buttons_Button1);
-			this.Toolbar1.Items.Add(this.Toolbar1_Buttons_Button2);
-			this.Toolbar1.Items.Add(this.Toolbar1_Buttons_Button3);
-			this.Toolbar1.Items.Add(this.Toolbar1_Buttons_Button4);
-			this.Toolbar1.Items.Add(this.Toolbar1_Buttons_Button5);
-			this.Toolbar1.Items.Add(this.Toolbar1_Buttons_Button6);
+			Toolbar1.AllowDrop = true;
+			Toolbar1.Dock = System.Windows.Forms.DockStyle.Top;
+			Toolbar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Toolbar1.ImageList = ImageList1;
+			Toolbar1.Location = new System.Drawing.Point(0, 0);
+			Toolbar1.Name = "Toolbar1";
+			Toolbar1.ShowItemToolTips = true;
+			Toolbar1.Size = new System.Drawing.Size(454, 44);
+			Toolbar1.TabIndex = 13;
+			Toolbar1.Items.Add(Toolbar1_Buttons_Button1);
+			Toolbar1.Items.Add(Toolbar1_Buttons_Button2);
+			Toolbar1.Items.Add(Toolbar1_Buttons_Button3);
+			Toolbar1.Items.Add(Toolbar1_Buttons_Button4);
+			Toolbar1.Items.Add(Toolbar1_Buttons_Button5);
+			Toolbar1.Items.Add(Toolbar1_Buttons_Button6);
 			// 
 			// Toolbar1_Buttons_Button1
 			// 
-			this.Toolbar1_Buttons_Button1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-			this.Toolbar1_Buttons_Button1.ImageIndex = 0;
-			this.Toolbar1_Buttons_Button1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-			this.Toolbar1_Buttons_Button1.Size = new System.Drawing.Size(44, 39);
-			this.Toolbar1_Buttons_Button1.Text = "Add";
-			this.Toolbar1_Buttons_Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.Toolbar1_Buttons_Button1.ToolTipText = "Create a new record";
-			this.Toolbar1_Buttons_Button1.Click += new System.EventHandler(this.Toolbar1_ButtonClick);
+			Toolbar1_Buttons_Button1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+			Toolbar1_Buttons_Button1.ImageIndex = 0;
+			Toolbar1_Buttons_Button1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+			Toolbar1_Buttons_Button1.Size = new System.Drawing.Size(44, 39);
+			Toolbar1_Buttons_Button1.Text = "Add";
+			Toolbar1_Buttons_Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			Toolbar1_Buttons_Button1.ToolTipText = "Create a new record";
+			Toolbar1_Buttons_Button1.Click += new System.EventHandler(Toolbar1_ButtonClick);
 			// 
 			// Toolbar1_Buttons_Button2
 			// 
-			this.Toolbar1_Buttons_Button2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-			this.Toolbar1_Buttons_Button2.ImageIndex = 1;
-			this.Toolbar1_Buttons_Button2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-			this.Toolbar1_Buttons_Button2.Size = new System.Drawing.Size(44, 39);
-			this.Toolbar1_Buttons_Button2.Text = "Edit";
-			this.Toolbar1_Buttons_Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.Toolbar1_Buttons_Button2.ToolTipText = "Edit this record";
-			this.Toolbar1_Buttons_Button2.Click += new System.EventHandler(this.Toolbar1_ButtonClick);
+			Toolbar1_Buttons_Button2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+			Toolbar1_Buttons_Button2.ImageIndex = 1;
+			Toolbar1_Buttons_Button2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+			Toolbar1_Buttons_Button2.Size = new System.Drawing.Size(44, 39);
+			Toolbar1_Buttons_Button2.Text = "Edit";
+			Toolbar1_Buttons_Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			Toolbar1_Buttons_Button2.ToolTipText = "Edit this record";
+			Toolbar1_Buttons_Button2.Click += new System.EventHandler(Toolbar1_ButtonClick);
 			// 
 			// Toolbar1_Buttons_Button3
 			// 
-			this.Toolbar1_Buttons_Button3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-			this.Toolbar1_Buttons_Button3.ImageIndex = 2;
-			this.Toolbar1_Buttons_Button3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-			this.Toolbar1_Buttons_Button3.Size = new System.Drawing.Size(44, 39);
-			this.Toolbar1_Buttons_Button3.Text = "Save";
-			this.Toolbar1_Buttons_Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.Toolbar1_Buttons_Button3.ToolTipText = "Save the current changes";
-			this.Toolbar1_Buttons_Button3.Click += new System.EventHandler(this.Toolbar1_ButtonClick);
+			Toolbar1_Buttons_Button3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+			Toolbar1_Buttons_Button3.ImageIndex = 2;
+			Toolbar1_Buttons_Button3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+			Toolbar1_Buttons_Button3.Size = new System.Drawing.Size(44, 39);
+			Toolbar1_Buttons_Button3.Text = "Save";
+			Toolbar1_Buttons_Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			Toolbar1_Buttons_Button3.ToolTipText = "Save the current changes";
+			Toolbar1_Buttons_Button3.Click += new System.EventHandler(Toolbar1_ButtonClick);
 			// 
 			// Toolbar1_Buttons_Button4
 			// 
-			this.Toolbar1_Buttons_Button4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-			this.Toolbar1_Buttons_Button4.ImageIndex = 3;
-			this.Toolbar1_Buttons_Button4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-			this.Toolbar1_Buttons_Button4.Size = new System.Drawing.Size(44, 39);
-			this.Toolbar1_Buttons_Button4.Text = "Delete";
-			this.Toolbar1_Buttons_Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.Toolbar1_Buttons_Button4.ToolTipText = "Delete the current record";
-			this.Toolbar1_Buttons_Button4.Click += new System.EventHandler(this.Toolbar1_ButtonClick);
+			Toolbar1_Buttons_Button4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+			Toolbar1_Buttons_Button4.ImageIndex = 3;
+			Toolbar1_Buttons_Button4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+			Toolbar1_Buttons_Button4.Size = new System.Drawing.Size(44, 39);
+			Toolbar1_Buttons_Button4.Text = "Delete";
+			Toolbar1_Buttons_Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			Toolbar1_Buttons_Button4.ToolTipText = "Delete the current record";
+			Toolbar1_Buttons_Button4.Click += new System.EventHandler(Toolbar1_ButtonClick);
 			// 
 			// Toolbar1_Buttons_Button5
 			// 
-			this.Toolbar1_Buttons_Button5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-			this.Toolbar1_Buttons_Button5.ImageIndex = 4;
-			this.Toolbar1_Buttons_Button5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-			this.Toolbar1_Buttons_Button5.Size = new System.Drawing.Size(44, 39);
-			this.Toolbar1_Buttons_Button5.Text = "Search";
-			this.Toolbar1_Buttons_Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.Toolbar1_Buttons_Button5.ToolTipText = "Search for a record";
-			this.Toolbar1_Buttons_Button5.Click += new System.EventHandler(this.Toolbar1_ButtonClick);
+			Toolbar1_Buttons_Button5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+			Toolbar1_Buttons_Button5.ImageIndex = 4;
+			Toolbar1_Buttons_Button5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+			Toolbar1_Buttons_Button5.Size = new System.Drawing.Size(44, 39);
+			Toolbar1_Buttons_Button5.Text = "Search";
+			Toolbar1_Buttons_Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			Toolbar1_Buttons_Button5.ToolTipText = "Search for a record";
+			Toolbar1_Buttons_Button5.Click += new System.EventHandler(Toolbar1_ButtonClick);
 			// 
 			// Toolbar1_Buttons_Button6
 			// 
-			this.Toolbar1_Buttons_Button6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-			this.Toolbar1_Buttons_Button6.ImageIndex = 5;
-			this.Toolbar1_Buttons_Button6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-			this.Toolbar1_Buttons_Button6.Size = new System.Drawing.Size(44, 39);
-			this.Toolbar1_Buttons_Button6.Text = "Cancel";
-			this.Toolbar1_Buttons_Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.Toolbar1_Buttons_Button6.ToolTipText = "Cancel edited changes";
-			this.Toolbar1_Buttons_Button6.Click += new System.EventHandler(this.Toolbar1_ButtonClick);
+			Toolbar1_Buttons_Button6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+			Toolbar1_Buttons_Button6.ImageIndex = 5;
+			Toolbar1_Buttons_Button6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+			Toolbar1_Buttons_Button6.Size = new System.Drawing.Size(44, 39);
+			Toolbar1_Buttons_Button6.Text = "Cancel";
+			Toolbar1_Buttons_Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			Toolbar1_Buttons_Button6.ToolTipText = "Cancel edited changes";
+			Toolbar1_Buttons_Button6.Click += new System.EventHandler(Toolbar1_ButtonClick);
 			// 
 			// frmProviders
 			// 
-			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(454, 447);
-			this.Controls.Add(this.dcProviders);
-			this.Controls.Add(this.Frame1);
-			this.Controls.Add(this.Toolbar1);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Location = new System.Drawing.Point(3, 25);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "frmProviders";
-			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Text = "Suppliers";
-			this.Activated += new System.EventHandler(this.frmProviders_Activated);
-			this.Closed += new System.EventHandler(this.Form_Closed);
-			((System.ComponentModel.ISupportInitialize) this.dcProviders).EndInit();
-			this.Frame1.ResumeLayout(false);
-			this.Frame2.ResumeLayout(false);
-			this.Toolbar1.ResumeLayout(false);
-			this.ResumeLayout(false);
+			AllowDrop = true;
+			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			BackColor = System.Drawing.SystemColors.Control;
+			ClientSize = new System.Drawing.Size(454, 447);
+			Controls.Add(dcProviders);
+			Controls.Add(Frame1);
+			Controls.Add(Toolbar1);
+			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			Location = new System.Drawing.Point(3, 25);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "frmProviders";
+			RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Text = "Suppliers";
+			Activated += new System.EventHandler(frmProviders_Activated);
+			Closed += new System.EventHandler(Form_Closed);
+			((System.ComponentModel.ISupportInitialize) dcProviders).EndInit();
+			Frame1.ResumeLayout(false);
+			Frame2.ResumeLayout(false);
+			Toolbar1.ResumeLayout(false);
+			ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents)
 		{
@@ -794,21 +794,21 @@ namespace SKS
 		}
 		void InitializetxtField()
 		{
-			this.txtField = new System.Windows.Forms.TextBox[15];
-			this.txtField[1] = _txtField_1;
-			this.txtField[4] = _txtField_4;
-			this.txtField[0] = _txtField_0;
-			this.txtField[6] = _txtField_6;
-			this.txtField[7] = _txtField_7;
-			this.txtField[2] = _txtField_2;
-			this.txtField[5] = _txtField_5;
-			this.txtField[11] = _txtField_11;
-			this.txtField[13] = _txtField_13;
-			this.txtField[12] = _txtField_12;
-			this.txtField[8] = _txtField_8;
-			this.txtField[10] = _txtField_10;
-			this.txtField[14] = _txtField_14;
-			this.txtField[9] = _txtField_9;
+			txtField = new System.Windows.Forms.TextBox[15];
+			txtField[1] = _txtField_1;
+			txtField[4] = _txtField_4;
+			txtField[0] = _txtField_0;
+			txtField[6] = _txtField_6;
+			txtField[7] = _txtField_7;
+			txtField[2] = _txtField_2;
+			txtField[5] = _txtField_5;
+			txtField[11] = _txtField_11;
+			txtField[13] = _txtField_13;
+			txtField[12] = _txtField_12;
+			txtField[8] = _txtField_8;
+			txtField[10] = _txtField_10;
+			txtField[14] = _txtField_14;
+			txtField[9] = _txtField_9;
 		}
 		#endregion
 		#region "Upgrade Support"
