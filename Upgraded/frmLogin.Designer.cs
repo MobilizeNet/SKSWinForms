@@ -50,153 +50,153 @@ namespace SKS
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-			ToolTipMain = new System.Windows.Forms.ToolTip(components);
-			txtUserName = new System.Windows.Forms.TextBox();
-			cmdCancel = new System.Windows.Forms.Button();
-			txtPassword = new System.Windows.Forms.TextBox();
-			cmdOK = new System.Windows.Forms.Button();
-			_lblLabels_0 = new System.Windows.Forms.Label();
-			_lblLabels_1 = new System.Windows.Forms.Label();
-			SuspendLayout();
-			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
+			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
+			this.txtUserName = new System.Windows.Forms.TextBox();
+			this.cmdCancel = new System.Windows.Forms.Button();
+			this.txtPassword = new System.Windows.Forms.TextBox();
+			this.cmdOK = new System.Windows.Forms.Button();
+			this._lblLabels_0 = new System.Windows.Forms.Label();
+			this._lblLabels_1 = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// txtUserName
 			// 
-			txtUserName.AcceptsReturn = true;
-			txtUserName.AllowDrop = true;
-			txtUserName.BackColor = System.Drawing.SystemColors.Window;
-			txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-			txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtUserName.ForeColor = System.Drawing.SystemColors.WindowText;
-			txtUserName.Location = new System.Drawing.Point(118, 25);
-			txtUserName.MaxLength = 0;
-			txtUserName.Name = "txtUserName";
-			txtUserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			txtUserName.Size = new System.Drawing.Size(155, 23);
-			txtUserName.TabIndex = 1;
+			this.txtUserName.AcceptsReturn = true;
+			this.txtUserName.AllowDrop = true;
+			this.txtUserName.BackColor = System.Drawing.SystemColors.Window;
+			this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtUserName.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.txtUserName.Location = new System.Drawing.Point(118, 25);
+			this.txtUserName.MaxLength = 0;
+			this.txtUserName.Name = "txtUserName";
+			this.txtUserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.txtUserName.Size = new System.Drawing.Size(155, 23);
+			this.txtUserName.TabIndex = 1;
 			// 
 			// cmdCancel
 			// 
-			cmdCancel.AllowDrop = true;
-			cmdCancel.BackColor = System.Drawing.SystemColors.Control;
-			cmdCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmdCancel.ForeColor = System.Drawing.SystemColors.ControlText;
-			cmdCancel.Location = new System.Drawing.Point(196, 100);
-			cmdCancel.Name = "cmdCancel";
-			cmdCancel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cmdCancel.Size = new System.Drawing.Size(76, 26);
-			cmdCancel.TabIndex = 5;
-			cmdCancel.Text = "Cancel";
-			cmdCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			cmdCancel.UseVisualStyleBackColor = false;
-			cmdCancel.Click += new System.EventHandler(cmdCancel_Click);
+			this.cmdCancel.AllowDrop = true;
+			this.cmdCancel.BackColor = System.Drawing.SystemColors.Control;
+			this.cmdCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmdCancel.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.cmdCancel.Location = new System.Drawing.Point(196, 100);
+			this.cmdCancel.Name = "cmdCancel";
+			this.cmdCancel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cmdCancel.Size = new System.Drawing.Size(76, 26);
+			this.cmdCancel.TabIndex = 5;
+			this.cmdCancel.Text = "Cancel";
+			this.cmdCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.cmdCancel.UseVisualStyleBackColor = false;
+			this.cmdCancel.Click += new System.EventHandler(this.cmdCancel_Click);
 			// 
 			// txtPassword
 			// 
-			txtPassword.AcceptsReturn = true;
-			txtPassword.AllowDrop = true;
-			txtPassword.BackColor = System.Drawing.SystemColors.Window;
-			txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-			txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtPassword.ForeColor = System.Drawing.SystemColors.WindowText;
-			txtPassword.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			txtPassword.Location = new System.Drawing.Point(118, 51);
-			txtPassword.MaxLength = 0;
-			txtPassword.Name = "txtPassword";
-			txtPassword.PasswordChar = (char) 42;
-			txtPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			txtPassword.Size = new System.Drawing.Size(155, 23);
-			txtPassword.TabIndex = 3;
+			this.txtPassword.AcceptsReturn = true;
+			this.txtPassword.AllowDrop = true;
+			this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
+			this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtPassword.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.txtPassword.ImeMode = System.Windows.Forms.ImeMode.Disable;
+			this.txtPassword.Location = new System.Drawing.Point(118, 51);
+			this.txtPassword.MaxLength = 0;
+			this.txtPassword.Name = "txtPassword";
+			this.txtPassword.PasswordChar = (char) 42;
+			this.txtPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.txtPassword.Size = new System.Drawing.Size(155, 23);
+			this.txtPassword.TabIndex = 3;
 			// 
 			// cmdOK
 			// 
-			cmdOK.AllowDrop = true;
-			cmdOK.BackColor = System.Drawing.SystemColors.Control;
-			cmdOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmdOK.ForeColor = System.Drawing.SystemColors.ControlText;
-			cmdOK.Location = new System.Drawing.Point(89, 100);
-			cmdOK.Name = "cmdOK";
-			cmdOK.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cmdOK.Size = new System.Drawing.Size(76, 26);
-			cmdOK.TabIndex = 4;
-			cmdOK.Text = "OK";
-			cmdOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			cmdOK.UseVisualStyleBackColor = false;
-			cmdOK.Click += new System.EventHandler(cmdOk_Click);
+			this.cmdOK.AllowDrop = true;
+			this.cmdOK.BackColor = System.Drawing.SystemColors.Control;
+			this.cmdOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmdOK.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.cmdOK.Location = new System.Drawing.Point(89, 100);
+			this.cmdOK.Name = "cmdOK";
+			this.cmdOK.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cmdOK.Size = new System.Drawing.Size(76, 26);
+			this.cmdOK.TabIndex = 4;
+			this.cmdOK.Text = "OK";
+			this.cmdOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.cmdOK.UseVisualStyleBackColor = false;
+			this.cmdOK.Click += new System.EventHandler(this.cmdOk_Click);
 			// 
 			// _lblLabels_0
 			// 
-			_lblLabels_0.AllowDrop = true;
-			_lblLabels_0.BackColor = System.Drawing.SystemColors.Control;
-			_lblLabels_0.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			_lblLabels_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			_lblLabels_0.ForeColor = System.Drawing.SystemColors.ControlText;
-			_lblLabels_0.Location = new System.Drawing.Point(39, 26);
-			_lblLabels_0.MinimumSize = new System.Drawing.Size(72, 18);
-			_lblLabels_0.Name = "_lblLabels_0";
-			_lblLabels_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			_lblLabels_0.Size = new System.Drawing.Size(72, 18);
-			_lblLabels_0.TabIndex = 0;
-			_lblLabels_0.Text = "&User Name:";
+			this._lblLabels_0.AllowDrop = true;
+			this._lblLabels_0.BackColor = System.Drawing.SystemColors.Control;
+			this._lblLabels_0.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this._lblLabels_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this._lblLabels_0.ForeColor = System.Drawing.SystemColors.ControlText;
+			this._lblLabels_0.Location = new System.Drawing.Point(39, 26);
+			this._lblLabels_0.MinimumSize = new System.Drawing.Size(72, 18);
+			this._lblLabels_0.Name = "_lblLabels_0";
+			this._lblLabels_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this._lblLabels_0.Size = new System.Drawing.Size(72, 18);
+			this._lblLabels_0.TabIndex = 0;
+			this._lblLabels_0.Text = "&User Name:";
 			// 
 			// _lblLabels_1
 			// 
-			_lblLabels_1.AllowDrop = true;
-			_lblLabels_1.BackColor = System.Drawing.SystemColors.Control;
-			_lblLabels_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			_lblLabels_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			_lblLabels_1.ForeColor = System.Drawing.SystemColors.ControlText;
-			_lblLabels_1.Location = new System.Drawing.Point(39, 52);
-			_lblLabels_1.MinimumSize = new System.Drawing.Size(72, 18);
-			_lblLabels_1.Name = "_lblLabels_1";
-			_lblLabels_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			_lblLabels_1.Size = new System.Drawing.Size(72, 18);
-			_lblLabels_1.TabIndex = 2;
-			_lblLabels_1.Text = "&Password:";
+			this._lblLabels_1.AllowDrop = true;
+			this._lblLabels_1.BackColor = System.Drawing.SystemColors.Control;
+			this._lblLabels_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this._lblLabels_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this._lblLabels_1.ForeColor = System.Drawing.SystemColors.ControlText;
+			this._lblLabels_1.Location = new System.Drawing.Point(39, 52);
+			this._lblLabels_1.MinimumSize = new System.Drawing.Size(72, 18);
+			this._lblLabels_1.Name = "_lblLabels_1";
+			this._lblLabels_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this._lblLabels_1.Size = new System.Drawing.Size(72, 18);
+			this._lblLabels_1.TabIndex = 2;
+			this._lblLabels_1.Text = "&Password:";
 			// 
 			// frmLogin
 			// 
-			AcceptButton = cmdOK;
-			AllowDrop = true;
-			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			BackColor = System.Drawing.SystemColors.Control;
-			CancelButton = cmdCancel;
-			ClientSize = new System.Drawing.Size(289, 137);
-			Controls.Add(txtUserName);
-			Controls.Add(cmdCancel);
-			Controls.Add(txtPassword);
-			Controls.Add(cmdOK);
-			Controls.Add(_lblLabels_0);
-			Controls.Add(_lblLabels_1);
-			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			Icon = (System.Drawing.Icon) resources.GetObject("frmLogin.Icon");
-			Location = new System.Drawing.Point(189, 232);
-			MaximizeBox = false;
-			MinimizeBox = false;
-			Name = "frmLogin";
-			RightToLeft = System.Windows.Forms.RightToLeft.No;
-			ShowInTaskbar = false;
-			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			Text = "Login";
-			commandButtonHelper1.SetStyle(cmdCancel, 0);
-			commandButtonHelper1.SetStyle(cmdOK, 0);
-			Activated += new System.EventHandler(frmLogin_Activated);
-			Closed += new System.EventHandler(Form_Closed);
-			ResumeLayout(false);
+			this.AcceptButton = this.cmdOK;
+			this.AllowDrop = true;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.Control;
+			this.CancelButton = this.cmdCancel;
+			this.ClientSize = new System.Drawing.Size(289, 137);
+			this.Controls.Add(this.txtUserName);
+			this.Controls.Add(this.cmdCancel);
+			this.Controls.Add(this.txtPassword);
+			this.Controls.Add(this.cmdOK);
+			this.Controls.Add(this._lblLabels_0);
+			this.Controls.Add(this._lblLabels_1);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = (System.Drawing.Icon) resources.GetObject("frmLogin.Icon");
+			this.Location = new System.Drawing.Point(189, 232);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
+			this.Name = "frmLogin";
+			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.ShowInTaskbar = false;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Login";
+			this.commandButtonHelper1.SetStyle(this.cmdCancel, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdOK, 0);
+			this.Activated += new System.EventHandler(this.frmLogin_Activated);
+			this.Closed += new System.EventHandler(this.Form_Closed);
+			this.ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents) => InitializelblLabels();
 
 		void InitializelblLabels()
 		{
-			lblLabels = new System.Windows.Forms.Label[2];
-			lblLabels[0] = _lblLabels_0;
-			lblLabels[1] = _lblLabels_1;
+			this.lblLabels = new System.Windows.Forms.Label[2];
+			this.lblLabels[0] = _lblLabels_0;
+			this.lblLabels[1] = _lblLabels_1;
 		}
 		#endregion
 	}
