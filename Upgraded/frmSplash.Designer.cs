@@ -44,54 +44,54 @@ namespace SKS
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
-			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
-			this.Timer1 = new System.Windows.Forms.Timer(components);
-			this.Image1 = new System.Windows.Forms.PictureBox();
-			this.SuspendLayout();
+			ToolTipMain = new System.Windows.Forms.ToolTip(components);
+			Timer1 = new System.Windows.Forms.Timer(components);
+			Image1 = new System.Windows.Forms.PictureBox();
+			SuspendLayout();
 			// 
 			// Timer1
 			// 
-			this.Timer1.Enabled = true;
-			this.Timer1.Interval = 3000;
-			this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+			Timer1.Enabled = true;
+			Timer1.Interval = 3000;
+			Timer1.Tick += new System.EventHandler(Timer1_Tick);
 			// 
 			// Image1
 			// 
-			this.Image1.AllowDrop = true;
-			this.Image1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Image1.Enabled = true;
-			this.Image1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Image1.Image = (System.Drawing.Image) resources.GetObject("Image1.Image");
-			this.Image1.Location = new System.Drawing.Point(0, 0);
-			this.Image1.Name = "Image1";
-			this.Image1.Size = new System.Drawing.Size(964, 642);
-			this.Image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.Image1.Visible = true;
+			Image1.AllowDrop = true;
+			Image1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Image1.Enabled = true;
+			Image1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Image1.Image = (System.Drawing.Image) resources.GetObject("Image1.Image");
+			Image1.Location = new System.Drawing.Point(0, 0);
+			Image1.Name = "Image1";
+			Image1.Size = new System.Drawing.Size(964, 642);
+			Image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			Image1.Visible = true;
 			// 
 			// frmSplash
 			// 
-			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(943, 613);
-			this.Controls.Add(this.Image1);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.KeyPreview = true;
-			this.Location = new System.Drawing.Point(17, 116);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "frmSplash";
-			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.ShowInTaskbar = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Activated += new System.EventHandler(this.frmSplash_Activated);
-			this.Closed += new System.EventHandler(this.Form_Closed);
-			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form_KeyPress);
-			this.ResumeLayout(false);
+			AllowDrop = true;
+			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			BackColor = System.Drawing.SystemColors.Control;
+			ClientSize = new System.Drawing.Size(943, 613);
+			Controls.Add(Image1);
+			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			KeyPreview = true;
+			Location = new System.Drawing.Point(17, 116);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "frmSplash";
+			RightToLeft = System.Windows.Forms.RightToLeft.No;
+			ShowInTaskbar = false;
+			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			Activated += new System.EventHandler(frmSplash_Activated);
+			Closed += new System.EventHandler(Form_Closed);
+			KeyPress += new System.Windows.Forms.KeyPressEventHandler(Form_KeyPress);
+			ResumeLayout(false);
 		}
 		#endregion
 	}
