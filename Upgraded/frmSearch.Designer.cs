@@ -53,220 +53,220 @@ namespace SKS
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSearch));
-			ToolTipMain = new System.Windows.Forms.ToolTip(components);
-			cmdClose = new System.Windows.Forms.Button();
-			cmdSearch = new System.Windows.Forms.Button();
-			ctrlLiner1 = new System.Windows.Forms.PictureBox();
-			cboSrchBy = new System.Windows.Forms.ComboBox();
-			txtSrchStr = new System.Windows.Forms.TextBox();
-			Label20 = new System.Windows.Forms.Label();
-			Label19 = new System.Windows.Forms.Label();
-			Image3 = new System.Windows.Forms.PictureBox();
-			Label1 = new System.Windows.Forms.Label();
-			lblSrchBy = new System.Windows.Forms.Label();
-			SuspendLayout();
-			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
+			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
+			this.cmdClose = new System.Windows.Forms.Button();
+			this.cmdSearch = new System.Windows.Forms.Button();
+			this.ctrlLiner1 = new System.Windows.Forms.PictureBox();
+			this.cboSrchBy = new System.Windows.Forms.ComboBox();
+			this.txtSrchStr = new System.Windows.Forms.TextBox();
+			this.Label20 = new System.Windows.Forms.Label();
+			this.Label19 = new System.Windows.Forms.Label();
+			this.Image3 = new System.Windows.Forms.PictureBox();
+			this.Label1 = new System.Windows.Forms.Label();
+			this.lblSrchBy = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// cmdClose
 			// 
-			cmdClose.AllowDrop = true;
-			cmdClose.BackColor = System.Drawing.SystemColors.Control;
-			cmdClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmdClose.ForeColor = System.Drawing.SystemColors.ControlText;
-			cmdClose.Location = new System.Drawing.Point(272, 104);
-			cmdClose.Name = "cmdClose";
-			cmdClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cmdClose.Size = new System.Drawing.Size(81, 25);
-			cmdClose.TabIndex = 8;
-			cmdClose.Text = "&Close";
-			cmdClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			cmdClose.UseVisualStyleBackColor = false;
-			cmdClose.Click += new System.EventHandler(cmdClose_Click);
+			this.cmdClose.AllowDrop = true;
+			this.cmdClose.BackColor = System.Drawing.SystemColors.Control;
+			this.cmdClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmdClose.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.cmdClose.Location = new System.Drawing.Point(272, 104);
+			this.cmdClose.Name = "cmdClose";
+			this.cmdClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cmdClose.Size = new System.Drawing.Size(81, 25);
+			this.cmdClose.TabIndex = 8;
+			this.cmdClose.Text = "&Close";
+			this.cmdClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.cmdClose.UseVisualStyleBackColor = false;
+			this.cmdClose.Click += new System.EventHandler(this.cmdClose_Click);
 			// 
 			// cmdSearch
 			// 
-			cmdSearch.AllowDrop = true;
-			cmdSearch.BackColor = System.Drawing.SystemColors.Control;
-			cmdSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmdSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-			cmdSearch.Location = new System.Drawing.Point(184, 104);
-			cmdSearch.Name = "cmdSearch";
-			cmdSearch.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cmdSearch.Size = new System.Drawing.Size(81, 25);
-			cmdSearch.TabIndex = 7;
-			cmdSearch.Text = "&Search";
-			cmdSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			cmdSearch.UseVisualStyleBackColor = false;
-			cmdSearch.Click += new System.EventHandler(cmdSearch_Click);
+			this.cmdSearch.AllowDrop = true;
+			this.cmdSearch.BackColor = System.Drawing.SystemColors.Control;
+			this.cmdSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmdSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.cmdSearch.Location = new System.Drawing.Point(184, 104);
+			this.cmdSearch.Name = "cmdSearch";
+			this.cmdSearch.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cmdSearch.Size = new System.Drawing.Size(81, 25);
+			this.cmdSearch.TabIndex = 7;
+			this.cmdSearch.Text = "&Search";
+			this.cmdSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.cmdSearch.UseVisualStyleBackColor = false;
+			this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
 			// 
 			// ctrlLiner1
 			// 
-			ctrlLiner1.AllowDrop = true;
-			ctrlLiner1.BackColor = System.Drawing.SystemColors.Control;
-			ctrlLiner1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			ctrlLiner1.CausesValidation = true;
-			ctrlLiner1.Dock = System.Windows.Forms.DockStyle.None;
-			ctrlLiner1.Enabled = true;
-			ctrlLiner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			ctrlLiner1.Location = new System.Drawing.Point(0, 56);
-			ctrlLiner1.Name = "ctrlLiner1";
-			ctrlLiner1.Size = new System.Drawing.Size(385, 2);
-			ctrlLiner1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Normal;
-			ctrlLiner1.TabIndex = 6;
-			ctrlLiner1.TabStop = true;
-			ctrlLiner1.Visible = true;
+			this.ctrlLiner1.AllowDrop = true;
+			this.ctrlLiner1.BackColor = System.Drawing.SystemColors.Control;
+			this.ctrlLiner1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.ctrlLiner1.CausesValidation = true;
+			this.ctrlLiner1.Dock = System.Windows.Forms.DockStyle.None;
+			this.ctrlLiner1.Enabled = true;
+			this.ctrlLiner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.ctrlLiner1.Location = new System.Drawing.Point(0, 56);
+			this.ctrlLiner1.Name = "ctrlLiner1";
+			this.ctrlLiner1.Size = new System.Drawing.Size(385, 2);
+			this.ctrlLiner1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Normal;
+			this.ctrlLiner1.TabIndex = 6;
+			this.ctrlLiner1.TabStop = true;
+			this.ctrlLiner1.Visible = true;
 			// 
 			// cboSrchBy
 			// 
-			cboSrchBy.AllowDrop = true;
-			cboSrchBy.BackColor = System.Drawing.SystemColors.Window;
-			cboSrchBy.CausesValidation = true;
-			cboSrchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			cboSrchBy.Enabled = true;
-			cboSrchBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cboSrchBy.ForeColor = System.Drawing.SystemColors.WindowText;
-			cboSrchBy.IntegralHeight = true;
-			cboSrchBy.Location = new System.Drawing.Point(208, 144);
-			cboSrchBy.Name = "cboSrchBy";
-			cboSrchBy.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cboSrchBy.Size = new System.Drawing.Size(145, 21);
-			cboSrchBy.Sorted = false;
-			cboSrchBy.TabIndex = 3;
-			cboSrchBy.TabStop = true;
-			cboSrchBy.Visible = true;
-			cboSrchBy.SelectedIndexChanged += new System.EventHandler(cboSrchBy_SelectedIndexChanged);
+			this.cboSrchBy.AllowDrop = true;
+			this.cboSrchBy.BackColor = System.Drawing.SystemColors.Window;
+			this.cboSrchBy.CausesValidation = true;
+			this.cboSrchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cboSrchBy.Enabled = true;
+			this.cboSrchBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cboSrchBy.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.cboSrchBy.IntegralHeight = true;
+			this.cboSrchBy.Location = new System.Drawing.Point(208, 144);
+			this.cboSrchBy.Name = "cboSrchBy";
+			this.cboSrchBy.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cboSrchBy.Size = new System.Drawing.Size(145, 21);
+			this.cboSrchBy.Sorted = false;
+			this.cboSrchBy.TabIndex = 3;
+			this.cboSrchBy.TabStop = true;
+			this.cboSrchBy.Visible = true;
+			this.cboSrchBy.SelectedIndexChanged += new System.EventHandler(this.cboSrchBy_SelectedIndexChanged);
 			// 
 			// txtSrchStr
 			// 
-			txtSrchStr.AcceptsReturn = true;
-			txtSrchStr.AllowDrop = true;
-			txtSrchStr.BackColor = System.Drawing.SystemColors.Window;
-			txtSrchStr.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			txtSrchStr.Cursor = System.Windows.Forms.Cursors.IBeam;
-			txtSrchStr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtSrchStr.ForeColor = System.Drawing.SystemColors.WindowText;
-			txtSrchStr.Location = new System.Drawing.Point(136, 72);
-			txtSrchStr.MaxLength = 0;
-			txtSrchStr.Name = "txtSrchStr";
-			txtSrchStr.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			txtSrchStr.Size = new System.Drawing.Size(217, 19);
-			txtSrchStr.TabIndex = 0;
+			this.txtSrchStr.AcceptsReturn = true;
+			this.txtSrchStr.AllowDrop = true;
+			this.txtSrchStr.BackColor = System.Drawing.SystemColors.Window;
+			this.txtSrchStr.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.txtSrchStr.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtSrchStr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtSrchStr.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.txtSrchStr.Location = new System.Drawing.Point(136, 72);
+			this.txtSrchStr.MaxLength = 0;
+			this.txtSrchStr.Name = "txtSrchStr";
+			this.txtSrchStr.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.txtSrchStr.Size = new System.Drawing.Size(217, 19);
+			this.txtSrchStr.TabIndex = 0;
 			// 
 			// Label20
 			// 
-			Label20.AllowDrop = true;
-			Label20.AutoSize = true;
-			Label20.BackColor = System.Drawing.Color.Transparent;
-			Label20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			Label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Label20.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-			Label20.Location = new System.Drawing.Point(49, 32);
-			Label20.MinimumSize = new System.Drawing.Size(119, 13);
-			Label20.Name = "Label20";
-			Label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			Label20.Size = new System.Drawing.Size(119, 13);
-			Label20.TabIndex = 5;
-			Label20.Text = "Search for a specific item";
+			this.Label20.AllowDrop = true;
+			this.Label20.AutoSize = true;
+			this.Label20.BackColor = System.Drawing.Color.Transparent;
+			this.Label20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.Label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Label20.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+			this.Label20.Location = new System.Drawing.Point(49, 32);
+			this.Label20.MinimumSize = new System.Drawing.Size(119, 13);
+			this.Label20.Name = "Label20";
+			this.Label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.Label20.Size = new System.Drawing.Size(119, 13);
+			this.Label20.TabIndex = 5;
+			this.Label20.Text = "Search for a specific item";
 			// 
 			// Label19
 			// 
-			Label19.AllowDrop = true;
-			Label19.AutoSize = true;
-			Label19.BackColor = System.Drawing.Color.Transparent;
-			Label19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Label19.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-			Label19.Location = new System.Drawing.Point(49, 8);
-			Label19.MinimumSize = new System.Drawing.Size(50, 16);
-			Label19.Name = "Label19";
-			Label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			Label19.Size = new System.Drawing.Size(50, 16);
-			Label19.TabIndex = 4;
-			Label19.Text = "Search";
-			Label19.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.Label19.AllowDrop = true;
+			this.Label19.AutoSize = true;
+			this.Label19.BackColor = System.Drawing.Color.Transparent;
+			this.Label19.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Label19.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+			this.Label19.Location = new System.Drawing.Point(49, 8);
+			this.Label19.MinimumSize = new System.Drawing.Size(50, 16);
+			this.Label19.Name = "Label19";
+			this.Label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.Label19.Size = new System.Drawing.Size(50, 16);
+			this.Label19.TabIndex = 4;
+			this.Label19.Text = "Search";
+			this.Label19.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			// 
 			// Image3
 			// 
-			Image3.AllowDrop = true;
-			Image3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			Image3.Enabled = true;
-			Image3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Image3.Image = (System.Drawing.Image) resources.GetObject("Image3.Image");
-			Image3.Location = new System.Drawing.Point(8, 8);
-			Image3.Name = "Image3";
-			Image3.Size = new System.Drawing.Size(16, 16);
-			Image3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Normal;
-			Image3.Visible = true;
+			this.Image3.AllowDrop = true;
+			this.Image3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.Image3.Enabled = true;
+			this.Image3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Image3.Image = (System.Drawing.Image) resources.GetObject("Image3.Image");
+			this.Image3.Location = new System.Drawing.Point(8, 8);
+			this.Image3.Name = "Image3";
+			this.Image3.Size = new System.Drawing.Size(16, 16);
+			this.Image3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Normal;
+			this.Image3.Visible = true;
 			// 
 			// Label1
 			// 
-			Label1.AllowDrop = true;
-			Label1.AutoSize = true;
-			Label1.BackColor = System.Drawing.SystemColors.Control;
-			Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Label1.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-			Label1.Location = new System.Drawing.Point(125, 144);
-			Label1.MinimumSize = new System.Drawing.Size(62, 13);
-			Label1.Name = "Label1";
-			Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			Label1.Size = new System.Drawing.Size(62, 13);
-			Label1.TabIndex = 2;
-			Label1.Text = "Search by:";
-			Label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.Label1.AllowDrop = true;
+			this.Label1.AutoSize = true;
+			this.Label1.BackColor = System.Drawing.SystemColors.Control;
+			this.Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Label1.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+			this.Label1.Location = new System.Drawing.Point(125, 144);
+			this.Label1.MinimumSize = new System.Drawing.Size(62, 13);
+			this.Label1.Name = "Label1";
+			this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.Label1.Size = new System.Drawing.Size(62, 13);
+			this.Label1.TabIndex = 2;
+			this.Label1.Text = "Search by:";
+			this.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			// 
 			// lblSrchBy
 			// 
-			lblSrchBy.AllowDrop = true;
-			lblSrchBy.AutoSize = true;
-			lblSrchBy.BackColor = System.Drawing.SystemColors.Control;
-			lblSrchBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblSrchBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblSrchBy.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-			lblSrchBy.Location = new System.Drawing.Point(7, 72);
-			lblSrchBy.MinimumSize = new System.Drawing.Size(116, 13);
-			lblSrchBy.Name = "lblSrchBy";
-			lblSrchBy.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblSrchBy.Size = new System.Drawing.Size(116, 13);
-			lblSrchBy.TabIndex = 1;
-			lblSrchBy.Text = "Field";
-			lblSrchBy.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.lblSrchBy.AllowDrop = true;
+			this.lblSrchBy.AutoSize = true;
+			this.lblSrchBy.BackColor = System.Drawing.SystemColors.Control;
+			this.lblSrchBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblSrchBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblSrchBy.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+			this.lblSrchBy.Location = new System.Drawing.Point(7, 72);
+			this.lblSrchBy.MinimumSize = new System.Drawing.Size(116, 13);
+			this.lblSrchBy.Name = "lblSrchBy";
+			this.lblSrchBy.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblSrchBy.Size = new System.Drawing.Size(116, 13);
+			this.lblSrchBy.TabIndex = 1;
+			this.lblSrchBy.Text = "Field";
+			this.lblSrchBy.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			// 
 			// frmSearch
 			// 
-			AllowDrop = true;
-			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			BackColor = System.Drawing.SystemColors.Control;
-			ClientSize = new System.Drawing.Size(378, 173);
-			Controls.Add(cmdClose);
-			Controls.Add(cmdSearch);
-			Controls.Add(ctrlLiner1);
-			Controls.Add(cboSrchBy);
-			Controls.Add(txtSrchStr);
-			Controls.Add(Label20);
-			Controls.Add(Label19);
-			Controls.Add(Image3);
-			Controls.Add(Label1);
-			Controls.Add(lblSrchBy);
-			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			Icon = (System.Drawing.Icon) resources.GetObject("frmSearch.Icon");
-			Location = new System.Drawing.Point(486, 322);
-			MaximizeBox = false;
-			MinimizeBox = false;
-			Name = "frmSearch";
-			RightToLeft = System.Windows.Forms.RightToLeft.No;
-			ShowInTaskbar = false;
-			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			Text = "Search";
-			commandButtonHelper1.SetStyle(cmdClose, 0);
-			commandButtonHelper1.SetStyle(cmdSearch, 0);
-			Activated += new System.EventHandler(frmSearch_Activated);
-			Closed += new System.EventHandler(Form_Closed);
-			ResumeLayout(false);
+			this.AllowDrop = true;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.Control;
+			this.ClientSize = new System.Drawing.Size(378, 173);
+			this.Controls.Add(this.cmdClose);
+			this.Controls.Add(this.cmdSearch);
+			this.Controls.Add(this.ctrlLiner1);
+			this.Controls.Add(this.cboSrchBy);
+			this.Controls.Add(this.txtSrchStr);
+			this.Controls.Add(this.Label20);
+			this.Controls.Add(this.Label19);
+			this.Controls.Add(this.Image3);
+			this.Controls.Add(this.Label1);
+			this.Controls.Add(this.lblSrchBy);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Icon = (System.Drawing.Icon) resources.GetObject("frmSearch.Icon");
+			this.Location = new System.Drawing.Point(486, 322);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
+			this.Name = "frmSearch";
+			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.ShowInTaskbar = false;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Search";
+			this.commandButtonHelper1.SetStyle(this.cmdClose, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdSearch, 0);
+			this.Activated += new System.EventHandler(this.frmSearch_Activated);
+			this.Closed += new System.EventHandler(this.Form_Closed);
+			this.ResumeLayout(false);
 		}
 		#endregion
 	}
