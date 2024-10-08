@@ -148,7 +148,7 @@ namespace SKS
 			return;
 
 			//UPGRADE_WARNING: (2081) Err.Number has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2081
-			MessageBox.Show($"An error has occurred adding the data. Error: ({Information.Err().Number.ToString()}) {Information.Err().Description}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			MessageBox.Show($"An error has occurred adding the data.{Environment.NewLine}Error: ({Information.Err().Number.ToString()}) {Information.Err().Description}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 
 		public void LoadData()
